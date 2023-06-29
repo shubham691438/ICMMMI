@@ -94,7 +94,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #2be4a2;
+  /* background: #2be4a2; */
   color: #fff;
 }
 
@@ -119,37 +119,40 @@ h6 {
   height: 80px;
   transition: all 0.5s;
   z-index: 997;
+  box-shadow: 5px 5px 5px rgb(123, 122, 122);
   transition: all 0.5s;
   background: rgba(1, 4, 136, 0.9);
 }
 
 #header.header-transparent {
-  background: transparent;
+  background: #2dd0d06b;
 }
 
 #header.header-scrolled {
-  background: rgba(1, 4, 136, 0.9);
-  height: 60px;
+  /* background: rgba(1, 4, 136, 0.9); */
+  background: #109fb6fd;
+  height: 70px;
+  color: white;
 }
 
 #header .logo h1 {
   font-size: 28px;
   margin: 0;
   padding: 0;
-  line-height: 1;
-  font-weight: 700;
+  line-height: 2;
+  font-weight: 750;
 }
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: #fff;
+  color: #090000;
   text-decoration: none;
 }
 
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 40px;
+  max-height: 52px;
 }
 
 /*--------------------------------------------------------------
@@ -181,9 +184,9 @@ h6 {
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 700;
   font-family: "Poppins", sans-serif;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(11, 7, 7, 0.7);
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -202,7 +205,7 @@ h6 {
   height: 2px;
   bottom: 3px;
   left: 30px;
-  background-color: #1acc8d;
+  /* background-color: #1acc8d; */
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -215,11 +218,15 @@ h6 {
   width: 25px;
 }
 
-.navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
-.navbar li:hover>a {
-  color: #fff;
+.navbar a:hover
+ {
+  /* color: #0511f0; */
+  text-decoration: underline;
+    /* font-size: 1.1rem; */
+    font-size: 16px;
+    /* text-shadow: white; */
+    /* color: rgb(6, 1, 1); */
+    color: rgba(1, 4, 136, 0.9);
 }
 
 .navbar .dropdown ul {
@@ -254,9 +261,8 @@ h6 {
   font-size: 12px;
 }
 
-.navbar .dropdown ul a:hover,
-.navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
+.navbar .dropdown ul a:hover
+ {
   color: #1acc8d;
 }
 
@@ -412,27 +418,40 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  background: url("../img/hero-bg.jpg");
+  height: 100vh;
+  /* background: url("../img/nit1.jpg")top center; */
+  background-size: cover;
   position: relative;
   padding: 120px 0 0 0;
 }
-
+#hero .bg{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0.3;
+  margin-top: -120px;
+  left: 0;
+  z-index: 1;
+}
 #hero:before {
   content: "";
-  background: rgba(2, 5, 161, 0.91);
+  /* background: rgba(2, 5, 161, 0.91); */
+  /* background-image: url("../img/nit1.jpg"); */
   position: absolute;
-  bottom: 0;
+  /* bottom: 0;
   top: 0;
   left: 0;
-  right: 0;
+  right: 0; */
 }
 
 #hero h1 {
   margin: 0 0 20px 0;
   font-size: 48px;
   font-weight: 700;
-  line-height: 56px;
-  color: rgba(255, 255, 255, 0.8);
+  line-height: 190px;
+  color: black;
 }
 
 #hero h1 span {
@@ -440,12 +459,38 @@ h6 {
   border-bottom: 4px solid #1acc8d;
 }
 
-#hero h2 {
-  color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 40px;
-  font-size: 24px;
+#hero p{
+  color: black;
+  margin-bottom: 32px;
+  font-size: 28px;
+  margin-top: 0px;
+  font-weight: 800;
 }
+#hero h3 {
+  color: black;
+  margin-bottom: 32px;
+  font-size: 32px;
+  margin-top: -50px;
+  font-weight: 700;
+}
+#hero h4 {
+  color: black;
+  margin-bottom: 32px;
+  font-size: 28px;
+  margin-top: 0px;
+  font-weight: 700;
+}
+hr{
+  height: 3px;
+  color: black;
+  /* width: 4px; */
+  background-color: black;
+  border: none;
+  margin-top: -20px;
+  margin-left: -60px;
+  margin-bottom: 20px;
 
+}
 #hero .btn-get-started {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -496,7 +541,7 @@ h6 {
     margin-bottom: 10px;
   }
 
-  #hero h2 {
+  #hero p {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
@@ -521,7 +566,7 @@ h6 {
 
 .hero-waves {
   display: block;
-  margin-top: 60px;
+  margin-top: 8px;
   width: 100%;
   height: 60px;
   z-index: 5;
