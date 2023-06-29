@@ -1,14 +1,4 @@
-.sect{
-    /* min-height: 100vh;  */
-    /* display: flex; */
-    /* justify-content:center; */
-    /* align-items:center; */
-    /* background: #fff;
-    font-size: 35px;
-    color:black;
-    font-weight: 30; */
-    border:2px solid black;
-}
+
 .head{
   display:flex;
   justify-content:center;
@@ -34,7 +24,7 @@
 
 
 .sect {
-  padding: 60px 0;
+  padding: 0vh 0;
   overflow: hidden;
 }
 
@@ -182,4 +172,20 @@
   margin-left: 8px;
 }
 
+/* .member1{
+  width:87vw;
+  /* padding-right: 30px; */
+} */
 
+.member1 {
+    flex: 0 0 auto;
+    width:100%;
+}
+
+@media (min-width: 992px)
+{
+.member1 {
+    flex: 0 0 auto;
+    width:100%;
+}
+}
