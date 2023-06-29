@@ -734,12 +734,86 @@ section {
   padding: 40px 0 0 0;
 }
 
-.about .icon-boxes h3 {
-  font-size: 28px;
+.about .icon-boxes h1 {
+  font-size: 58px;
+  text-align: center;
+  justify-content: center;
   font-weight: 700;
-  color: #010483;
+  color: #01036f;
   margin-bottom: 15px;
 }
+
+.about .icon-boxes p{
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #0c10e7;
+  margin-bottom: 15px;
+}
+
+
+.key_dates {
+  background-image: url("../../assets/img/computer.jpeg");
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+}
+
+.key_dates h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62px;
+  padding-top: 2%;
+  left: 30%;
+  color: white;
+  position: absolute;
+
+}
+
+.key1,
+.key2,
+.key3,
+.key4 {
+  width: 33.3%;
+  padding-left: 5vw;
+}
+
+.key1 img,
+.key2 img,
+.key3 img {
+  width: 20vmax;
+  height: 10vmax;
+  border-radius: 10px;
+  margin-top: 20vw;
+
+}
+
+.key_dates .key1 p,
+.key_dates .key2 p,
+.key_dates .key3 p,
+.key_dates .key4 p{
+  /* padding-top: 5vw; */
+  margin-top: 170px;
+  /* padding-left: 4%; */
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+#three {
+  padding-left: 2vw;
+      margin-bottom: -109px;
+}
+
+
+
+
+
 
 .about .icon-box {
   margin-top: 40px;
@@ -1127,7 +1201,14 @@ section {
 .team {
   background: #fff;
 }
-
+.team .section-title h3{
+  /* text-align: center; */
+  font-size: 26px;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 30px;
+  margin-top: 30px;
+}
 .team .member {
   text-align: center;
   margin-bottom: 80px;
