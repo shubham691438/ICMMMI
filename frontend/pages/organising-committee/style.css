@@ -110,6 +110,13 @@
   margin-bottom: 5px;
   font-size: 20px;
   color: #37517e;
+
+  /* font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #01036f; */
+  position: relative;
+  padding-bottom: 40px;
 }
 
 .team .member span {
