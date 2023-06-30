@@ -1687,3 +1687,12 @@ section {
     margin: -20px 0 30px 0;
   }
 }
+
+
+/* Footer */
+
+#images img{
+  height: 10em;
+  width: 10em;
+  margin: 2em;
+}
