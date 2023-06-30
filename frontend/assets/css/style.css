@@ -1642,3 +1642,12 @@ section {
     margin: -20px 0 30px 0;
   }
 }
+
+
+/* footer */
+
+#images img{
+  height: 10em;
+  width: 10em;
+  margin: 2em;
+}
