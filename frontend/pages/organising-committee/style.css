@@ -39,7 +39,7 @@
 }
 
 .section-title h2 {
-  font-size: 141%;
+  font-size: 97%;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -82,6 +82,7 @@
   background: #fff;
   transition: 0.5s;
   height: 90%;
+  margin-bottom: 10px;
 }
 
 .team .member .pic {
@@ -105,25 +106,47 @@
   padding-left: 30px;
 }
 
-.team .member h4 {
+.team .member .member-info > h4 {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
   color: #37517e;
 }
 
+.team .member h4::after {
+  content: "";
+  position: absolute;
+  display: none;
+  width: 50px;
+  height: 1px;
+  background: #0d12fc;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.team .member .member-info {
+  position: static;
+  /* bottom: -80px;
+  left: 0px;
+  right: 0px; */
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px 10px;
+  border-radius: 0 0 0px 0px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+}
+
 .team .member span {
   display: block;
   font-size: 15px;
   padding-bottom: 10px;
-  position: relative;
+  position: static;
   font-weight: 500;
 }
 
 .team .member span::after {
   content: "";
-  position: absolute;
-  display: block;
+  position: static;
+  display: none;
   width: 50px;
   height: 1px;
   background: #cbd6e9;
@@ -172,10 +195,6 @@
   margin-left: 8px;
 }
 
-/* .member1{
-  width:87vw;
-  /* padding-right: 30px; */
-} */
 
 .member1 {
     flex: 0 0 auto;
@@ -187,5 +206,15 @@
 .member1 {
     flex: 0 0 auto;
     width:100%;
+}
+}
+
+@media (min-width: 992px)
+{
+.member2 {
+    flex: 0 0 auto;
+    width:29.5vw;
+    font-size: 2px;
+
 }
 }
