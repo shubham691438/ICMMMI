@@ -6,3 +6,29 @@
 .card{
     margin: 20px 0;
 }
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.adress p{
+    text-decoration: solid;
+    text-decoration-color: black;
+    font-size: 17px;
+    color: white;
+}
+
+.aos-init aos-animate{
+    margin-top: 25px;
+}
+
+.row justify-content-between{
+    margin-top: 30px;
+    /* justify-content: center; */
+}

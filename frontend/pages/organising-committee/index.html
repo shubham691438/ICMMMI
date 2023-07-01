@@ -14,7 +14,9 @@
   <link href="../../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="../../assets/vendor/aos/aos.css" rel="stylesheet">
@@ -27,7 +29,7 @@
 
   <!-- Template Main CSS File -->
   <link href="../../assets/css/style.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="style.css">
   <!-- =======================================================
   * Template Name: Bootslander
   * Updated: May 30 2023 with Bootstrap v5.3.0
@@ -44,75 +46,2125 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <h1><a href="index.html"><span>Bootslander</span></a></h1>
+        <!-- <h1><a href="index.html"><span>Bootslander</span></a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="../../assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
-      
+
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="../../index.html">Home</a></li>
           <li><a class="nav-link scrollto" href="../aims-and-scope/index.html">Aims & Scope</a></li>
           <li><a class="nav-link scrollto" href="../participation/index.html">Participations</a></li>
-          <li><a class="nav-link scrollto" href="../key-attractions/index.html">Key Attractions</a></li>
-          <li><a class="nav-link scrollto" href="index.html">Organizing Committee</a></li>
+
+          <li><a class="nav-link scrollto" href="../key-attractions/index.html">Key Atractions</a></li>
+          <li class="dropdown"><a href="#"><span>Organizing Committee</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#Patron" class="active">Patron</a></li>
+              <li><a href="#Co-Patron" id="Co-Patron1">Co-Patron</a></li>
+              <li><a href="#Executive General Chair" id="Executive General Chair1">Executive General Chair</a></li>
+              <li><a href="#Chairman" id="Chairman1">Chairman</a></li>
+              <li><a href="#Conveners" id="Conveners1">Conveners</a></li>
+              <li><a href="#Organizing Secretaries" id="Organizing Secretaries1">Organizing Secretaries</a></li>
+              <li><a href="#Joint-Organizing Secretaries" id="Joint-Organizing Secretaries1">Joint-Organizing
+                  Secretaries</a></li>
+              <li><a href="#Treasurers" id="Treasurers1">Treasurers</a></li>
+              <li><a href="#Organizing Committee" id="Organizing Committee1">Organizing Committee</a></li>
+              <li><a href="#National Advisory Committee" id="National Advisory Committee1">National Advisory
+                  Committee</a></li>
+              <li><a href="#International Advisory Committee" id="International Advisory Committee1">International
+                  Advisory Committee</a></li>
+              <li><a href="#Student Coordinators" id="Student Coordinators1">Student Coordinators</a></li>
+            </ul>
+          </li>
           <li><a class="nav-link scrollto" href="../registration/index.html">Registration</a></li>
           <li><a class="nav-link scrollto" href="../contact/index.html">Contact</a></li>
         </ul>
-        <!-- <i class="bi bi-list mobile-nav-toggle"></i> -->
+        <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
       <!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
 
-   <!-- ======= Hero Section ======= -->
+
+  <!-- ======= Hero Section ======= -->
   <section id="hero">
 
     <div class="container">
-      <!-- <div class="row justify-content-between"> -->
-        <!-- <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center"> -->
+      <div class="row justify-content-between">
+        <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
           <div data-aos="zoom-out">
             <h1>organising-committee</span></h1>
-            <h2>We are team of talented designers making websites with Bootstrap</h2>
-            <!-- <div class="text-center text-lg-start">
-              <a href="#about" class="btn-get-started scrollto">Get Started</a>
-            </div>  -->
+            <!-- <h2>We are team of talented designers making websites with Bootstrap</h2>
+              <div class="text-center text-lg-start">
+                <a href="#about" class="btn-get-started scrollto">Get Started</a>
+              </div> -->
           </div>
         </div>
-         <!-- <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
-          <img src="../../assets/img/hero-img.png" class="img-fluid animated" alt="">
-        </div>  -->
+        <!-- <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+            <img src="../../assets/img/hero-img.png" class="img-fluid animated" alt="">
+          </div> -->
       </div>
     </div>
 
-    <!-- <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none"> -->
-      <defs>
-        <!-- <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"> -->
-      </defs>
-      <g class="wave1">
-        <!-- <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)"> -->
-      </g>
-      <g class="wave2">
-        <!-- <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)"> -->
-      </g>
-      <g class="wave3">
-        <!-- <use xlink:href="#wave-path" x="50" y="9" fill="#fff"> -->
-      </g>
-    </svg>
+    <!-- <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+          </defs>
+          <g class="wave1">
+            <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+            </g>
+            <g class="wave2">
+              <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+              </g>
+              <g class="wave3">
+                <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+                </g>
+              </svg> -->
 
   </section><!-- End Hero -->
 
   <main id="main">
 
-    <!---======= About Section ======= --> 
-     
+    <!---======= About Section ======= -->
+    <!-- <section id="about" class="about">
+                <div class="container-fluid">
+                  
+                  <div class="row">
+                    <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
+                      <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
+                      <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla tenetur. Suscipit aut voluptate.</p>
+                      
+                      <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="icon"><i class="bx bx-fingerprint"></i></div>
+                        <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                      </div>
+                      
+                      <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="icon"><i class="bx bx-gift"></i></div>
+                        <h4 class="title"><a href="">Nemo Enim</a></h4>
+                        <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                      </div>
+                      
+                      <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="icon"><i class="bx bx-atom"></i></div>
+                        <h4 class="title"><a href="">Dine Pad</a></h4>
+                        <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
+                      </div>
+                      
+                    </div>
+                  </div> 
+                  
+                </div>
+              </section> -->
+    <!-- End About Section -->
 
-    
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
+    <!--                                      MAIN SECTION STARTS                                     -->
+
+    <section class="sect" id="Patron">
+      <section id="team" class="team section-bg">
+        <div class="container" data-aos="fade-up">
+
+          <div class="section-title">
+            <h2>Patron</h2>
+            <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+          </div>
+
+          <div class="row">
+
+            <div class="col-lg-6 member1" data-aos="zoom-in" data-aos-delay="100">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img src="https://www.nitjsr.ac.in/static/media/director_crop.5c48dc91.jpg"
+                    class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Prof. Gautam Sutradhar</h4>
+                  <span>Director<br>NIT Jamshedpur</span>
+                  <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p> -->
+                  <!-- <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <h2 class="head">Patron</h2>
+              <div class="main-box">
+                  <div class="box">
+                  <img src="https://www.nitjsr.ac.in/static/media/director_crop.5c48dc91.jpg" class="image" alt="src not found">
+                  <p class="para"><b>Prof. Goutam Sutradhar</b><br><ab>Director</ab><br>NIT Jamshedpur
+                </p>                
+                </div>
+              </div> -->
+    </section>
+    <section class="sect" id="Co-Patron">
+      <section id="team" class="team section-bg">
+        <div class="container" data-aos="fade-up">
+
+          <div class="section-title">
+            <h2>Co-Patron</h2>
+            <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+          </div>
+
+          <div class="row">
+
+            <div class="col-lg-6 member1" data-aos="zoom-in" data-aos-delay="100">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img src="https://www.nitjsr.ac.in/static/media/deputy_director.a4aca0ca.jpg"
+                    class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Prof R. V. Sharma</h4>
+                  <span>Deputy Director<br>NIT Jamshedpur</span>
+                  <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p> -->
+                  <!-- <div class="social">
+                              <a href=""><i class="ri-twitter-fill"></i></a>
+                              <a href=""><i class="ri-facebook-fill"></i></a>
+                              <a href=""><i class="ri-instagram-fill"></i></a>
+                              <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                            </div> -->
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- <h2 class="head">Co-Patron</h2>
+              <div class="main-box">
+                  <div class="box">
+                  <img src="https://www.nitjsr.ac.in/static/media/deputy_director.a4aca0ca.jpg" class="image" alt="src not found">
+                  <p class="para"><b>Prof R. V. Sharma</b><br><ab>Deputy Director</ab><br>NIT Jamshedpur
+                </p>                
+                </div>
+              </div> -->
+    </section>
+    <section class="sect" id="Executive General Chair">
+      <section id="team" class="team section-bg">
+        <div class="container" data-aos="fade-up">
+
+          <div class="section-title">
+            <h2>Executive General Chair</h2>
+            <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+          </div>
+
+          <div class="row">
+
+            <div class="col-lg-6 member1" data-aos="zoom-in" data-aos-delay="100">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img
+                    src="https://nitjsr.ac.in/backend/uploads/Faculty/CE109/profile/cd7f2347-4ead-4ef7-a592-7bc206fe85c7.jpg"
+                    class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Dr. C M Rao</h4>
+                  <span>Dean Academic<br>NIT Jamshedpur</span>
+                  <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="sect" id="Chairman">
+      <section id="team" class="team section-bg">
+        <div class="container" data-aos="fade-up">
+
+          <div class="section-title">
+            <h2>Chairman</h2>
+            <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+          </div>
+
+          <div class="row">
+
+            <div class="col-lg-6 member1" data-aos="zoom-in" data-aos-delay="100">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img src="https://www.nitjsr.ac.in/static/media/hod_prod.df54f145.jpg"
+                    class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Dr. Ashok Kumar Jha</h4>
+                  <span>HOD<br>PIE Department</span>
+                  <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="sect" id="Conveners">
+
+      <section id="team" class="team section-bg">
+        <div class="container" data-aos="fade-up">
+
+          <div class="section-title">
+            <h2>Conveners</h2>
+            <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+          </div>
+
+          <div class="row">
+
+            <div class="col-lg-6 member1" data-aos="zoom-in" data-aos-delay="100">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img
+                    src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI102/profile/305e9894-9964-4faa-be14-6aaa6e1c30a1.jfif"
+                    class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Prof Amaresh Kumar</h4>
+                  <span>NIT Jamshedpur</span>
+                  <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </section>
+    <section class="sect" id="Organizing Secretaries">
+      <section id="team" class="team section-bg">
+        <div class="container" data-aos="fade-up">
+
+          <div class="section-title">
+            <h2>Organizing Secretaries</h2>
+            <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+          </div>
+
+          <div class="row">
+
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img
+                    src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg"
+                    class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Dr. Dinesh Kumar</h4>
+                  <span></span>
+                  <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img
+                    src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI115/profile/76495562-ec52-45ff-ab01-facf59fbb828.jpg"
+                    class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Dr. Kuntal Maji</h4>
+                  <span></span>
+                  <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                          <div class="social">
+                            <a href=""><i class="ri-twitter-fill"></i></a>
+                            <a href=""><i class="ri-facebook-fill"></i></a>
+                            <a href=""><i class="ri-instagram-fill"></i></a>
+                            <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                          </div> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img
+                    src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI108/profile/723a49be-eff3-4875-b479-e071a2f2b54b.jpg"
+                    class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Dr. Kanika Prasad</h4>
+                  <span></span>
+                  <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                          <div class="social">
+                            <a href=""><i class="ri-twitter-fill"></i></a>
+                            <a href=""><i class="ri-facebook-fill"></i></a>
+                            <a href=""><i class="ri-instagram-fill"></i></a>
+                            <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                          </div> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img
+                    src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI107/profile/ace330bd-5d25-4dbb-8564-6d3cc0eed5db.JPG"
+                    class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Dr. Tushar Banerjee </h4>
+                  <span></span>
+                  <!-- <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img
+                    src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI114/profile/a1896d08-28aa-4bf2-844c-bf3631c50d6a.jpg"
+                    class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Dr. Shubham Tripathi</h4>
+                  <span></span>
+                  <!-- <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img
+                    src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI113/profile/e74d47c7-253f-4669-864b-e325929e9ae0.JPG"
+                    class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Dr. Akash Subhash Awale</h4>
+                  <span></span>
+                  <!-- <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+    </section>
+    <section class="sect" id="Joint-Organizing Secretaries">
+
+      <section id="team" class="team section-bg">
+        <div class="container" data-aos="fade-up">
+
+          <div class="section-title">
+            <h2>Joint-Organizing Secretaries</h2>
+            <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+          </div>
+
+          <div class="row">
+
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img
+                    src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI111/profile/5ad8571b-288d-40a0-ab68-b0e63051107b.jpg"
+                    class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Dr S B Prasad</h4>
+                  <span></span>
+                  <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img
+                    src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI110/profile/085f8c14-02e4-4384-866b-8b6fc97a4156.jpg"
+                    class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Dr. Raj Ballav</h4>
+                  <span></span>
+                  <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                          <div class="social">
+                            <a href=""><i class="ri-twitter-fill"></i></a>
+                            <a href=""><i class="ri-facebook-fill"></i></a>
+                            <a href=""><i class="ri-instagram-fill"></i></a>
+                            <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                          </div> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img src="https://www.nitjsr.ac.in/static/media/default.b9a3f227.jpg" class="img-fluid"
+                    alt=""></div>
+                <div class="member-info">
+                  <h4>Dr. D. Patel</h4>
+                  <span></span>
+                  <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                          <div class="social">
+                            <a href=""><i class="ri-twitter-fill"></i></a>
+                            <a href=""><i class="ri-facebook-fill"></i></a>
+                            <a href=""><i class="ri-instagram-fill"></i></a>
+                            <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                          </div> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img
+                    src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI103/profile/5e8425b8-13d9-4d15-a287-09fc7a26e47a.jpg"
+                    class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Dr. Ashish Das</h4>
+                  <span></span>
+                  <!-- <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img
+                    src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI109/profile/48b0c634-1b0d-44db-af40-fe1c8fb37b94.jpg"
+                    class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Dr. Mayuri Baruah</h4>
+                  <span></span>
+                  <!-- <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img
+                    src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI112/profile/72e9114e-c74c-4fb3-805d-7bde7feb3126.jpg"
+                    class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Dr. Gunda Yoganjanyulu</h4>
+                  <span></span>
+                  <!-- <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="sect" id="Treasurers">
+
+        <section id="team" class="team section-bg">
+          <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+              <h2>Treasurers</h2>
+              <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+            </div>
+
+            <div class="row">
+
+              <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img
+                      src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI108/profile/723a49be-eff3-4875-b479-e071a2f2b54b.jpg"
+                      class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Dr. Kanika Prasad</h4>
+                    <span></span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p> -->
+                    <!-- <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img
+                      src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI114/profile/a1896d08-28aa-4bf2-844c-bf3631c50d6a.jpg"
+                      class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Dr. Shubham Tripathi</h4>
+                    <span></span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p> -->
+                    <!-- <div class="social">
+                            <a href=""><i class="ri-twitter-fill"></i></a>
+                            <a href=""><i class="ri-facebook-fill"></i></a>
+                            <a href=""><i class="ri-instagram-fill"></i></a>
+                            <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                          </div> -->
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+      </section>
+      <section class="sect" id="Organizing Committee">
+
+        <section id="team" class="team section-bg">
+          <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+              <h2>Organizing Committee</h2>
+              <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+            </div>
+
+            <div class="row">
+
+              <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img
+                      src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI102/profile/305e9894-9964-4faa-be14-6aaa6e1c30a1.jfif"
+                      class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Prof Amaresh Kumar</h4>
+                    <span></span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img src="https://www.nitjsr.ac.in/static/media/hod_prod.df54f145.jpg"
+                      class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Dr. Ashok Kumar Jha</h4>
+                    <span></span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                          <div class="social">
+                            <a href=""><i class="ri-twitter-fill"></i></a>
+                            <a href=""><i class="ri-facebook-fill"></i></a>
+                            <a href=""><i class="ri-instagram-fill"></i></a>
+                            <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                          </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img
+                      src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI111/profile/5ad8571b-288d-40a0-ab68-b0e63051107b.jpg"
+                      class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Dr S B Prasad</h4>
+                    <span></span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                          <div class="social">
+                            <a href=""><i class="ri-twitter-fill"></i></a>
+                            <a href=""><i class="ri-facebook-fill"></i></a>
+                            <a href=""><i class="ri-instagram-fill"></i></a>
+                            <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                          </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img
+                      src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI110/profile/085f8c14-02e4-4384-866b-8b6fc97a4156.jpg"
+                      class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Dr. Raj Ballav</h4>
+                    <span></span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                          <div class="social">
+                            <a href=""><i class="ri-twitter-fill"></i></a>
+                            <a href=""><i class="ri-facebook-fill"></i></a>
+                            <a href=""><i class="ri-instagram-fill"></i></a>
+                            <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                          </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img src="https://www.nitjsr.ac.in/static/media/default.b9a3f227.jpg"
+                      class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Dr. D. Patel</h4>
+                    <span></span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                          <div class="social">
+                            <a href=""><i class="ri-twitter-fill"></i></a>
+                            <a href=""><i class="ri-facebook-fill"></i></a>
+                            <a href=""><i class="ri-instagram-fill"></i></a>
+                            <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                          </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img
+                      src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI103/profile/5e8425b8-13d9-4d15-a287-09fc7a26e47a.jpg"
+                      class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Dr. Ashish Das</h4>
+                    <span></span>
+                    <!-- <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                          <div class="social">
+                            <a href=""><i class="ri-twitter-fill"></i></a>
+                            <a href=""><i class="ri-facebook-fill"></i></a>
+                            <a href=""><i class="ri-instagram-fill"></i></a>
+                            <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                          </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img
+                      src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI109/profile/48b0c634-1b0d-44db-af40-fe1c8fb37b94.jpg"
+                      class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Dr. Mayuri Baruah</h4>
+                    <span></span>
+                    <!-- <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                          <div class="social">
+                            <a href=""><i class="ri-twitter-fill"></i></a>
+                            <a href=""><i class="ri-facebook-fill"></i></a>
+                            <a href=""><i class="ri-instagram-fill"></i></a>
+                            <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                          </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img
+                      src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg"
+                      class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Dr. Dinesh Kumar</h4>
+                    <span></span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                          <div class="social">
+                            <a href=""><i class="ri-twitter-fill"></i></a>
+                            <a href=""><i class="ri-facebook-fill"></i></a>
+                            <a href=""><i class="ri-instagram-fill"></i></a>
+                            <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                          </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img
+                      src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI115/profile/76495562-ec52-45ff-ab01-facf59fbb828.jpg"
+                      class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Dr. Kuntal Maji</h4>
+                    <span></span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                         <div class="social">
+                           <a href=""><i class="ri-twitter-fill"></i></a>
+                           <a href=""><i class="ri-facebook-fill"></i></a>
+                           <a href=""><i class="ri-instagram-fill"></i></a>
+                           <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                         </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img
+                      src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI108/profile/723a49be-eff3-4875-b479-e071a2f2b54b.jpg"
+                      class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Dr. Kanika Prasad</h4>
+                    <span></span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                         <div class="social">
+                           <a href=""><i class="ri-twitter-fill"></i></a>
+                           <a href=""><i class="ri-facebook-fill"></i></a>
+                           <a href=""><i class="ri-instagram-fill"></i></a>
+                           <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                         </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img
+                      src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI107/profile/ace330bd-5d25-4dbb-8564-6d3cc0eed5db.JPG"
+                      class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Dr. Tushar Banerjee </h4>
+                    <span></span>
+                    <!-- <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                          <div class="social">
+                            <a href=""><i class="ri-twitter-fill"></i></a>
+                            <a href=""><i class="ri-facebook-fill"></i></a>
+                            <a href=""><i class="ri-instagram-fill"></i></a>
+                            <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                          </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img
+                      src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI112/profile/72e9114e-c74c-4fb3-805d-7bde7feb3126.jpg"
+                      class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Dr. Gunda Yoganjanyulu</h4>
+                    <span></span>
+                    <!-- <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                          <div class="social">
+                            <a href=""><i class="ri-twitter-fill"></i></a>
+                            <a href=""><i class="ri-facebook-fill"></i></a>
+                            <a href=""><i class="ri-instagram-fill"></i></a>
+                            <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                          </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img
+                      src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI114/profile/a1896d08-28aa-4bf2-844c-bf3631c50d6a.jpg"
+                      class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Dr. Shubham Tripathi</h4>
+                    <span></span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p> -->
+                    <!-- <div class="social">
+                            <a href=""><i class="ri-twitter-fill"></i></a>
+                            <a href=""><i class="ri-facebook-fill"></i></a>
+                            <a href=""><i class="ri-instagram-fill"></i></a>
+                            <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                          </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+                <div class="member d-flex align-items-start">
+                  <div class="pic"><img
+                      src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI113/profile/e74d47c7-253f-4669-864b-e325929e9ae0.JPG"
+                      class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Dr. Akash Subhash Awale</h4>
+                    <span></span>
+                    <!-- <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                          <div class="social">
+                            <a href=""><i class="ri-twitter-fill"></i></a>
+                            <a href=""><i class="ri-facebook-fill"></i></a>
+                            <a href=""><i class="ri-instagram-fill"></i></a>
+                            <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                          </div> -->
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+      </section>
+      <section class="sect" id="National Advisory Committee">
+
+        <section id="team" class="team section-bg">
+          <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+              <h2>National Advisory Committee</h2>
+              <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+            </div>
+
+            <div class="row">
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. D. K. Pratihar</h4>
+                    <span>Prof., IIT Kharagpur</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. A. K. Nath</h4>
+                    <span>ex-professor, IIT Kharagpur</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. P K Jain</h4>
+                    <span>Director, IIT BHU</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. M K Tiwari</h4>
+                    <span>Director, NITIE Mumbai</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. Pradeep Kumar</h4>
+                    <span>IIT-Roorkee</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. Dinesh Kumar</h4>
+                    <span>IIT-Roorkee (Retd.)</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. Ravi Shankar</h4>
+                    <span>IIT- Delhi</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. P M Pandey</h4>
+                    <span>IIT-Delhi</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Sachin Choudhary</h4>
+                    <span>IIT Ropar</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Arvind Rajput</h4>
+                    <span>IIT Jammu</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Pankaj Kumar Gupta</h4>
+                    <span>MNIT Jaipur</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Nitin Lautre</h4>
+                    <span>VNIT Nagpur</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Faisal Hasan</h4>
+                    <span>AMU</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. P. Saha</h4>
+                    <span>Professor, IIT Kharagpur</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof Inderdeep Singh</h4>
+                    <span>IIT Roorkee</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. Navneet Arora</h4>
+                    <span>IIT Roorkee</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Rahul S. Mulik</h4>
+                    <span>IIT Roorkee</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Abhishek Singh</h4>
+                    <span>NIT Patna</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Rajiv Srivastava</h4>
+                    <span>MNNIT Allahabad</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Abhishek Das</h4>
+                    <span>IIT Delhi</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. Sunil Jha</h4>
+                    <span>IIT Delhi</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Sagar Sarkar</h4>
+                    <span>IIT Delhi</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. Amitava De</h4>
+                    <span>IIT Bombay</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. S. S. Joshi</h4>
+                    <span>Director, IIT Indore</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Monica Sharma</h4>
+                    <span>MNIT Jaipur</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. G. S. Dangayach</h4>
+                    <span>MNIT Jaipur</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. K. P. Karunakaran</h4>
+                    <span>IIT Bombay</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. Murari Lal Mittal</h4>
+                    <span></span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. Asim Tewari</h4>
+                    <span>IIT Bombay</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Amar Patnaik</h4>
+                    <span>MNIT Jaipur</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. T. N. Desai</h4>
+                    <span>SVNIT Surat</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Subhash Singh</h4>
+                    <span>IGDTU Delhi</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. N. V. Reddy</h4>
+                    <span>IIT Hyderabad</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Gopinath Muvvala</h4>
+                    <span>IIT Hyderabad</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. S. K. Pal</h4>
+                    <span>IIT Kharagpur</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Khyati Verma</h4>
+                    <span>NIT Karnataka</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. V. Racherla</h4>
+                    <span>IIT Kharagpur</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Ravi Kant</h4>
+                    <span>SVNIT Surat</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Nilanjan Das Chakladar</h4>
+                    <span>IIT Kharagpur</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. P. P. Bandayopadhayay</h4>
+                    <span>IIT Kharagpur</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Simanchal Kar</h4>
+                    <span>NIT Silchar</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. S. V. Kailash</h4>
+                    <span>IISC Bangalore</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Shankar Purbe</h4>
+                    <span>DMI Patna</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. V. Panduranga</h4>
+                    <span>IIT Bhubaneswar</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Suvradip Mullick</h4>
+                    <span>IIT Bhubaneswar</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. Ramesh Babu N</h4>
+                    <span>IIT Madras</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. Amitava Ghosh</h4>
+                    <span>IIT Madras</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. J. Ramkumar</h4>
+                    <span>IIT Kanpur</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+              
+              
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. Shantanu Bhattacharya</h4>
+                    <span>IIT Kanpur</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Supratik Mukhapadhyay</h4>
+                    <span>IIT Kanpur</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. U. S. Dixit</h4>
+                    <span>IIT Guwahati</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Neeraj Srivastava</h4>
+                    <span>SVNIT Surat</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Rajesh Choudhary</h4>
+                    <span></span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Manas Das</h4>
+                    <span>IIT Guwahati</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. S. N. Joshi</h4>
+                    <span>IIT Guwahati</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Sajan Kapil</h4>
+                    <span>IIT Guwahati</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Vineet Kumar Yadav</h4>
+                    <span></span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Vinay Panwar</h4>
+                    <span>NSUT</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Ambrish Maurya</h4>
+                    <span>NIT Patna</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Mohit Tyagi</h4>
+                    <span>PEC Chandigarh</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="sect" id="International Advisory Committee">
+
+        <section id="team" class="team section-bg">
+          <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+              <h2>International Advisory Committee</h2>
+              <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+            </div>
+
+            <div class="row">
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. Biswajit Sarkar</h4>
+                    <span>Yonsei University, South Korea</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Dr. Sunil Tiwari</h4>
+                    <span>ESSCA School of Management, France</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Leopoldo Eduardo Cárdenas Barrón</h4>
+                    <span></span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Tecnológico de Monterrey</h4>
+                    <span>México</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. J. Paulo Davim</h4>
+                    <span>University of Aveiro</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. T. Debroy</h4>
+                    <span>Penn State</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. Satish Bukkapatnam</h4>
+                    <span>Texas A&M University</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. Jian Cao</h4>
+                    <span>Northwestern University</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 member2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member d-flex align-items-start">
+                  <!-- <div class="pic"><img src="https://www.nitjsr.ac.in/backend/uploads/Faculty/PI106/profile/8bdb4d6c-d83e-4adc-ab68-bd1d16521532.jpg" class="img-fluid" alt=""></div> -->
+                  <div class="member-info">
+                    <h4>Prof. F. Y. Hsi Jerry</h4>
+                    <span>NUS</span>
+                    <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                           <div class="social">
+                             <a href=""><i class="ri-twitter-fill"></i></a>
+                             <a href=""><i class="ri-facebook-fill"></i></a>
+                             <a href=""><i class="ri-instagram-fill"></i></a>
+                             <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                           </div> -->
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+
+      </section>
+
+      <!--                            Student Coordinators                                -->
+
+      <!-- <section class="sect" id="Student Coordinators">Student Coordinators</section> -->
+
+      <!--                            Student Coordinators                                -->
+
+      <!--                             MAIN SECTION END                                      -->
+
+      <!-- ======= Footer ======= -->
+      <!-- <footer id="footer">
     <div class="footer-top">
       <div class="container">
         <div class="row">
@@ -212,20 +2264,24 @@
   </footer>
   <!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  <div id="preloader"></div>
+        window.onscroll = () => {
+          sections.forEach(sec => {
+            let top = window.scrollY;
+            let offset = sec.offsetTop - 150;
+            let height = sec.offsetHeight;
+            let id = sec.getAttribute('id');
 
-  <!-- Vendor JS Files -->
-  <script src="../../assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="../../assets/vendor/aos/aos.js"></script>
-  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../../assets/vendor/php-email-form/validate.js"></script>
+            if (top >= offset && top < offset + height) {
+              navLinks.forEach(links => {
+                links.classList.remove('active');
+                document.querySelector('a[href*=' + id + ']').classList.add('active');
+              });
+            };
+          });
+        };
 
-  <!-- Template Main JS File -->
-  <script src="../../assets/js/main.js"></script>
+      </script>
 
 </body>
 
-</html> 
+</html>
