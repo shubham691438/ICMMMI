@@ -106,7 +106,7 @@
   padding-left: 30px;
 }
 
-.team .member h4 {
+.team .member .member-info > h4 {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
@@ -215,5 +215,6 @@
     flex: 0 0 auto;
     width:29.5vw;
     font-size: 2px;
+
 }
 }
