@@ -1,14 +1,4 @@
-.sect{
-    /* min-height: 100vh;  */
-    /* display: flex; */
-    /* justify-content:center; */
-    /* align-items:center; */
-    /* background: #fff;
-    font-size: 35px;
-    color:black;
-    font-weight: 30; */
-    border:2px solid black;
-}
+
 .head{
   display:flex;
   justify-content:center;
@@ -33,3 +23,198 @@
 }
 
 
+.sect {
+  padding: 0vh 0;
+  overflow: hidden;
+}
+
+
+.section-bg {
+  background-color: #f3f5fa;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 97%;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #37517e;
+}
+
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+.team .member {
+  position: relative;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 5px;
+  background: #fff;
+  transition: 0.5s;
+  height: 90%;
+  margin-bottom: 10px;
+}
+
+.team .member .pic {
+  overflow: hidden;
+  width: 180px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+.team .member .pic img {
+  transition: ease-in-out 0.3s;
+  width: 180px;
+  height: 150px;
+}
+
+.team .member:hover {
+  transform: translateY(-10px);
+}
+
+.team .member .member-info {
+  padding-left: 30px;
+}
+
+.team .member .member-info > h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #37517e;
+}
+
+.team .member h4::after {
+  content: "";
+  position: absolute;
+  display: none;
+  width: 50px;
+  height: 1px;
+  background: #0d12fc;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.team .member .member-info {
+  position: static;
+  /* bottom: -80px;
+  left: 0px;
+  right: 0px; */
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px 10px;
+  border-radius: 0 0 0px 0px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+}
+
+.team .member span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: static;
+  font-weight: 500;
+}
+
+.team .member span::after {
+  content: "";
+  position: static;
+  display: none;
+  width: 50px;
+  height: 1px;
+  background: #cbd6e9;
+  bottom: 0;
+  left: 0;
+}
+
+.team .member p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+
+.team .member .social {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.team .member .social a {
+  transition: ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  background: #eff2f8;
+}
+
+.team .member .social a i {
+  color: #37517e;
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+.team .member .social a:hover {
+  background: #47b2e4;
+}
+
+.team .member .social a:hover i {
+  color: #fff;
+}
+
+.team .member .social a+a {
+  margin-left: 8px;
+}
+
+
+.member1 {
+    flex: 0 0 auto;
+    width:100%;
+}
+
+@media (min-width: 992px)
+{
+.member1 {
+    flex: 0 0 auto;
+    width:100%;
+}
+}
+
+@media (min-width: 992px)
+{
+.member2 {
+    flex: 0 0 auto;
+    width:29.5vw;
+    font-size: 2px;
+
+}
+}

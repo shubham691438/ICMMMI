@@ -1,0 +1,17 @@
+h4 {
+    color: rgb(19, 180, 126);
+    padding-top: 10px;
+    font-weight: bold;
+}
+.about .icon-box .description {
+    text-align: left;
+    color: black;
+}
+.about .row p {
+    text-align: left;
+    color:black;
+}
+h3 {
+    color:darkblue;
+    font-weight: bold;
+}
