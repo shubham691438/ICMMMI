@@ -130,7 +130,7 @@
   left: 0px;
   right: 0px; */
   background: rgba(255, 255, 255, 0.9);
-  padding: 15px 10px;
+  padding: 15px 0px;
   border-radius: 0 0 0px 0px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
 }
@@ -201,20 +201,21 @@
     width:100%;
 }
 
-@media (min-width: 992px)
+/* @media (min-width: 992px)
 {
 .member1 {
     flex: 0 0 auto;
     width:100%;
 }
-}
+} */
 
-@media (min-width: 992px)
+ @media (max-width: 992px)
 {
 .member2 {
     flex: 0 0 auto;
-    width:29.5vw;
+    width:48 vw;
     font-size: 2px;
 
 }
 }
+
