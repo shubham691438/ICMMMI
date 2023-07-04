@@ -822,13 +822,25 @@ section {
       margin-bottom: -109px;
 }
 
+@media (min-width: 1024px) {
+  #about {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 991px){
+  .about .row h1{
+    font-size: 45px;
+    padding-top: 5%;
+    left: 10%;
+  }
+}
 
 
 
-
-
-.about .icon-box {
-  margin-top: 40px;
+.about .row p{
+  font-size: 15px;
+  align-items: center;
 }
 
 .about .icon-box .icon {
