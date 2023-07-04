@@ -547,17 +547,15 @@ hr{
     max-width: 50%;
   }
 
-  /* #hero h1 {
-    font-size: 28px;
-    line-height: 32px;
-    margin-bottom: 10px;
-  } */
+  
 
   #hero p {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
   }
+
+
 }
 
 @media (max-width: 575px) {
@@ -834,6 +832,13 @@ section {
     padding-top: 5%;
     left: 10%;
   }
+ #about .key_dates h2 {
+      font-size: 38px;
+      line-height: 32px;
+      /* margin-bottom: 10px; */
+      margin-top: 25px;
+      margin-left: -110px;
+    }
 }
 
 
