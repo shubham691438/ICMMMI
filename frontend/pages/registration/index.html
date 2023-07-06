@@ -24,6 +24,8 @@
   <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="../../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
   <!-- page specific css file -->
   <link href="./style.css" rel="stylesheet">
@@ -174,8 +176,8 @@
 						    </tr>
 						    <tr>
 						      <th scope="row">Academicians</th>
-						      <td>Rs 150</td>
-						      <td>Rs 200</td>
+						      <td>USD 150</td>
+						      <td>USD 200</td>
 						      
 						    </tr>
 						    <tr>
@@ -199,6 +201,105 @@
     </div>
   </section>
   <!-- ======= Registration GuideLines End ======= -->
+
+  <!-- ======= Registration Form ======= -->
+  <section id="features" class="features">
+    <div class="container" >
+
+      <div class="section-title" >
+        <h2>Registeration form</h2>
+        <p>Register YourSelf</p>
+      </div>
+
+      <div class="registration-form" id="registration-form">
+        <form >
+            <div class="form-icon">
+                <span><i class="icon icon-user"></i></span>
+            </div>
+
+            <div class="form-group">
+              <label for="salutation">Salutation</label>
+              <select class="form-control" id="salutation" required>
+                <option value="Select Salutation">Select Salutation</option>
+                <option value="Dr.">Dr.</option>
+                <option value="Mr.">Mr.</option>
+                <option value="Prof.">Prof.</option>
+                <option value="Ms.">Ms.</option>
+                <option value="Mrs.">Mrs.</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="firstName">First Name</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="firstName" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="lastName">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="nationality">Nationality</label>
+                <input type="text" class="form-control" id="nationality" placeholder="nationality" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="category">Category</label>
+                <select class="form-control " id="category" required>
+                  <option value="Select Category">Select Category</option>
+                  <option value="Delegates from Industry">Delegates from Industry</option>
+                  <option value="Academician">Academician</option>
+                  <option value="Research scholar or student">Research scholar or student</option>
+                  <option value="Accompanying persons">Accompanying persons</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="organization">Organization</label>
+                <input type="text" class="form-control" id="organization" placeholder="organization">
+            </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="noOfPapers">Number of Papers</label>
+              <input type="number" class="form-control" id="noOfPapers" placeholder="Enter Number of papers">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="paperId">Paper Id</label>
+              <input type="text" class="form-control" id="paperId" placeholder="Enter Paper Id">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="example@gmail.com" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="phoneNo">Phone Number</label>
+              <input type="text" class="form-control" id="phoneNo" placeholder="Enter Phone Number" required>
+            </div>
+          </div>
+            
+            <div class="form-group">
+              <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-block create-account">Register</button>
+            </div>
+            <div class="" id="msg">
+
+            </div>
+        </form>
+    </div>
+    
+
+    </div>
+  </section>
+  <!-- ======= Registration Form Ends ======= -->  
   
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -290,6 +391,8 @@
 
   <!-- Template Main JS File -->
   <script src="../../assets/js/main.js"></script>
+
+  <script src="./script.js"></script>
 
 </body>
 
