@@ -44,7 +44,7 @@ UserSchema.statics.register = async function(salutation,firstName,lastName,natio
     // }
     if(password.length<8)
     {
-      throw Error("Password is too short")
+      throw Error("Password is should be least 8 characters")
     }
     if(phoneNo)
     {
