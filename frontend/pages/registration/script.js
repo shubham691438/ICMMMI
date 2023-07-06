@@ -7,7 +7,7 @@ form.addEventListener('submit',function(event){
 
     //loader
     const alertBox=document.getElementById('msg');
-    alertBox.className="spinner-border text-primary";
+    alertBox.className="spinner-border text-warning";
 
 
     let salutation=document.getElementById('salutation').value;
