@@ -5,6 +5,11 @@ form.addEventListener('submit',function(event){
     //prevents form from auto submitting
     event.preventDefault();
 
+    //loader
+    const alertBox=document.getElementById('msg');
+    alertBox.className="spinner-border text-primary";
+
+
     let salutation=document.getElementById('salutation').value;
     let firstName=document.getElementById('firstName').value;
     let lastName=document.getElementById('lastName').value;
