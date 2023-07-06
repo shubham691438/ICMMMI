@@ -1,0 +1,30 @@
+
+  
+  .table thead th {
+    color:#1acc8d;
+    border: none;
+    font-size: 14px;
+  }
+  
+  .table tbody tr {
+    margin-bottom: 10px;
+  }
+  
+  .table tbody th,
+  .table tbody td {
+    border: none;
+    border-bottom: 3px solid #f8f9fd;
+    font-size: 14px;
+  }
+  
+
+  .table-container:hover{
+    overflow-x:auto;
+    transition: 500ms;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+
+  .table-container{
+    overflow-x:auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 15px 30px -30px, rgba(10, 37, 64, 0.35) 0px -2px 3px 0px inset;
+  }
