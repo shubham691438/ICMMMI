@@ -548,17 +548,15 @@ hr{
     max-width: 50%;
   }
 
-  /* #hero h1 {
-    font-size: 28px;
-    line-height: 32px;
-    margin-bottom: 10px;
-  } */
+  
 
   #hero p {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
   }
+
+
 }
 
 @media (max-width: 575px) {
@@ -835,7 +833,31 @@ section {
     padding-top: 5%;
     left: 10%;
   }
-}
+ #about .key_dates h2 {
+      font-size: 38px;
+      line-height: 32px;
+      /* margin-bottom: 10px; */
+      margin-top: 25px;
+      margin-left: -110px;
+    }
+    .key_dates .key1 p,
+    .key_dates .key2 p,
+    .key_dates .key3 p,
+    .key_dates .key4 p {
+      /* padding-top: 5vw; */
+      margin-top: 170px;
+      padding-left: 20px;
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      margin-left: -30px;
+      space-between: 10px;
+    }
+    #three {
+      padding-left: 23px;
+      margin-bottom: -109px;
+    }
+    }
 
 
 
@@ -1272,6 +1294,13 @@ section {
   position: relative;
   padding-bottom: 10px;
 }
+
+@media (max-width: 992px) {
+  #team h3{
+    width: 90%;
+    font-size: 20px;
+  }
+  }
 
 .team .member h4::after {
   content: "";
