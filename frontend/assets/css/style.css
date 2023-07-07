@@ -125,7 +125,8 @@ h6 {
 }
 
 #header.header-transparent {
-  background: #2dd0d06b;
+  background: #109fb6fd;
+
 }
 
 #header.header-scrolled {
@@ -520,32 +521,42 @@ hr{
 
 @media (max-width: 991px) {
   #hero {
-    padding-top: 80px;
+    /* padding-top: 80px; */
+    height: 122%;
+    font-size: 10px;
+    margin: 0% 0% 0% 0%;
   }
 
+  #hero h1 {
+    font-size: 48px;
+    line-height: 106px;
+    margin-top: -100px;
+    margin-bottom: 45px;
+  }
   #hero .animated {
     animation: none;
   }
 
-  #hero .hero-img {
-    text-align: center;
+  #hero .bg img{
+    /* text-align: center; */
+    height: 122%;
+    width: 100%;
+    margin-bottom: 90px;
   }
 
   #hero .hero-img img {
     max-width: 50%;
   }
 
-  #hero h1 {
-    font-size: 28px;
-    line-height: 32px;
-    margin-bottom: 10px;
-  }
+  
 
   #hero p {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
   }
+
+
 }
 
 @media (max-width: 575px) {
@@ -810,13 +821,49 @@ section {
       margin-bottom: -109px;
 }
 
+@media (min-width: 1024px) {
+  #about {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 991px){
+  .about .row h1{
+    font-size: 45px;
+    padding-top: 5%;
+    left: 10%;
+  }
+ #about .key_dates h2 {
+      font-size: 38px;
+      line-height: 32px;
+      /* margin-bottom: 10px; */
+      margin-top: 25px;
+      margin-left: -110px;
+    }
+    .key_dates .key1 p,
+    .key_dates .key2 p,
+    .key_dates .key3 p,
+    .key_dates .key4 p {
+      /* padding-top: 5vw; */
+      margin-top: 170px;
+      padding-left: 20px;
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      margin-left: -30px;
+      space-between: 10px;
+    }
+    #three {
+      padding-left: 23px;
+      margin-bottom: -109px;
+    }
+    }
 
 
 
-
-
-.about .icon-box {
-  margin-top: 40px;
+.about .row p{
+  font-size: 15px;
+  align-items: center;
 }
 
 .about .icon-box .icon {
@@ -1248,6 +1295,13 @@ section {
   padding-bottom: 10px;
 }
 
+@media (max-width: 992px) {
+  #team h3{
+    width: 90%;
+    font-size: 20px;
+  }
+  }
+
 .team .member h4::after {
   content: "";
   position: absolute;
@@ -1525,16 +1579,16 @@ section {
   color: #fff;
 }
 
-.contact .php-email-form {
+.contact .contact-form {
   width: 100%;
   background: #fff;
 }
 
-.contact .php-email-form .form-group {
+.contact .contact-form .form-group {
   padding-bottom: 8px;
 }
 
-.contact .php-email-form .error-message {
+.contact .contact-form .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -1543,11 +1597,11 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .contact-form .error-message br+br {
   margin-top: 25px;
 }
 
-.contact .php-email-form .sent-message {
+.contact .contact-form .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1556,14 +1610,14 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .loading {
+.contact .contact-form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-.contact .php-email-form .loading:before {
+.contact .contact-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1575,22 +1629,22 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.contact .contact-form input,
+.contact .contact-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
 
-.contact .php-email-form input {
+.contact .contact-form input {
   height: 44px;
 }
 
-.contact .php-email-form textarea {
+.contact .contact-form textarea {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .contact-form button[type=submit] {
   background: #1acc8d;
   border: 0;
   padding: 10px 30px;
@@ -1599,7 +1653,7 @@ section {
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .contact-form button[type=submit]:hover {
   background: #34e5a6;
 }
 

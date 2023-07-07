@@ -7,19 +7,19 @@
     height: inherit;
     padding: 4em;
 }
-#container{
+#containe{
     display: flex;
     /* flex-wrap: wrap; */
     align-items: center;
     justify-content: space-between;
 }
-#container img{
+#containe img{
     height: 15em;
     width: 24em;
     border: 3px ridge rgb(133, 131, 131);
     margin: 4em;
 }
-#container #text{
+#containe #text{
     margin: 3em;
 }
 #top{
@@ -52,7 +52,7 @@
 
 
 @media (max-width:840px){
-    #container{
+    #containe{
         display: flex;
         flex-direction: column;
     }
