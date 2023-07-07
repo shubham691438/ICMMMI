@@ -219,3 +219,211 @@
 }
 }
 
+
+#hero {
+  width: 100%;
+  /* height: 100vh; */
+  background-image: url("assets/img/nit1.jpg")top center;
+  background-size: cover;
+  position: relative;
+  padding: 120px 0 0 0;
+}
+
+#hero .bg {
+  width: 100%;
+  /* height: 100vh; */
+  background-size: cover;
+  /* object-fit: cover; */
+  position: absolute;
+  opacity: 0.3;
+  margin-top: -120px;
+  left: 0;
+  z-index: 1;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(2, 5, 161, 0.91);
+  /* background-image: url("assets/img/nit1.jpg"); */
+  position: absolute;
+  bottom: 0;
+top: 0;
+left: 0;
+right: 0;
+}
+
+#hero h1 {
+  margin: 0 0 20px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 190px;
+  color: white;
+}
+
+#hero h1 span {
+  color: #fff;
+  border-bottom: 4px solid #1acc8d;
+}
+
+#hero p {
+  color: black;
+  margin-bottom: 32px;
+  font-size: 28px;
+  margin-top: 0px;
+  font-weight: 800;
+}
+
+#hero h3 {
+  color: black;
+  margin-bottom: 32px;
+  font-size: 32px;
+  margin-top: -50px;
+  font-weight: 700;
+}
+
+#hero h4 {
+  color: black;
+  margin-bottom: 32px;
+  font-size: 28px;
+  margin-top: 0px;
+  font-weight: 700;
+}
+
+hr {
+  height: 3px;
+  color: black;
+  /* width: 4px; */
+  background-color: black;
+  border: none;
+  margin-top: -20px;
+  margin-left: -60px;
+  margin-bottom: 20px;
+
+}
+
+#hero .btn-get-started {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #fff;
+  background: #1acc8d;
+}
+
+#hero .btn-get-started:hover {
+  background: #17b57d;
+}
+
+#hero .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+      background-attachment: fixed;
+  }
+}
+
+@media (max-width: 991px) {
+  #hero {
+      padding-top: 80px;
+  }
+
+  #hero .animated {
+      animation: none;
+  }
+
+  #hero .hero-img {
+      text-align: center;
+  }
+
+  #hero .hero-img img {
+      max-width: 50%;
+  }
+
+  #hero h1 {
+      font-size: 28px;
+      line-height: 32px;
+      margin-bottom: 10px;
+  }
+
+  #hero p {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  #hero .hero-img img {
+      width: 80%;
+  }
+}
+
+@keyframes up-down {
+  0% {
+      transform: translateY(10px);
+  }
+
+  100% {
+      transform: translateY(-10px);
+  }
+}
+
+.hero-waves {
+  display: block;
+  margin-top: 8px;
+  width: 100%;
+  height: 60px;
+  z-index: 5;
+  position: relative;
+}
+
+.wave1 use {
+  animation: move-forever1 10s linear infinite;
+  animation-delay: -2s;
+}
+
+.wave2 use {
+  animation: move-forever2 8s linear infinite;
+  animation-delay: -2s;
+}
+
+.wave3 use {
+  animation: move-forever3 6s linear infinite;
+  animation-delay: -2s;
+}
+
+@keyframes move-forever1 {
+  0% {
+      transform: translate(85px, 0%);
+  }
+
+  100% {
+      transform: translate(-90px, 0%);
+  }
+}
+
+@keyframes move-forever2 {
+  0% {
+      transform: translate(-90px, 0%);
+  }
+
+  100% {
+      transform: translate(85px, 0%);
+  }
+}
+
+@keyframes move-forever3 {
+  0% {
+      transform: translate(-90px, 0%);
+  }
+
+  100% {
+      transform: translate(85px, 0%);
+  }
+}
