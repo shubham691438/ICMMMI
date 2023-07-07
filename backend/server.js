@@ -5,7 +5,7 @@ const cookieParser=require('cookie-parser')
 const path = require('path')
 
 const indexRouter=require('./api/index')
-const userAuthRouter=require('./api/userAuthApi')
+const userRouter=require('./api/userApi')
 const profileApi=require('./api/profileApi')
 
 //initialized express app
@@ -29,7 +29,7 @@ app.use((req, res, next) => {
 
 //for api routes
 app.use('/api',indexRouter)
-app.use('/api/user',userAuthRouter)
+app.use('/api/user',userRouter)
 app.use('/api/profile',profileApi)
 
 //connect to database and listen to port
