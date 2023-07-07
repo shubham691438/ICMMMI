@@ -64,6 +64,40 @@
     }
 }
 
+#hero:before {
+    content: "url()";
+    background: rgba(2, 5, 161, 0.91) no-repeat;
+    /* background-image: url("assets/img/nit1.jpg"); */
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#hero h1 {
+    margin: 0 0 20px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 190px;
+    color: white;
+}
+#hero{
+    height: 395px;
+}
+@media (max-width: 912px) {
+    #hero{
+        height: 318.5px;
+    }
+    #hero h1 {
+        margin: 0 0 2px 0;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 60px;
+        color: white;
+}
+}
+
 
 
 
