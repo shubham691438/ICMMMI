@@ -1775,3 +1775,8 @@ section {
     margin: -20px 0 30px 0;
   }
 }
+
+/* custom style added */
+.nav-link:hover{
+  color:white
+}
