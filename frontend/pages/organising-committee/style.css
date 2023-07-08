@@ -1,4 +1,6 @@
-
+.spacing{
+  margin-top: 100px;
+}
 .head{
   display:flex;
   justify-content:center;
