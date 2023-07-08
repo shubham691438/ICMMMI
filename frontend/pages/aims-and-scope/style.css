@@ -417,7 +417,10 @@ h6 {
 #hero {
     width: 100%;
     /* height: 100vh; */
-    background-image: url("assets/img/nit1.jpg")top center;
+    /* background-image: url("assets/img/nit1.jpg")top center; */
+    background-image: url("../../assets/img/bg1.jpeg");
+    margin-top: 80px;
+    margin-left: 3px;
     background-size: cover;
     position: relative;
     padding: 120px 0 0 0;
@@ -426,7 +429,7 @@ h6 {
 #hero .bg {
     width: 100%;
     /* height: 100vh; */
-    background-size: cover;
+    /* background-size: cover; */
     /* object-fit: cover; */
     position: absolute;
     opacity: 0.3;
@@ -435,23 +438,21 @@ h6 {
     z-index: 1;
 }
 
-#hero:before {
-    content: "";
-    background: rgba(2, 5, 161, 0.91);
-    /* background-image: url("assets/img/nit1.jpg"); */
-    position: absolute;
-    bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
+#hero h2 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 56px;
+    color: #aaaaaa;
+    
 }
 
-#hero h1 {
-    margin: 0 0 20px 0;
-    font-size: 48px;
+#hero .section-title h1{
+    font-size: 60px;
     font-weight: 700;
-    line-height: 190px;
-    color: white;
+    /* line-height: 190px; */
+    margin-top: -30px;
+    color: rgba(1, 3, 111, 0.8);
 }
 
 #hero h1 span {
@@ -467,54 +468,7 @@ h6 {
     font-weight: 800;
 }
 
-#hero h3 {
-    color: black;
-    margin-bottom: 32px;
-    font-size: 32px;
-    margin-top: -50px;
-    font-weight: 700;
-}
 
-#hero h4 {
-    color: black;
-    margin-bottom: 32px;
-    font-size: 28px;
-    margin-top: 0px;
-    font-weight: 700;
-}
-
-hr {
-    height: 3px;
-    color: black;
-    /* width: 4px; */
-    background-color: black;
-    border: none;
-    margin-top: -20px;
-    margin-left: -60px;
-    margin-bottom: 20px;
-
-}
-
-#hero .btn-get-started {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 10px 30px;
-    border-radius: 50px;
-    transition: 0.5s;
-    color: #fff;
-    background: #1acc8d;
-}
-
-#hero .btn-get-started:hover {
-    background: #17b57d;
-}
-
-#hero .animated {
-    animation: up-down 2s ease-in-out infinite alternate-reverse both;
-}
 
 @media (min-width: 1024px) {
     #hero {
@@ -568,59 +522,6 @@ hr {
     }
 }
 
-.hero-waves {
-    display: block;
-    margin-top: 8px;
-    width: 100%;
-    height: 60px;
-    z-index: 5;
-    position: relative;
-}
-
-.wave1 use {
-    animation: move-forever1 10s linear infinite;
-    animation-delay: -2s;
-}
-
-.wave2 use {
-    animation: move-forever2 8s linear infinite;
-    animation-delay: -2s;
-}
-
-.wave3 use {
-    animation: move-forever3 6s linear infinite;
-    animation-delay: -2s;
-}
-
-@keyframes move-forever1 {
-    0% {
-        transform: translate(85px, 0%);
-    }
-
-    100% {
-        transform: translate(-90px, 0%);
-    }
-}
-
-@keyframes move-forever2 {
-    0% {
-        transform: translate(-90px, 0%);
-    }
-
-    100% {
-        transform: translate(85px, 0%);
-    }
-}
-
-@keyframes move-forever3 {
-    0% {
-        transform: translate(-90px, 0%);
-    }
-
-    100% {
-        transform: translate(85px, 0%);
-    }
-}
 
 /*--------------------------------------------------------------
 # Sections General
@@ -676,18 +577,31 @@ section {
 --------------------------------------------------------------*/
 .about {
     padding: 40px 0 0 0;
+    background-color: white;
 }
 
-.about .row h3{
-    font-size: 50px;
-    font-weight:600;
-    text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
-    color: #010483;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
+.about .row .head1{
+    /* display: flex; */
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 10px;
 }
+.about .row .card{
+    width: 97%;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 10px solid  rgba(0,0,0,0.12);
+}
+
+.about .row .card h5{
+    font-size: 33px;
+}
+.about .row .card p{
+    font-size: 17px;
+}
+
+
 .about .row h2{
     font-size: 30px;
     font-weight:600;
@@ -699,6 +613,11 @@ section {
     margin-right: 50px;
 
 }
+
+#about .table-container{
+    overflow-x:auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 15px 30px -30px, rgba(10, 37, 64, 0.35) 0px -2px 3px 0px inset;
+  }
 
 .about .row p{
     font-size: 28px;
@@ -712,101 +631,93 @@ section {
     margin-right: 50px;
 }
 
-.about .row .icon-box{
-    width: 100%;
-        height: auto;
-        background-color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.3vw;
-        line-height: 1.6;
-        word-spacing: 5px;
-        border-bottom: 2%;
-        display: flex;
-}
-.about .row .sub1 {
-    font-size: 20px;
-    line-height: 32px;
+.about h2{
+    font-size: 40px;
+    font-weight:600;
+    text-transform: uppercase;
     font-family: "Poppins", sans-serif;
-    color: black;
-    line-height: 40px;
-    font-weight: 400;
+    color: #010483;
     margin-bottom: 20px;
-    margin-left: 50px;
+    margin-left: 120px;
+    margin-top: 30px;
     margin-right: 50px;
 }
 
-.about .row .sub2{
-    font-size: 20px;
-    line-height: 32px;
-    font-family: "Poppins", sans-serif;
-    color: black;
-    line-height: 40px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
+.title .one{
+    display: flex;
+    margin-right: 30px;
 }
 
-.about .row .sub3{
-    font-size: 20px;
-    line-height: 32px;
-    font-family: "Poppins", sans-serif;
-    color: black;
-    line-height: 40px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
+.title .two{
+    display: flex;
+    margin-bottom: 60px;
 }
-.sub1,
-.sub2,
-.sub3{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: left;
-        padding-top: 3%;
-        width: 25%;
-        padding-bottom: 3%;
-        display: flex;
-        flex-direction: row;
 
+.title .icon-box{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    margin-left: 30px;
+    padding-right: -20px;
+    padding: 20px;
+    background: #f5f5ff;
+    transition: ease-in-out 0.3s;
+}
+
+.title .icon-box h3 {
+    font-weight: 700;
+    color: #010483;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 16px;
+}
+
+.about .icon-box h3 a {
+    
+    transition: ease-in-out 0.3s;
+}
+
+.title .icon-box h3 a:hover {
+    color: #01036f;
+}
+
+.title .icon-box:hover {
+    background: #ebebff;
 }
 
 @media (max-width: 768px) {
-    .about .row p{
-        font-size: 20px;
-        line-height: 32px;
-        font-family: "Poppins", sans-serif;
-        color: black;
-        line-height: 40px;
-        font-weight: 400;
-        margin-bottom: 20px;
-        margin-left: 50px;
-        margin-right: 50px;
+    .head1 .card{
+        overflow: hidden;
+        width: 97%;
     }
 
-    .about .icon-box .sub1 ,
-    .about .icon-box .sub2 ,
-    .about .icon-box .sub3 {
-        font-size: 15px;
-        line-height: 32px;
-        font-family: "Poppins", sans-serif;
-        color: black;
-        /* line-height: 40px; */
-        font-weight: 400;
-        margin-bottom: 20px;
+    .head1 .card p{
+        font-size: 17px;
         margin-left: -10px;
-        /* margin-right: 50px; */
-        /* overflow-y: scroll; */
+        margin-right: 0px;
     }
-           .about .icon-box .sub1 ul,
-           .about .icon-box .sub2 ul,
-           .about .icon-box .sub3 ul{
-            list-style: none;
-            padding: 0;
-            margin-left: 8px;
-            /* overflow-y: scroll; */
-           }
+    .about h2{
+        font-size: 30px;
+        font-weight:600;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        color: #010483;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        margin-top: 30px;
+        margin-right: 50px;
+    }
+    .title .one{
+        display: block;
+        margin-right: 150px;
+        width: 93vw;
+    }
+    .title .two{
+        display: block;
+        margin-right: 150px;
+        width: 93vw;
+    }
     }
 
 @keyframes pulsate-btn {
