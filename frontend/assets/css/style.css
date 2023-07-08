@@ -219,17 +219,6 @@ h6 {
   width: 25px;
 }
 
-.navbar a:hover
- {
-  /* color: #0511f0; */
-  text-decoration: underline;
-    /* font-size: 1.1rem; */
-    font-size: 16px;
-    /* text-shadow: white; */
-    /* color: rgb(6, 1, 1); */
-    color: rgba(1, 4, 136, 0.9);
-}
-
 .navbar .dropdown ul {
   display: block;
   position: absolute;
@@ -352,19 +341,6 @@ h6 {
 
 .navbar-mobile>ul>li>a:before {
   left: 20px;
-}
-
-.navbar-mobile a,
-.navbar-mobile a:focus {
-  padding: 10px 20px;
-  font-size: 15px;
-  color: #0205a1;
-}
-
-.navbar-mobile a:hover,
-.navbar-mobile .active,
-.navbar-mobile li:hover>a {
-  color: #3f43fd;
 }
 
 .navbar-mobile .getstarted,
@@ -575,29 +551,7 @@ hr{
   }
 }
 
-.hero-waves {
-  display: block;
-  margin-top: 8px;
-  width: 100%;
-  height: 60px;
-  z-index: 5;
-  position: relative;
-}
 
-.wave1 use {
-  animation: move-forever1 10s linear infinite;
-  animation-delay: -2s;
-}
-
-.wave2 use {
-  animation: move-forever2 8s linear infinite;
-  animation-delay: -2s;
-}
-
-.wave3 use {
-  animation: move-forever3 6s linear infinite;
-  animation-delay: -2s;
-}
 
 @keyframes move-forever1 {
   0% {
