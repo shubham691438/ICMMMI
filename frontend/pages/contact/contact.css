@@ -8,8 +8,8 @@
 }
 
 .container{
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     
 }
 .container1{
@@ -239,6 +239,9 @@
       flex: 0 0 auto;
       width:100%;
   }
+  .btn btn-primary{
+    margin: 10px 10px;
+  }
   
   /* @media (min-width: 992px)
   {
@@ -285,7 +288,7 @@
     letter-spacing: 2px;
   } */
   .map-area {
-    width: 600px;
+    width: 1000px;
     height: 465px;
     background: #fff;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
