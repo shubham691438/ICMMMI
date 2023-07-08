@@ -1,0 +1,43 @@
+.boxed a:hover { color: #ffffff;
+    background: #222222;
+}
+.boxed a {
+    display: inline-block;
+    padding: 8px 30px;
+    color: #D2691E;
+    background: #ffffff;
+}
+a:hover, a:active, a:focus {
+    color: #666;
+    outline: none;
+    text-decoration: none;
+}
+a:hover {
+    color: #080808;
+    text-decoration: underline;
+}
+
+
+#about {
+    position: relative;
+    padding: 80px 0 60px 0;
+    background: #f2f2f2;
+}
+
+
+
+section {
+    display: block;
+}
+body {
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background: #fff;
+}
+.text-maroon {
+    color: maroon;
+}
+.text-center {
+    text-align: center!important;
+}
