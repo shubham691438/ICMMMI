@@ -112,7 +112,7 @@
                                   <div class="col mr-2">
                                       <div class="text-xs font-weight-bold text-primary text-uppercase mb-1" >
                                           Total Registrations</div>
-                                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="total-registartiona">100</div>
+                                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="total-registartions"></div>
                                   </div>
                                   <div class="col-auto">
                                       <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -130,7 +130,7 @@
                                   <div class="col mr-2">
                                       <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                           Indian Registrations</div>
-                                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="indian-registrations">70</div>
+                                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="indian-registrations"></div>
                                   </div>
                                   <div class="col-auto">
                                       <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -150,7 +150,7 @@
                                       </div>
                                       <div class="row no-gutters align-items-center">
                                           <div class="col-auto">
-                                              <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800" id="international-registrations">30</div>
+                                              <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800" id="international-registrations"></div>
                                           </div>
                                           
                                       </div>
@@ -193,31 +193,8 @@
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">Category of Registrant</h6>
                         </div>
-                        <div class="card-body">
-                            <h4 class="small font-weight-bold">Delegates from Industries <span
-                                    class="float-right" id="delegates-from-industrues-percent">20</span>%</h4>
-                            <div class="progress mb-4">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 20%"
-                                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h4 class="small font-weight-bold">Academicians <span
-                                    class="float-right">40%</span></h4>
-                            <div class="progress mb-4">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 40%"
-                                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h4 class="small font-weight-bold">Research scholars & students<span
-                                    class="float-right">60%</span></h4>
-                            <div class="progress mb-4">
-                                <div class="progress-bar" role="progressbar" style="width: 60%"
-                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h4 class="small font-weight-bold">Accompanying persons <span
-                                    class="float-right">80%</span></h4>
-                            <div class="progress mb-4">
-                                <div class="progress-bar bg-info" role="progressbar" style="width: 80%"
-                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
+                        <div class="card-body" id="category-progress-bar">
+                             <!-- addig this data using javascript -->
                             
                         </div>
                     </div>    
@@ -226,24 +203,62 @@
 
                 <div class="col-lg-6 mb-4">
 
-                    <!-- Illustrations -->
                     <div class="card shadow mb-4">
+                        <!-- Card Header - Dropdown -->
+                        <div
+                            class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                            <h6 class="m-0 font-weight-bold text-primary">Indian Vs International</h6>
+                            <div class="dropdown no-arrow">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                    aria-labelledby="dropdownMenuLink">
+                                    <div class="dropdown-header">Dropdown Header:</div>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card Body -->
+                        <div class="card-body">
+                            <div class="chart-pie pt-4 pb-2">
+                                <canvas id="myPieChart"></canvas>
+                            </div>
+                            <div class="mt-4 text-center small">
+                                <span class="mr-2">
+                                    <i class="fas fa-circle text-primary"></i> Direct
+                                </span>
+                                <span class="mr-2">
+                                    <i class="fas fa-circle text-success"></i> Social
+                                </span>
+                                <span class="mr-2">
+                                    <i class="fas fa-circle text-info"></i> Referral
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Illustrations -->
+                    <!-- <div class="card shadow mb-4">
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">Messages</h6>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body"> -->
                             <!-- <div class="text-center">
                                 <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;"
                                     src="img/undraw_posting_photo.svg" alt="...">
                             </div> -->
-                            <p>Add some quality, svg illustrations to your project courtesy of <a
+                            <!-- <p>Add some quality, svg illustrations to your project courtesy of <a
                                     target="_blank" rel="nofollow" href="https://undraw.co/">unDraw</a>, a
                                 constantly updated collection of beautiful svg images that you can use
                                 completely free and without attribution!</p>
                             <a target="_blank" rel="nofollow" href="https://undraw.co/">Browse Illustrations on
                                 unDraw &rarr;</a>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
@@ -274,44 +289,28 @@
 
                   <!-- Pie Chart -->
                   <div class="col-xl-4 col-lg-5">
-                      <div class="card shadow mb-4">
-                          <!-- Card Header - Dropdown -->
-                          <div
-                              class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                              <h6 class="m-0 font-weight-bold text-primary">Indian Vs International</h6>
-                              <div class="dropdown no-arrow">
-                                  <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                                  </a>
-                                  <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                      aria-labelledby="dropdownMenuLink">
-                                      <div class="dropdown-header">Dropdown Header:</div>
-                                      <a class="dropdown-item" href="#">Action</a>
-                                      <a class="dropdown-item" href="#">Another action</a>
-                                      <div class="dropdown-divider"></div>
-                                      <a class="dropdown-item" href="#">Something else here</a>
-                                  </div>
-                              </div>
-                          </div>
-                          <!-- Card Body -->
-                          <div class="card-body">
-                              <div class="chart-pie pt-4 pb-2">
-                                  <canvas id="myPieChart"></canvas>
-                              </div>
-                              <div class="mt-4 text-center small">
-                                  <span class="mr-2">
-                                      <i class="fas fa-circle text-primary"></i> Direct
-                                  </span>
-                                  <span class="mr-2">
-                                      <i class="fas fa-circle text-success"></i> Social
-                                  </span>
-                                  <span class="mr-2">
-                                      <i class="fas fa-circle text-info"></i> Referral
-                                  </span>
-                              </div>
-                          </div>
-                      </div>
+                      <!-- Illustrations -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Messages</h6>
+                        </div>
+                        <div class="card-body">
+                           <strong> This one is left . I will add queries sent by user here.</strong>
+                            <br>
+                            random text for testing
+                                                    a written or spoken piece of information that you send to or leave for a person when you cannot speak to him/her
+                        लिखित या मौखिक रूप से प्रेषित संदेश (जब संबोधित व्यक्ति से साक्षात बात न हो सके)
+                        Mr Khanna is not here at the moment. Can I take a message?Mr Khanna is not here at the moment. Can I take a message?
+                        Could you give a message to gake, please?
+                        If he’s not in I’ll leave a message on his answering machine.
+                        2.
+                        an important idea that a book, speech, etc. is trying to communicate
+                        पुस्‍तक, भाषण आदि में व्‍यक्त महत्वपूर्ण विचार या संदेश
+                        The advertising campaign is trying to get the message across that smoking kills.
+                        
+                            
+                        </div>
+                    </div>
                   </div>
               </div>
 
@@ -418,6 +417,7 @@
   <!-- Template Main JS File -->
   <script src="../../assets/js/main.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./script.js"></script>
 
 </body>
