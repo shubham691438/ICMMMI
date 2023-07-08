@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#hero:before {
+    content: "url()";
+    background: rgba(2, 5, 161, 0.91) no-repeat;
+    /* background-image: url("assets/img/nit1.jpg"); */
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#hero h1 {
+    margin: 0 0 20px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 190px;
+    color: white;
+}
+#hero{
+    height: 395px;
+}
+@media (max-width: 912px) {
+    #hero{
+        height: 318.5px;
+    }
+    #hero h1 {
+        margin: 0 0 2px 0;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 60px;
+        color: white;
+}
+}
+
+.containe{
+    /* height:100vh; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#fffdfd;
+}
+
+.card{
+    border: 4px solid #2e2b2b;
+    margin: 10em 5em 10em 5em;
+    width: 70em;
+    height: 100%;
+    background-color:#fff;
+    box-shadow:0px 20px 20px rgba(3, 3, 3, 0.1);
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.card .info{
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    
+    background-color:#109fb6fd;
+    position: relative;
+}
+.card .info span{
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.card .info button{
+    height:4em;
+    width: 4em;
+    border:none;
+    color:#fff;
+    border-radius:0px 4px 0px 40px ;
+    background-color:#0c0b0b;
+    cursor:pointer;
+    text-transform:uppercase;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.card .forms{
+    padding:25px;
+    background-image: linear-gradient(#109fb6fd, rgb(42, 34, 163));
+}
+
+.card .inputs{
+    display:flex;
+    flex-direction:column;
+    margin-bottom: 2em;
+}
+
+.card .inputs span{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.card .inputs input{
+    background-color: transparent;
+    height: 2em;
+    padding: 1em 1em;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow:none;
+    outline:none;
+    border: 2px solid white;
+}
+
+.card .inputs input:focus-visible{
+    border: 2px solid white;
+}
+
+
+.card .inputs input[type="text"][readonly]{
+    border: 2px solid rgba(0,0,0,0);
+}
+
+@media (max-width: 1000px){
+    .containe{
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .card{
+        width: 17em;
+    }
+}
