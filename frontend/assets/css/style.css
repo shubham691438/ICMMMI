@@ -833,12 +833,6 @@ section {
     padding-top: 5%;
     left: 10%;
   }
-
-  .about .row p{
-    font-size: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
  #about .key_dates h2 {
       font-size: 38px;
       line-height: 32px;
@@ -857,7 +851,7 @@ section {
       font-family: Arial, Helvetica, sans-serif;
       color: white;
       margin-left: -30px;
-      /* space-between: 10px; */
+      space-between: 10px;
     }
     #three {
       padding-left: 23px;
@@ -868,7 +862,7 @@ section {
 
 
 .about .row p{
-  font-size: 20px;
+  font-size: 15px;
   align-items: center;
 }
 
@@ -1258,7 +1252,6 @@ section {
   /* text-align: center; */
   font-size: 26px;
   font-weight: 500;
-  color: #0c10e7;
   position: relative;
   padding-bottom: 30px;
   margin-top: 30px;
@@ -1304,11 +1297,8 @@ section {
 
 @media (max-width: 992px) {
   #team h3{
-    /* width: 90%; */
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 90%;
     font-size: 20px;
-    margin-bottom: -100px;
   }
   }
 
