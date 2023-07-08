@@ -156,6 +156,17 @@ h6 {
   max-height: 52px;
 }
 
+@media(max-width: 768px) {
+  #header .logo h1 {
+    font-size: 24px;
+    padding: 8px 0;
+  }
+
+  #header .logo img {
+    max-height: 50px;
+    
+  }
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -515,7 +526,7 @@ hr{
 
   #hero .bg img{
     /* text-align: center; */
-    height: 122%;
+    height: 130%;
     width: 100%;
     margin-bottom: 90px;
   }
@@ -530,6 +541,11 @@ hr{
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+  }
+
+  #hero img{
+    
+    margin-bottom: 40px;
   }
 
 
