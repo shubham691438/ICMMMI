@@ -587,7 +587,8 @@ section {
     margin-right: 10px;
 }
 .about .row .card{
-    width: 100%;
+    width: 97%;
+    overflow: hidden;
     margin-left: 20px;
     margin-right: 20px;
     border: 10px solid  rgba(0,0,0,0.12);
@@ -686,16 +687,36 @@ section {
 }
 
 @media (max-width: 768px) {
-    .about .row p{
-        font-size: 20px;
-        line-height: 32px;
+    .head1 .card{
+        overflow: hidden;
+        width: 97%;
+    }
+
+    .head1 .card p{
+        font-size: 17px;
+        margin-left: -10px;
+        margin-right: 0px;
+    }
+    .about h2{
+        font-size: 30px;
+        font-weight:600;
+        text-transform: uppercase;
         font-family: "Poppins", sans-serif;
-        color: black;
-        line-height: 40px;
-        font-weight: 400;
+        color: #010483;
         margin-bottom: 20px;
-        margin-left: 50px;
+        margin-left: 30px;
+        margin-top: 30px;
         margin-right: 50px;
+    }
+    .title .one{
+        display: block;
+        margin-right: 150px;
+        width: 93vw;
+    }
+    .title .two{
+        display: block;
+        margin-right: 150px;
+        width: 93vw;
     }
     }
 
