@@ -3,8 +3,17 @@ let totalRegistrations=0,indianRegistartions=0,industries=0,academicians=0,stude
 
 async function fetchUsers(){
     try{
-        const res= await fetch("https://icmmmi-backend.onrender.com/api/user/get-all-users",{
+        const admin=JSON.parse(localStorage.getItem('admin'));
+        
+        if(!admin)
+        {
+            throw new Error("Invalid authorization")
+        }
+        const res= await fetch("https://icmmmi-backend.onrender.com/api/admin/get-all-users",{
         method:"GET",
+        headers:{
+          'Authorization':`Bearer ${admin.token}`
+        }
         })
         const users= await res.json();
         if (!res.ok) {
