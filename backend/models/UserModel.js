@@ -68,29 +68,29 @@ UserSchema.statics.register = async function(salutation,firstName,lastName,natio
     return user
   }
   
-  // static signin method
-  // UserSchema.statics.signin = async function(email, password) {
+  // static login method
+  UserSchema.statics.login = async function(email, password) {
   
-  //   if (!email) {
-  //     throw Error('Email is required')
-  //   }
+    if (!email) {
+      throw Error('Email is required')
+    }
 
-  //   if (!password) {
-  //       throw Error('Password is required')
-  //     }
+    if (!password) {
+        throw Error('Password is required')
+      }
   
-  //   const user = await this.findOne({ email })
-  //   if (!user) {
-  //     throw Error('email not registered')
-  //   }
+    const user = await this.findOne({ email })
+    if (!user) {
+      throw Error('email not registered')
+    }
   
-  //   const match = await bcrypt.compare(password, user.password)
-  //   if (!match) {
-  //     throw Error('Incorrect password')
-  //   }
+    const match = await bcrypt.compare(password, user.password)
+    if (!match) {
+      throw Error('Incorrect password')
+    }
   
-  //   return user
-  // }
+    return user
+  }
 
   //pre to create a new profile document before save signup 
   // UserSchema.pre('save', async function(next) {

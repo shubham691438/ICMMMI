@@ -24,42 +24,36 @@ const register = async (req, res) => {
     }
   }
 
-// signin post request 
-// const signin = async (req, res) => {
-//     const {email, password} = req.body
+// login post request 
+const login = async (req, res) => {
+    const {email, password} = req.body
     
-//     try {
-//       const user = await User.signin(email, password)
+    try {
+      const user = await User.login(email, password)
   
       
-//       // create a token
-//       const token = createToken(user._id)
+      // create a token
+      const token = createToken(user._id)
   
-//       res.status(200).json({
-//         userId:user._id,
-//         profileId:user.profileId,
-//         firstName:user.firstName,
-//         lastName:user.lastName,
-//         email:user.email,
-//         phone:user.phone,
-//         token})
-//     } catch (error) {
-//       res.status(400).json({error: error.message})
-//     }
-//   }  
-
-const getAllUsers=async(req,res)=>{
-  try{
-    const users=await User.find({})
-    // console.log(users);
-    res.status(200).json(users);
-  }
-  catch(error){
-    res.status(500).json({error: error.message})
-  }
-}
+      res.status(200).json({
+        userId:user._id,
+        salutation:user.salutation,
+        firstName:user.firstName,
+        lastName:user.lastName,
+        nationality:user.nationality,
+        email:user.email,
+        phoneNo:user.phoneNo,
+        organization:user.organization,
+        category:user.category,
+        noOfPapers:user.noOfPapers,
+        paperId:user.paperId,
+        token})
+    } catch (error) {
+      res.status(400).json({error: error.message})
+    }
+  }  
   
   module.exports={
-    register,
-    getAllUsers
+    login,
+    register
 }

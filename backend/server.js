@@ -7,6 +7,7 @@ const path = require('path')
 const indexRouter=require('./api/index')
 const userRouter=require('./api/userApi')
 const profileApi=require('./api/profileApi')
+const adminRouter=require('./api/admin')
 
 //initialized express app
 const app=express()
@@ -29,6 +30,7 @@ app.use((req, res, next) => {
 
 //for api routes
 app.use('/api',indexRouter)
+app.use('/api/admin',adminRouter)
 app.use('/api/user',userRouter)
 app.use('/api/profile',profileApi)
 
