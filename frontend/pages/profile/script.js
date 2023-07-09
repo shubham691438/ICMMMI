@@ -1,6 +1,6 @@
 var savebutton = document.getElementById('savebutton');
 var readonly = true;
-var inputs = document.querySelectorAll('input[type="text"]');
+var inputs = document.querySelectorAll('input');
 savebutton.addEventListener('click',function(){
     
      for (var i=0; i<inputs.length; i++) {
@@ -11,11 +11,5 @@ savebutton.addEventListener('click',function(){
       savebutton.innerHTML = "save";
          } else {
       savebutton.innerHTML = "edit";
-      }
-
-
-
-     
+      }     
 });
-
-

@@ -3,7 +3,6 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
 }
 
 #hero:before {
@@ -40,97 +39,115 @@
 }
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif
+}
+
+#left{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    align-items: center;
+    align-self: center;
+    border-right: 0.5px solid rgb(151, 149, 147);
+}
+svg{
+    margin: 10em 0 10em 0;
+}
+
+#right{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: none;
+    width: 62em;
+}
+
 .containe{
     /* height:100vh; */
     display:flex;
     justify-content:center;
     align-items:center;
-    background-color:#fffdfd;
+    background-color:#ffffff
 }
 
 .card{
-    border: 4px solid #2e2b2b;
-    margin: 10em 5em 10em 5em;
-    width: 70em;
-    height: 100%;
+    margin-top: 10em;
+    margin-bottom: 10em;
+    width:350px;
+    height: 40em;
     background-color:#fff;
-    box-shadow:0px 20px 20px rgba(3, 3, 3, 0.1);
+    /* box-shadow:0px 15px 30px rgba(0,0,0,0.1); */
+    border: 2px solid black;
     border-radius:10px;
-    overflow:hidden;
+    overflow:hidden
 }
 
 .card .info{
-    padding:15px;
+    padding:10px;
     display:flex;
     justify-content:space-between;
-    
-    background-color:#109fb6fd;
+    border-bottom:none;
+    background-color:rgb(255, 253, 253);
     position: relative;
 }
 .card .info span{
-    font-size: 2em;
-    font-weight: 800;
+    margin-left: 3em;
+
+    font-size: 3em;
+    font-weight: 500;
+    color: #080a7b;
 }
+
 
 .card .info button{
-    height:4em;
-    width: 4em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 5em;
+    width: 6em;
     border:none;
     color:#fff;
-    border-radius:0px 4px 0px 40px ;
-    background-color:#0c0b0b;
+    border-radius:0px 4px 0px 40px;
+    background-color:#000;
     cursor:pointer;
-    text-transform:uppercase;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.card .forms{
-    padding:25px;
-    background-image: linear-gradient(#109fb6fd, rgb(42, 34, 163));
-}
-
-.card .inputs{
-    display:flex;
-    flex-direction:column;
-    margin-bottom: 2em;
-}
-
-.card .inputs span{
-    font-size: 1em;
-    font-weight: 500;
-}
-
-.card .inputs input{
-    background-color: transparent;
-    height: 2em;
-    padding: 1em 1em;
-    font-size: 1.5em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    box-shadow:none;
-    outline:none;
-    border: 2px solid white;
-}
-
-.card .inputs input:focus-visible{
-    border: 2px solid white;
-}
-
-
-.card .inputs input[type="text"][readonly]{
-    border: 2px solid rgba(0,0,0,0);
-}
-
-@media (max-width: 1000px){
-    .containe{
-        flex-direction: column;
+    text-transform:uppercase;}
+    
+    .card .forms{
+        padding: 10px;
     }
     
-}
-
-@media (max-width: 400px) {
-    .card{
-        width: 17em;
+    .card .inputs{
+        display:flex;
+        /* flex-direction:column; */
+        margin-bottom: 0.5em;
     }
-}
+    
+    .card .inputs span{
+        font-size: 1em;
+        font-weight: 600;
+        color: #1abd84;
+        margin-left: 1em;
+    }
+    
+    .card .inputs input{
+        height:30px;
+        padding:0px 10px;
+        font-size:17px;
+        box-shadow:none;
+        outline:none;
+        margin-left: 1.5em;
+    }
+    
+    .card .inputs input[type="text"][readonly]{
+        border: 2px solid rgba(0,0,0,0);
+    }
+    .card .inputs input[type="number"][readonly]{
+        border: 2px solid rgba(0,0,0,0);
+    }
+    .card .inputs input[type="password"][readonly]{
+        border: 2px solid rgba(0,0,0,0);
+    }
+    .card .inputs input[type="email"][readonly]{
+        border: 2px solid rgba(0,0,0,0);
+    }
