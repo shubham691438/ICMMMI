@@ -1,0 +1,20 @@
+#hero h1 p{
+    margin-top: 5px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  #hero h2 {
+    color: black;
+    margin-bottom: 40px;
+    font-size: 25px;
+  }
+
+  @media (max-width: 575px) {
+    #hero h1 p{
+        font-size: 20px;
+        line-height: 20px;
+      }
+    #hero h2 {
+    font-weight: 800px;
+    }  
+  }
