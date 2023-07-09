@@ -552,6 +552,13 @@ hr{
 }
 
 @media (max-width: 575px) {
+    #hero h1{
+      font-size: 40px;
+      line-height: 40px;
+      margin-top: -100px;
+      margin-bottom: 45px;
+    }
+
   #hero .hero-img img {
     width: 80%;
   }
