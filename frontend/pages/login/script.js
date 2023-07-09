@@ -8,7 +8,7 @@ adminLoginForm.addEventListener('submit',function(event){
     event.preventDefault();
 
     //loader
-    const alertBox=document.getElementById('msg');
+    const alertBox=document.getElementById('msg-admin-login');
     alertBox.innerText="";
     alertBox.className="spinner-border text-success";
 
@@ -35,7 +35,7 @@ adminLoginForm.addEventListener('submit',function(event){
             }
           if(response.ok)
           {
-            const alertBox=document.getElementById('msg');
+            const alertBox=document.getElementById('msg-admin-login');
             alertBox.className="alert alert-success";
             alertBox.innerHTML="Logged in Successfully";
             // console.log(json);
@@ -48,7 +48,7 @@ adminLoginForm.addEventListener('submit',function(event){
         } catch (error) {
           console.log(error);
          
-          const alertBox=document.getElementById('msg');
+          const alertBox=document.getElementById('msg-admin-login');
           alertBox.className="alert alert-danger";
           alertBox.innerHTML=error;
         }
@@ -70,7 +70,7 @@ userLoginForm.addEventListener('submit',function(event){
     event.preventDefault();
 
     //loader
-    const alertBox=document.getElementById('msg');
+    const alertBox=document.getElementById('msg-user-login');
     alertBox.innerText=""
     alertBox.className="spinner-border text-success";
 
@@ -97,7 +97,7 @@ userLoginForm.addEventListener('submit',function(event){
             }
           if(response.ok)
           {
-            const alertBox=document.getElementById('msg');
+            const alertBox=document.getElementById('msg-user-login');
             alertBox.className="alert alert-success";
             alertBox.innerHTML="Logged in Successfully";
             // console.log(json);
@@ -110,7 +110,7 @@ userLoginForm.addEventListener('submit',function(event){
         } catch (error) {
           console.log(error);
          
-          const alertBox=document.getElementById('msg');
+          const alertBox=document.getElementById('msg-user-login');
           alertBox.className="alert alert-danger";
           alertBox.innerHTML=error;
         }
