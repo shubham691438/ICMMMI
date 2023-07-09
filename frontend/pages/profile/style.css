@@ -72,10 +72,10 @@ svg{
 }
 
 .card{
-    margin-top: 10em;
+    margin-top: 17em;
     margin-bottom: 10em;
     width:350px;
-    height: 40em;
+    height: 51em;
     background-color:#fff;
     /* box-shadow:0px 15px 30px rgba(0,0,0,0.1); */
     border: 2px solid black;
@@ -115,11 +115,12 @@ svg{
     
     .card .forms{
         padding: 10px;
+        margin-top: 3em;
     }
     
     .card .inputs{
         display:flex;
-        /* flex-direction:column; */
+        flex-direction:column;
         margin-bottom: 0.5em;
     }
     
@@ -132,11 +133,15 @@ svg{
     
     .card .inputs input{
         height:30px;
-        padding:0px 10px;
+        padding:2px 10px;
         font-size:17px;
         box-shadow:none;
-        outline:none;
-        margin-left: 1.5em;
+        outline: 1px;
+        margin: 0.5em 1em;
+        border-radius: 3px;
+    }
+    .card .inputs input:focus{
+        border: 2px solid rgb(30, 156, 127);
     }
     
     .card .inputs input[type="text"][readonly]{
@@ -144,10 +149,18 @@ svg{
     }
     .card .inputs input[type="number"][readonly]{
         border: 2px solid rgba(0,0,0,0);
+        background-color: transparent;
     }
     .card .inputs input[type="password"][readonly]{
         border: 2px solid rgba(0,0,0,0);
     }
     .card .inputs input[type="email"][readonly]{
         border: 2px solid rgba(0,0,0,0);
+    }
+    .names{
+        display: flex;
+        /* justify-content: space-between; */
+    }
+    .names input{
+        width: 26.5em;
     }
