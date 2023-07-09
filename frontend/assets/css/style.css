@@ -395,6 +395,7 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
+  min-height: 100vh;
   width: 100%;
   background: url("../img/nit3.jpg");
   background-size: cover;
@@ -670,149 +671,155 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about {
+  padding: 40px 0 0 0;
+}
 
-.about h2{
-  font-size: 40px;
+.about .icon-boxes h3 {
+  font-size: 28px;
   font-weight: 700;
-  color: #01036f;
+  color: #010483;
   margin-bottom: 15px;
 }
 
-.about p{
-  font-size: 20px;
-  font-weight: 700;
+.about .icon-box {
   margin-top: 40px;
-  color: black;
-  margin-bottom: 15px;
-  /* margin-top: 40px; */
-}
-.about .home1{
-  margin-top: -30px;
 }
 
-.about ul{
-  /* list-style: none; */
-  padding: 0;
-}
-
-.about ul li {
-  padding-left: 28px;
-  position: relative;
-}
-
-.about .btn-learn-more {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 32px;
+.about .icon-box .icon {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border: 2px solid #7ceec6;
   border-radius: 50px;
-  transition: 0.3s;
-  line-height: 1;
-  color: #009961;
-  animation-delay: 0.8s;
-  margin-top: 6px;
-  border: 2px solid #009961;
+  transition: 0.5s;
 }
 
-.about .btn-learn-more:hover {
-  background: #009961;
+.about .icon-box .icon i {
+  color: #1acc8d;
+  font-size: 32px;
+}
+
+.about .icon-box:hover .icon {
+  background: #1acc8d;
+  border-color: #1acc8d;
+}
+
+.about .icon-box:hover .icon i {
   color: #fff;
-  text-decoration: none;
 }
 
-
-.why-us {
-  padding-bottom: 0;
-}
-.why-us h2{
-  font-size: 40px;
+.about .icon-box .title {
+  margin-left: 85px;
   font-weight: 700;
-  color: #01036f;
-  margin-bottom: 35px;
+  margin-bottom: 10px;
+  font-size: 18px;
 }
 
-.why-us .img-bg {
-  min-height: 500px;
-  background-size: cover;
+.about .icon-box .title a {
+  color: #343a40;
+  transition: 0.3s;
 }
 
-.why-us .slides {
-  background-color: #f7f9fc;
+.about .icon-box .title a:hover {
+  color: #1acc8d;
 }
 
-.why-us h3 {
-  font-size: 34px;
-  font-weight: 700;
-  color: var(--color-secondary);
-}
-
-.why-us h4 {
-  font-size: 25px;
-  font-weight: 500;
-  color: #29486a;
-  font-family: var(--font-secondary);
-}
-
-.why-us p {
-  font-size: 20px;
+.about .icon-box .description {
+  margin-left: 85px;
   line-height: 24px;
-  margin-bottom: 20px;
+  font-size: 14px;
 }
 
-.why-us .swiper {
-  margin: 140px 140px 120px 140px;
+.about .video-box {
+  background: url("../img/about.png") center center no-repeat;
+  background-size: contain;
+  min-height: 300px;
+}
+
+.about .play-btn {
+  width: 94px;
+  height: 94px;
+  background: radial-gradient(#3f43fd 50%, rgba(63, 67, 253, 0.4) 52%);
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: calc(50% - 47px);
+  top: calc(50% - 47px);
   overflow: hidden;
 }
 
-.why-us .swiper-button-prev:after,
-.why-us .swiper-button-next:after {
-  font-size: 24px;
-  color: var(--color-secondary);
+.about .play-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 100;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-.why-us .swiper-button-prev {
-  left: 80px;
+.about .play-btn::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  animation-delay: 0s;
+  animation: pulsate-btn 2s;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid rgba(63, 67, 253, 0.7);
+  top: -15%;
+  left: -15%;
+  background: rgba(198, 16, 0, 0);
 }
 
-.why-us .swiper-button-next {
-  right: 80px;
+.about .play-btn:hover::after {
+  border-left: 15px solid #3f43fd;
+  transform: scale(20);
 }
 
-.why-us .swiper-pagination {
-  margin-top: 30px;
-  position: relative;
+.about .play-btn:hover::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 200;
+  animation: none;
+  border-radius: 0;
 }
 
-.why-us .swiper-pagination .swiper-pagination-bullet {
-  background-color: var(--color-secondary);
-}
-
-.why-us .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--color-primary);
-}
-
-@media (max-width: 1200px) {
-  .why-us .swiper {
-    margin: 60px 60px 40px 60px;
+@keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
   }
 
-  .why-us .swiper-button-prev,
-  .why-us .swiper-button-next {
-    display: none;
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
   }
 }
 
-@media (max-width: 575px) {
-  .why-us .swiper {
-    margin: 40px 40px 20px 40px;
-  }
-}
 
-.page-about .why-us {
-  padding: 0 0 80px 0;
-}
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
