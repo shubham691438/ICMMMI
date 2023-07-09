@@ -103,7 +103,7 @@ userLoginForm.addEventListener('submit',function(event){
             // console.log(json);
             localStorage.setItem('user',JSON.stringify(json));
 
-            window.location.href = "../profile/index.js";
+            window.location.href = "../profile/index.html";
             
           }  
           
