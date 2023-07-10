@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Admin Dashboard</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../../assets/img/logo.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+
+  <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+
+     <!-- Template Main CSS File -->
+  <link href="../../assets/css/style.css" rel="stylesheet">
+  
+  <!-- page specific css file -->
+  <link href="./style.css" rel="stylesheet">
+
+ 
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html"><span><img src="../../assets/img/logo.png"> ICMMMI</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="../../index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="../about-us/index.html">About Us</a></li>
+          <li><a class="nav-link scrollto" href="../call-for-paper/index.html">Call For Paper</a></li>
+          <li><a class="nav-link scrollto" href="../key-attractions/index.html">Key Attractions</a></li>
+          <li class="dropdown"><a href="../organising-committee/index.html"><span>Organizing Committee</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="../organising-committee/index.html" class="active">Patron</a></li>
+              <li><a href="../organising-committee/index.html" id="Co-Patron1">Co-Patron</a></li>
+              <li><a href="../organising-committee/index.html" id="Executive General Chair1">Executive General Chair</a></li>
+              <li><a href="../organising-committee/index.html" id="Chairman1">Chairman</a></li>
+              <li><a href="../organising-committee/index.html" id="Conveners1">Conveners</a></li>
+              <li><a href="../organising-committee/index.html" id="Organizing Secretaries1">Organizing Secretaries</a></li>
+              <li><a href="../organising-committee/index.html" id="Joint-Organizing Secretaries1">Joint-Organizing
+                  Secretaries</a></li>
+              <li><a href="../organising-committee/index.html" id="Treasurers1">Treasurers</a></li>
+              <li><a href="../organising-committee/index.html" id="Organizing Committee1">Organizing Committee</a></li>
+              <li><a href="../organising-committee/index.html" id="National Advisory Committee1">National Advisory
+                  Committee</a></li>
+              <li><a href="../organising-committee/index.html" id="International Advisory Committee1">International
+                  Advisory Committee</a></li>
+              <li><a href="../organising-committee/index.html" id="Student Coordinators1">Student Coordinators</a></li>
+            
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="../registration/index.html">Registration</a></li>
+          <li><a class="nav-link scrollto" href="../contact/index.html">Contact</a></li>
+          <li><a class="nav-link scrollto" href="../login/index.html"><button type="button" class="btn btn-primary">Login</button></a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
+
+    </div>
+  </header>
+  <!-- End Header -->
+
+
+  <main id="main">
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+          
+          <div class="spacing"></div>
+
+          <!-- Begin Page Content -->
+          <div class="container-fluid">
+
+              <!-- Page Heading -->
+              <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                  <h1 class="h3 mb-0 text-gray-800">Admin Dashboard</h1>
+                  <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                          class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
+                  <!-- Search Box -->
+                  <form class="d-none d-sm-inline-block form-inline  navbar-search">
+                    <div class="input-group">
+                        <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                            aria-label="Search" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="button">
+                                <i class="fas fa-search fa-sm"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                  <!-- End Search Box -->        
+              </div>
+
+              
+
+              <!-- Content Row -->
+              <div class="row">
+
+                  <!-- Total Registration -->
+                  <div class="col-xl-3 col-md-6 mb-4">
+                      <div class="card border-left-primary shadow h-100 py-2">
+                          <div class="card-body">
+                              <div class="row no-gutters align-items-center">
+                                  <div class="col mr-2">
+                                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1" >
+                                          Total Registrations</div>
+                                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="total-registartions"></div>
+                                  </div>
+                                  <div class="col-auto">
+                                      <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Earnings (Monthly) Card Example -->
+                  <div class="col-xl-3 col-md-6 mb-4">
+                      <div class="card border-left-success shadow h-100 py-2">
+                          <div class="card-body">
+                              <div class="row no-gutters align-items-center">
+                                  <div class="col mr-2">
+                                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                          Indian Registrations</div>
+                                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="indian-registrations"></div>
+                                  </div>
+                                  <div class="col-auto">
+                                      <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Earnings (Monthly) Card Example -->
+                  <div class="col-xl-3 col-md-6 mb-4">
+                      <div class="card border-left-info shadow h-100 py-2">
+                          <div class="card-body">
+                              <div class="row no-gutters align-items-center">
+                                  <div class="col mr-2">
+                                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">International Registrations
+                                      </div>
+                                      <div class="row no-gutters align-items-center">
+                                          <div class="col-auto">
+                                              <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800" id="international-registrations"></div>
+                                          </div>
+                                          
+                                      </div>
+                                  </div>
+                                  <div class="col-auto">
+                                      <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Pending Requests Card Example -->
+                  <div class="col-xl-3 col-md-6 mb-4">
+                      <div class="card border-left-warning shadow h-100 py-2">
+                          <div class="card-body">
+                              <div class="row no-gutters align-items-center">
+                                  <div class="col mr-2">
+                                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                          Total Registration Amt Collected</div>
+                                      <div class="h5 mb-0 font-weight-bold text-gray-800">Rs 5000</div>
+                                  </div>
+                                  <div class="col-auto">
+                                      <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Content Row -->
+              <div class="row">
+
+                <!-- Content Column -->
+                <div class="col-lg-6 mb-4">
+
+                    <!-- Project Card Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Category of Registrant</h6>
+                        </div>
+                        <div class="card-body" id="category-progress-bar">
+                             <!-- addig this data using javascript -->
+                            
+                        </div>
+                    </div>    
+
+                </div>
+
+                <div class="col-lg-6 mb-4">
+
+                    <div class="card shadow mb-4">
+                        <!-- Card Header - Dropdown -->
+                        <div
+                            class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                            <h6 class="m-0 font-weight-bold text-primary">Indian Vs International</h6>
+                            <div class="dropdown no-arrow">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                    aria-labelledby="dropdownMenuLink">
+                                    <div class="dropdown-header">Dropdown Header:</div>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card Body -->
+                        <div class="card-body">
+                            <div class="chart-pie pt-4 pb-2">
+                                <canvas id="myPieChart"></canvas>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <!-- Illustrations -->
+                    <!-- <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Messages</h6>
+                        </div>
+                        <div class="card-body"> -->
+                            <!-- <div class="text-center">
+                                <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;"
+                                    src="img/undraw_posting_photo.svg" alt="...">
+                            </div> -->
+                            <!-- <p>Add some quality, svg illustrations to your project courtesy of <a
+                                    target="_blank" rel="nofollow" href="https://undraw.co/">unDraw</a>, a
+                                constantly updated collection of beautiful svg images that you can use
+                                completely free and without attribution!</p>
+                            <a target="_blank" rel="nofollow" href="https://undraw.co/">Browse Illustrations on
+                                unDraw &rarr;</a>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+
+
+              <!-- Content Row -->
+
+              <div class="row">
+
+                  <!-- Area Chart -->
+                  <div class="col-xl-8 col-lg-7">
+                      <div class="card shadow mb-4">
+                          <!-- Card Header - Dropdown -->
+                          <div
+                              class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                              <h6 class="m-0 font-weight-bold text-primary">People Registered</h6>
+                    
+                          </div>
+                          <!-- Card Body -->
+                          <div class="card-body">
+                              <div class="overflow-auto p-3 bg-light" id="people-details-body"
+                              style=" max-height: 800px;">
+                                    
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Pie Chart -->
+                  <div class="col-xl-4 col-lg-5">
+                      <!-- Illustrations -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Messages</h6>
+                        </div>
+                        <div class="card-body">
+                           <strong> This one is left . I will add queries sent by user here.</strong>
+                            <br>
+                            random text for testing
+                                                    a written or spoken piece of information that you send to or leave for a person when you cannot speak to him/her
+                        लिखित या मौखिक रूप से प्रेषित संदेश (जब संबोधित व्यक्ति से साक्षात बात न हो सके)
+                        Mr Khanna is not here at the moment. Can I take a message?Mr Khanna is not here at the moment. Can I take a message?
+                        Could you give a message to gake, please?
+                        If he’s not in I’ll leave a message on his answering machine.
+                        2.
+                        an important idea that a book, speech, etc. is trying to communicate
+                        पुस्‍तक, भाषण आदि में व्‍यक्त महत्वपूर्ण विचार या संदेश
+                        The advertising campaign is trying to get the message across that smoking kills.
+                        
+                            
+                        </div>
+                    </div>
+                  </div>
+              </div>
+
+              
+
+          </div>
+          <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+  </div>
+  <!-- End of Content Wrapper -->
+  
+  
+  
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>ICMMMI</h3>
+              <p class="pb-3"><em>Organizing Secretary - ICMMMI - 2024<br>
+                Department of Production Engineering <br>
+              NIT JAMSHEDPUR</em></p>
+              <p>
+                Adityapur, Jamshedpur <br>
+                Jharkhand, India<br><br>
+                <strong>Phone:</strong> +91-8987571620<br>
+                <strong>Email:</strong> <a href="mailto:icmmmi2024@gmail.com">  icmmmi2024@gmail.com</a><br>
+              </p>
+              <div class="social-links mt-3">
+                <!-- <a href="#" class="twitter"><i class="bx bxl-email"></i></a> -->
+                <a target="_blank" href="https://www.facebook.com/nit.jamshedpur.9?mibextid=ZbWKwL" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a target="_blank" href="https://instagram.com/nitjamshedpur_official?igshid=Y2IzZGU1MTFhOQ==" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+                <a target="_blank" href="https://www.linkedin.com/school/national-institute-of-technology-jamshedpur/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="../../index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../about-us/index.html">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../participation/index.html">Participations</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../key-attractions/index.html">Key Attractions</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../organising-committee/index.html">Organizing Committee</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../registration/index.html">Registration</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../contact/index.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>IMPORTANT DATES</h4>
+            <strong>Abstract Submission :  </strong> August 31, 2023<br><br>
+            <strong>Registration Open:</strong> December 1, 2023<br><br>
+            <strong>Early Bird Registration:</strong> December 31, 2023<br><br>
+            <strong>Last Date for Registration:</strong> January 31, 2024<br><br>
+            <strong>Conference Date:</strong> 23 - 25 Febuary, 2024<br><br>
+
+          </div>
+          
+          
+          <div class="col-lg-4 col-md-6 footer-newsletter" id="logoImages">
+            
+              <img src="../../assets/img/logo.png" style="height: 10em; margin: 2em;">
+              <img src="../../assets/img/nit_logoWhite.png" style="height: 10em;">
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>National Institute of Tecchnology, Jamshedpur</span></strong>.<br> All Rights Reserved
+      </div>
+      <div class="credits">
+        
+        Designed by <a>Department of Production Engineering, NIT JAMSHEDPUR</a>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../../assets/vendor/aos/aos.js"></script>
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../../assets/js/main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

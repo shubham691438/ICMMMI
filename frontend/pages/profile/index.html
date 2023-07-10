@@ -10,9 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="../../assets/img/favicon.png" rel="icon">
-  <link href="../../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
+  <link href="../../assets/img/logo.png" rel="icon">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -24,17 +22,13 @@
   <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="../../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous">
+
 
   <!-- Template Main CSS File -->
   <link href="../../assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Bootslander
-  * Updated: May 30 2023 with Bootstrap v5.3.0
-  * Template URL: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 
   <!-- This page css file -->
  <link rel="stylesheet" href="style.css">
@@ -47,131 +41,184 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <h1><a href="index.html"><img src="../../assets/img/logo.png" alt="" class="img-fluid" srcset=""> ICMMMI</a></h1>
-        <!-- <h1><a href="index.html"><span>Bootslander</span></a></h1> -->
+
+        <h1><a href="index.html"><span><img src="../../assets/img/logo.png"> ICMMMI</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="../../assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
-      
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="../../index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="../aims-and-scope/index.html">About</a></li>
-          <li><a class="nav-link scrollto" href="../participation/index.html">Participations</a></li>
-          <li><a class="nav-link scrollto" href="index.html">Key Attractions</a></li>
+          <li><a class="nav-link scrollto" href="../about-us/index.html">About Us</a></li>
+          <li><a class="nav-link scrollto" href="../call-for-paper/index.html">Call For Paper</a></li>
+          <li><a class="nav-link scrollto" href="../key-attractions/index.html">Key Attractions</a></li>
           <li><a class="nav-link scrollto" href="../organising-committee/index.html">Organizing Committee</a></li>
           <li><a class="nav-link scrollto" href="../registration/index.html">Registration</a></li>
           <li><a class="nav-link scrollto" href="../contact/index.html">Contact</a></li>
+          <li><a class="nav-link scrollto" href="../login/index.html"><button type="button" class="btn btn-primary">Login</button></a></li>
+
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
       <!-- .navbar -->
 
     </div>
-  </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <!-- <section id="hero">
+  </header>
+  <!-- End Header -->
 
-    <div class="container">
-      <div class="row justify-content-between">
-        <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-          <div data-aos="zoom-out">
-            <h1>My Profile</span></h1>
-            <h2>We are team of talented designers making websites with Bootstrap</h2>
-            <div class="text-center text-lg-start">
-              <a href="#about" class="btn-get-started scrollto">Get Started</a>
+  <!-- Main Section Begins -->
+  <main id="main">
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+          
+        <div class="spacing"></div>
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- profile begins -->
+          <div class="container">
+            <div class="row">
+                <div class="col-12">
+                  <!-- Page title -->
+                  <div class="my-5">
+                    <h3>My Profile</h3>
+                    <hr>
+                  </div>
+                  <!-- Form START -->
+                  <form class="file-upload">
+                    <div class="row mb-5 gx-5 ">
+
+                      <!--  profile -->
+                      <div class="col-lg-4 d-flex justify-content-center">
+                        <div class="card ">
+
+                          <div class="card-body text-center">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar"
+                              class="rounded-circle img-fluid" style="width: 150px;">
+                            <h5 class="my-3" id="cardName">John Smith</h5>
+                            <p class="text-muted mb-1 " id="cardEmail">Shubham@gmail.com</p>
+                            <p class="text-muted mb-4" id="cardOrganization">NIT Jamshedpur</p>
+            
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                      <!-- Contact detail -->
+                      <div class="col-lg-8 mb-5 mb-lg-0 profile-details ">
+                        <div class="bg-secondary-soft px-4 py-5 rounded ">
+                          <div class="row g-3">
+
+                            <!-- Salutation -->
+                            <div >
+                              <label class="form-label">Salutation *</label>
+                              <input type="text" id="salutation" class="form-control" placeholder="" aria-label="Salutation" value="">
+                            </div>
+
+                            <!-- First Name -->
+                            <div class="col-md-6">
+                              <label class="form-label">First Name *</label>
+                              <input type="text" id="firstName" class="form-control" placeholder="" aria-label="First name" value="">
+                            </div>
+                            <!-- Last name -->
+                            <div class="col-md-6">
+                              <label class="form-label">Last Name </label>
+                              <input type="text" id="lastName" class="form-control" placeholder="" aria-label="Last name" value="">
+                            </div>
+                            <!-- Email -->
+                            <div class="col-md-6">
+                              <label class="form-label">Email *</label>
+                              <input type="text" id="email" class="form-control" placeholder="" aria-label="Email" value="">
+                            </div>
+                            <!-- Phone number -->
+                            <div class="col-md-6">
+                              <label class="form-label">Phone number *</label>
+                              <input type="text" id="phoneNo" class="form-control" placeholder="" aria-label="Phone number" value="">
+                            </div>
+                            
+                          </div> <!-- Row END -->
+                        </div>
+                      </div>
+
+
+                      
+                      
+                    </div>  
+
+                  </div> <!-- Row END -->
+            
+                  <!-- Other details -->
+                  <div class="row mb-5 gx-5">
+                    <div class="col-12 mb-5 mb-lg-0 ">
+                      <div class="bg-secondary-soft px-4 py-5 rounded">
+                        <div class="row g-3">
+                          <h4 class="mb-4 mt-0">Other Details</h4>
+                            <!-- Nationality-->
+                            <div class="col-md-6">
+                              <label for="nationality" class="form-label">Nationality *</label>
+                              <input type="email" class="form-control" id="nationality" value="">
+                            </div>
+                            <!-- Category -->
+                            <div class="col-md-6">
+                              <label class="form-label">Category *</label>
+                              <input type="text" id="category" class="form-control" placeholder="" aria-label="Category" value="">
+                            </div>
+                            <!-- Number of Papers -->
+                            <div class="col-md-6">
+                              <label class="form-label">Number of Papers</label>
+                              <input type="text" id="noOfPapers" class="form-control" placeholder="" aria-label="Number of Papers" value=0>
+                            </div>
+                            <!-- Paper Id -->
+                            <div class="col-md-6">
+                              <label class="form-label">Paper Id</label>
+                              <input type="text" id="paperId" class="form-control" placeholder="" aria-label="Paper Id" value="">
+                            </div>
+                            <!-- Organization-->
+                            <div class="col-md-6">
+                              <label class="form-label">Organization</label>
+                              <input type="text" id="organization" class="form-control" placeholder="" aria-label="Category" value="">
+                            </div>
+                        </div> <!-- Row END -->
+                      </div>
+                    </div>
+          
+                    
+                    </div>
+                  </div> <!-- Row END -->
+
+                     
+
+                    <!-- button -->
+                    <div class="gap-3 d-md-flex justify-content-center text-center mb-5 " >
+                     
+
+                      <div class="d-flex justify-content-center">
+                        <div class="" id="msg">
+          
+                        </div>
+                      </div>
+                      <!-- <button type="button" class="btn btn-danger btn-lg">Delete profile</button> -->
+                      <button type="button" class="btn btn-primary btn-lg" id="updateButton">Update profile</button>
+                    </div>
+                  </form> <!-- Form END -->
+                </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
-          <img src="../../assets/img/hero-img.png" class="img-fluid animated" alt="">
+           <!-- Profile Ends -->
+
         </div>
       </div>
-    </div>
-
-    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
-      <defs>
-        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
-      </defs>
-      <g class="wave1">
-        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
-      </g>
-      <g class="wave2">
-        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
-      </g>
-      <g class="wave3">
-        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
-      </g>
-    </svg>
-
-  </section> -->
-  <!-- End Hero -->
-
-  <!-- <main id="main"> -->
-    <div class="containe"> 
-      <div class="card" id="left">
-        <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-        </svg>
-    </div>
-      <div class="card" id="right"> 
-        <div class="info"> 
-          <span>Profile Setting</span> 
-          <button id="savebutton">edit</button> 
-        </div> 
-        <div class="forms"> 
-          <div class="inputs"> 
-            <span>Salutation</span> 
-            <input type="text" readonly value=" " style="width: 10em;"> 
-            </div>
-          <div class="names">
-          <div class="inputs"> 
-            <span>First Name</span> 
-            <input type="text" readonly value=""> 
-          </div> 
-          <div class="inputs"> 
-            <span>Last Name</span> 
-            <input type="text" readonly value=" "> 
-          </div> 
-        </div>
-          <div class="inputs">
-            <span>Email</span> 
-            <input type="email" readonly value=""> 
-          </div> 
-          <div class="inputs"> 
-            <span>Phone No.</span> 
-            <input type="number" readonly value=" "> 
-          </div>
-          <div class="names">
-          <div class="inputs"> 
-            <span>Natinality</span> 
-            <input type="text" readonly value=" "> 
-            </div>
-            <div class="inputs"> 
-              <span>Category</span> 
-              <input type="text" readonly value=" "> 
-            </div> 
-          </div> 
-            <div class="inputs"> 
-              <span>No. of Papers</span> 
-              <input type="number" readonly value=" "> 
-            </div> 
-            <div class="inputs">
-              <span>Paper ID</span> 
-              <input type="text" readonly value=" "> 
-            </div> 
-            <div class="inputs"> 
-              <span>Password</span> 
-              <input type="password" readonly value=""> 
-            </div> 
-            
-           </div> 
-          </div>
-        </div>
-
+    </div>  
+  </main>       
+ 
     
 
   <!-- ======= Footer ======= -->
@@ -190,8 +237,7 @@
                 Adityapur, Jamshedpur <br>
                 Jharkhand, India<br><br>
                 <strong>Phone:</strong> +91-8987571620<br>
-                <strong>Email:</strong> <a href="mailto:director@nitjsr.ac.in">  director@nitjsr.ac.in</a><br>
-                <strong>website:</strong><a href="https://www.icmmmi2024/" target="_blank">   https://www.icmmmi2024/</a><br>
+                <strong>Email:</strong> <a href="mailto:icmmmi2024@gmail.com">  icmmmi2024@gmail.com</a><br>
               </p>
               <div class="social-links mt-3">
                 <!-- <a href="#" class="twitter"><i class="bx bxl-email"></i></a> -->

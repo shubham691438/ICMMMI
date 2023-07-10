@@ -70,6 +70,7 @@
     }
     #main2{
         display: block ;
+
     }
 }
 
@@ -127,6 +128,8 @@
         height: 50em;
     }
 }
+
+
 @media(width: 912px){
     #containe{
         display: inline;
@@ -135,12 +138,14 @@
     #containe img{
         width: 40em;
     }
+
     #main{
         display: none;
     }
     #main2{
         display: block ;
     }
+
 }
 @media (width:1200px){
     #containe{
@@ -159,6 +164,7 @@
     #main2{
         display: block ;
     }
+
 }
 
 
