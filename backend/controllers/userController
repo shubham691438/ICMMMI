@@ -79,11 +79,12 @@ const login = async (req, res) => {
   const updateUser= async (req,res)=>{
 
     const userId = req.params.id;
-    const updatedUserData = req.body;
+    const {salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId} = req.body
+    
   
     try {
       // Find the user by ID and update the data
-      const user = await User.findByIdAndUpdate(userId, updatedUserData, { new: true });
+      const user = await User.findByIdAndUpdate({ _id: userId }, { $set: {salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId}},{ new: true });
   
       if (user) {
         // User updated successfully, send the updated user data as a response
