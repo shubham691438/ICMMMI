@@ -102,9 +102,9 @@
                           <div class="card-body text-center">
                             <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar"
                               class="rounded-circle img-fluid" style="width: 150px;">
-                            <h5 class="my-3">John Smith</h5>
-                            <p class="text-muted mb-1">Shubham@gmail.com</p>
-                            <p class="text-muted mb-4">NIT Jamshedpur</p>
+                            <h5 class="my-3" id="cardName">John Smith</h5>
+                            <p class="text-muted mb-1 " id="cardEmail">Shubham@gmail.com</p>
+                            <p class="text-muted mb-4" id="cardOrganization">NIT Jamshedpur</p>
             
                           </div>
 
@@ -113,35 +113,35 @@
                       </div>
 
                       <!-- Contact detail -->
-                      <div class="col-lg-8 mb-5 mb-lg-0 ">
+                      <div class="col-lg-8 mb-5 mb-lg-0 profile-details ">
                         <div class="bg-secondary-soft px-4 py-5 rounded ">
                           <div class="row g-3">
 
                             <!-- Salutation -->
                             <div >
                               <label class="form-label">Salutation *</label>
-                              <input type="text" class="form-control" placeholder="" aria-label="Salutation" value="Mr.">
+                              <input type="text" id="salutation" class="form-control" placeholder="" aria-label="Salutation" value="">
                             </div>
 
                             <!-- First Name -->
                             <div class="col-md-6">
                               <label class="form-label">First Name *</label>
-                              <input type="text" class="form-control" placeholder="" aria-label="First name" value="Scaralet">
+                              <input type="text" id="firstName" class="form-control" placeholder="" aria-label="First name" value="">
                             </div>
                             <!-- Last name -->
                             <div class="col-md-6">
                               <label class="form-label">Last Name </label>
-                              <input type="text" class="form-control" placeholder="" aria-label="Last name" value="Doe">
+                              <input type="text" id="lastName" class="form-control" placeholder="" aria-label="Last name" value="">
                             </div>
                             <!-- Email -->
                             <div class="col-md-6">
                               <label class="form-label">Email *</label>
-                              <input type="text" class="form-control" placeholder="" aria-label="Email" value="test@gmail.com">
+                              <input type="text" id="email" class="form-control" placeholder="" aria-label="Email" value="">
                             </div>
                             <!-- Phone number -->
                             <div class="col-md-6">
                               <label class="form-label">Phone number *</label>
-                              <input type="text" class="form-control" placeholder="" aria-label="Phone number" value="(333) 000 555">
+                              <input type="text" id="phoneNo" class="form-control" placeholder="" aria-label="Phone number" value="">
                             </div>
                             
                           </div> <!-- Row END -->
@@ -155,49 +155,58 @@
 
                   </div> <!-- Row END -->
             
-                    <!-- Other details -->
-                    <div class="row mb-5 gx-5">
-                      <div class="col-12 mb-5 mb-lg-0 ">
-                        <div class="bg-secondary-soft px-4 py-5 rounded">
-                          <div class="row g-3">
-                            <h4 class="mb-4 mt-0">Other Details</h4>
-                              <!-- Nationality-->
-                              <div class="col-md-6">
-                                <label for="nationality" class="form-label">Nationality *</label>
-                                <input type="email" class="form-control" id="nationality" value="Indian">
-                              </div>
-                              <!-- Category -->
-                              <div class="col-md-6">
-                                <label class="form-label">Category *</label>
-                                <input type="text" class="form-control" placeholder="" aria-label="Category" value="Student">
-                              </div>
-                              <!-- Number of Papers -->
-                              <div class="col-md-6">
-                                <label class="form-label">Number of Papers</label>
-                                <input type="text" class="form-control" placeholder="" aria-label="Number of Papers" value=1>
-                              </div>
-                              <!-- Paper Id -->
-                              <div class="col-md-6">
-                                <label class="form-label">Paper Id</label>
-                                <input type="text" class="form-control" placeholder="" aria-label="Paper Id" value="24ju23k">
-                              </div>
-                              <!-- Organization-->
-                              <div class="col-md-6">
-                                <label class="form-label">Organization</label>
-                                <input type="text" class="form-control" placeholder="" aria-label="Category" value="NIT Jamshedpur">
-                              </div>
-                          </div> <!-- Row END -->
-                        </div>
+                  <!-- Other details -->
+                  <div class="row mb-5 gx-5">
+                    <div class="col-12 mb-5 mb-lg-0 ">
+                      <div class="bg-secondary-soft px-4 py-5 rounded">
+                        <div class="row g-3">
+                          <h4 class="mb-4 mt-0">Other Details</h4>
+                            <!-- Nationality-->
+                            <div class="col-md-6">
+                              <label for="nationality" class="form-label">Nationality *</label>
+                              <input type="email" class="form-control" id="nationality" value="">
+                            </div>
+                            <!-- Category -->
+                            <div class="col-md-6">
+                              <label class="form-label">Category *</label>
+                              <input type="text" id="category" class="form-control" placeholder="" aria-label="Category" value="">
+                            </div>
+                            <!-- Number of Papers -->
+                            <div class="col-md-6">
+                              <label class="form-label">Number of Papers</label>
+                              <input type="text" id="noOfPapers" class="form-control" placeholder="" aria-label="Number of Papers" value=0>
+                            </div>
+                            <!-- Paper Id -->
+                            <div class="col-md-6">
+                              <label class="form-label">Paper Id</label>
+                              <input type="text" id="paperId" class="form-control" placeholder="" aria-label="Paper Id" value="">
+                            </div>
+                            <!-- Organization-->
+                            <div class="col-md-6">
+                              <label class="form-label">Organization</label>
+                              <input type="text" id="organization" class="form-control" placeholder="" aria-label="Category" value="">
+                            </div>
+                        </div> <!-- Row END -->
                       </div>
-            
+                    </div>
+          
+                    
+                    </div>
+                  </div> <!-- Row END -->
+
                      
-                      </div>
-                    </div> <!-- Row END -->
 
                     <!-- button -->
-                    <div class="gap-3 d-md-flex justify-content-center text-center mb-5 ">
+                    <div class="gap-3 d-md-flex justify-content-center text-center mb-5 " >
+                     
+
+                      <div class="d-flex justify-content-center">
+                        <div class="" id="msg">
+          
+                        </div>
+                      </div>
                       <!-- <button type="button" class="btn btn-danger btn-lg">Delete profile</button> -->
-                      <button type="button" class="btn btn-primary btn-lg">Update profile</button>
+                      <button type="button" class="btn btn-primary btn-lg" id="updateButton">Update profile</button>
                     </div>
                   </form> <!-- Form END -->
                 </div>
