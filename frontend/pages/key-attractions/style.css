@@ -7,19 +7,19 @@
     height: inherit;
     padding: 4em;
 }
-#container{
+#containe{
     display: flex;
     /* flex-wrap: wrap; */
     align-items: center;
     justify-content: space-between;
 }
-#container img{
+#containe img{
     height: 15em;
     width: 24em;
     border: 3px ridge rgb(133, 131, 131);
     margin: 4em;
 }
-#container #text{
+#containe #text{
     margin: 3em;
 }
 #top{
@@ -43,8 +43,8 @@
     font-family: "Open Sans", sans-serif;
 }
 #text p{
-    color: #1acc8d;
-    font-weight: 800;
+    color: brown;
+    font-weight: 1000;
     font-size: 2rem;
     font-family: "Open Sans", sans-serif;
 }
@@ -52,17 +52,89 @@
 
 
 @media (max-width:840px){
-    #container{
+    #containe{
         display: flex;
         flex-direction: column;
     }
     #top{
-        padding: 2em 0 0 0;
+        padding: 3em 0 0;
     }
     #bottom{
-        padding: 0 0 0 2em;
+        padding: 0 0  2em;
     }
 }
+
+#hero:before {
+    content: "url()";
+    background: rgba(2, 5, 161, 0.91) no-repeat;
+    /* background-image: url("assets/img/nit1.jpg"); */
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#hero h1 {
+    margin: 0 0 20px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 190px;
+    color: white;
+}
+#hero{
+    height: 395px;
+}
+@media (max-width: 912px) {
+    #hero{
+        height: 318.5px;
+    }
+    #hero h1 {
+        margin: 0 0 2px 0;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 60px;
+        color: white;
+}
+}
+@media(max-width:360px){
+    #containe #text{
+        margin: 4em;
+        padding-top: 0.5em;
+    }
+}
+@media(max-width: 280px){
+    #containe #text{
+        margin:6em ;
+
+    }
+    #containe img{
+        height: 50em;
+    }
+}
+@media(width: 912px){
+    #containe{
+        display: inline;
+
+    }
+    #containe img{
+        width: 40em;
+    }
+}
+@media (width:1200px){
+    #containe{
+        display: flex;
+        flex-direction: column;
+    }
+    #top{
+        padding: 3em 0 0;
+    }
+    #bottom{
+        padding: 0 0  2em;
+    }
+}
+
+
 
 
 

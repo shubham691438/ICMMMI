@@ -1,14 +1,4 @@
-/**
-* Template Name: Bootslander
-* Updated: May 30 2023 with Bootstrap v5.3.0
-* Template URL: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -121,11 +111,12 @@ h6 {
   z-index: 997;
   box-shadow: 5px 5px 5px rgb(123, 122, 122);
   transition: all 0.5s;
-  background: rgba(1, 4, 136, 0.9);
+  /* background: rgba(1, 4, 136, 0.9); */
 }
 
 #header.header-transparent {
-  background: #2dd0d06b;
+  background: #109fb6fd;
+
 }
 
 #header.header-scrolled {
@@ -155,6 +146,17 @@ h6 {
   max-height: 52px;
 }
 
+@media(max-width: 768px) {
+  #header .logo h1 {
+    font-size: 24px;
+    padding: 8px 0;
+  }
+
+  #header .logo img {
+    max-height: 50px;
+    
+  }
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -216,17 +218,6 @@ h6 {
 .navbar .active:before {
   visibility: visible;
   width: 25px;
-}
-
-.navbar a:hover
- {
-  /* color: #0511f0; */
-  text-decoration: underline;
-    /* font-size: 1.1rem; */
-    font-size: 16px;
-    /* text-shadow: white; */
-    /* color: rgb(6, 1, 1); */
-    color: rgba(1, 4, 136, 0.9);
 }
 
 .navbar .dropdown ul {
@@ -307,7 +298,7 @@ h6 {
   transition: 0.5s;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1400px) {
   .mobile-nav-toggle {
     display: block;
   }
@@ -351,19 +342,6 @@ h6 {
 
 .navbar-mobile>ul>li>a:before {
   left: 20px;
-}
-
-.navbar-mobile a,
-.navbar-mobile a:focus {
-  padding: 10px 20px;
-  font-size: 15px;
-  color: #0205a1;
-}
-
-.navbar-mobile a:hover,
-.navbar-mobile .active,
-.navbar-mobile li:hover>a {
-  color: #3f43fd;
 }
 
 .navbar-mobile .getstarted,
@@ -417,24 +395,16 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
+  min-height: 100vh;
   width: 100%;
-  height: 100vh;
-  /* background: url("../img/nit1.jpg")top center; */
+  background: url("../img/nit3.jpg");
   background-size: cover;
+  background-color: white;
   position: relative;
   padding: 120px 0 0 0;
+  padding-bottom: 30px;
 }
-#hero .bg{
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  object-fit: cover;
-  position: absolute;
-  opacity: 0.3;
-  margin-top: -120px;
-  left: 0;
-  z-index: 1;
-}
+
 #hero:before {
   content: "";
   /* background: rgba(2, 5, 161, 0.91); */
@@ -450,47 +420,25 @@ h6 {
   margin: 0 0 20px 0;
   font-size: 48px;
   font-weight: 700;
-  line-height: 190px;
+  line-height: 56px;
   color: black;
 }
 
 #hero h1 span {
-  color: #fff;
+  color: black;
   border-bottom: 4px solid #1acc8d;
 }
 
-#hero p{
-  color: black;
-  margin-bottom: 32px;
-  font-size: 28px;
-  margin-top: 0px;
-  font-weight: 800;
+#hero h1 p{
+  font-size: 30px;
+  line-height: 30px;
 }
-#hero h3 {
+#hero h2 {
   color: black;
-  margin-bottom: 32px;
-  font-size: 32px;
-  margin-top: -50px;
-  font-weight: 700;
+  margin-bottom: 40px;
+  font-size: 25px;
 }
-#hero h4 {
-  color: black;
-  margin-bottom: 32px;
-  font-size: 28px;
-  margin-top: 0px;
-  font-weight: 700;
-}
-hr{
-  height: 3px;
-  color: black;
-  /* width: 4px; */
-  background-color: black;
-  border: none;
-  margin-top: -20px;
-  margin-left: -60px;
-  margin-bottom: 20px;
 
-}
 #hero .btn-get-started {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -517,9 +465,15 @@ hr{
     background-attachment: fixed;
   }
 }
-
+@media (max-width: 1270px) {
+  #hero{
+    background-image :url("../img/nit2.jpg");
+  }
+  
+}
 @media (max-width: 991px) {
   #hero {
+    
     padding-top: 80px;
   }
 
@@ -541,7 +495,7 @@ hr{
     margin-bottom: 10px;
   }
 
-  #hero p {
+  #hero h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
@@ -563,30 +517,17 @@ hr{
     transform: translateY(-10px);
   }
 }
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
 
-.hero-waves {
-  display: block;
-  margin-top: 8px;
-  width: 100%;
-  height: 60px;
-  z-index: 5;
-  position: relative;
+  100% {
+    transform: translateY(-10px);
+  }
 }
 
-.wave1 use {
-  animation: move-forever1 10s linear infinite;
-  animation-delay: -2s;
-}
 
-.wave2 use {
-  animation: move-forever2 8s linear infinite;
-  animation-delay: -2s;
-}
-
-.wave3 use {
-  animation: move-forever3 6s linear infinite;
-  animation-delay: -2s;
-}
 
 @keyframes move-forever1 {
   0% {
@@ -734,86 +675,12 @@ section {
   padding: 40px 0 0 0;
 }
 
-.about .icon-boxes h1 {
-  font-size: 58px;
-  text-align: center;
-  justify-content: center;
+.about .icon-boxes h3 {
+  font-size: 28px;
   font-weight: 700;
-  color: #01036f;
+  color: #010483;
   margin-bottom: 15px;
 }
-
-.about .icon-boxes p{
-  font-size: 20px;
-  text-align: center;
-  justify-content: center;
-  font-weight: 700;
-  color: #0c10e7;
-  margin-bottom: 15px;
-}
-
-
-.key_dates {
-  background-image: url("../../assets/img/computer.jpeg");
-  background-color: rgba(0, 0, 0, 0.6);
-  background-blend-mode: darken;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 70vh;
-  display: flex;
-}
-
-.key_dates h2{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 62px;
-  padding-top: 2%;
-  left: 30%;
-  color: white;
-  position: absolute;
-
-}
-
-.key1,
-.key2,
-.key3,
-.key4 {
-  width: 33.3%;
-  padding-left: 5vw;
-}
-
-.key1 img,
-.key2 img,
-.key3 img {
-  width: 20vmax;
-  height: 10vmax;
-  border-radius: 10px;
-  margin-top: 20vw;
-
-}
-
-.key_dates .key1 p,
-.key_dates .key2 p,
-.key_dates .key3 p,
-.key_dates .key4 p{
-  /* padding-top: 5vw; */
-  margin-top: 170px;
-  /* padding-left: 4%; */
-  font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-}
-
-#three {
-  padding-left: 2vw;
-      margin-bottom: -109px;
-}
-
-
-
-
-
 
 .about .icon-box {
   margin-top: 40px;
@@ -951,6 +818,7 @@ section {
     opacity: 0;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Features
@@ -1203,10 +1071,10 @@ section {
 }
 .team .section-title h3{
   /* text-align: center; */
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 500;
   position: relative;
-  padding-bottom: 30px;
+  padding-bottom: 3px;
   margin-top: 30px;
 }
 .team .member {
@@ -1247,6 +1115,13 @@ section {
   position: relative;
   padding-bottom: 10px;
 }
+
+@media (max-width: 992px) {
+  #team h3{
+    width: 90%;
+    font-size: 20px;
+  }
+  }
 
 .team .member h4::after {
   content: "";
@@ -1525,16 +1400,16 @@ section {
   color: #fff;
 }
 
-.contact .php-email-form {
+.contact .contact-form {
   width: 100%;
   background: #fff;
 }
 
-.contact .php-email-form .form-group {
+.contact .contact-form .form-group {
   padding-bottom: 8px;
 }
 
-.contact .php-email-form .error-message {
+.contact .contact-form .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -1543,11 +1418,11 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .contact-form .error-message br+br {
   margin-top: 25px;
 }
 
-.contact .php-email-form .sent-message {
+.contact .contact-form .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1556,14 +1431,14 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .loading {
+.contact .contact-form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-.contact .php-email-form .loading:before {
+.contact .contact-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1575,22 +1450,22 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.contact .contact-form input,
+.contact .contact-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
 
-.contact .php-email-form input {
+.contact .contact-form input {
   height: 44px;
 }
 
-.contact .php-email-form textarea {
+.contact .contact-form textarea {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .contact-form button[type=submit] {
   background: #1acc8d;
   border: 0;
   padding: 10px 30px;
@@ -1599,7 +1474,7 @@ section {
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .contact-form button[type=submit]:hover {
   background: #34e5a6;
 }
 
@@ -1767,4 +1642,9 @@ section {
   #footer .footer-top .footer-info {
     margin: -20px 0 30px 0;
   }
+}
+
+/* custom style added */
+.nav-link:hover{
+  color:white
 }

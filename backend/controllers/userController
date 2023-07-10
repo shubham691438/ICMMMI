@@ -1,0 +1,59 @@
+const User=require('../models/UserModel')
+const jwt=require('jsonwebtoken')
+require('dotenv').config()
+
+//creating json web token
+const maxAge=2*24*60*60
+const createToken =(id)=>{
+    return jwt.sign({id},process.env.SECRET_JWT_KEY,{expiresIn:maxAge})
+}
+
+//register post request to create a new user in db
+const register = async (req, res) => {
+    const {salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId,password} = req.body
+  
+    try {
+      const user = await User.register(salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId,password)
+  
+      // create a token
+      const token = createToken(user._id)
+      
+      res.status(200).json({userId:user._id,salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId,token})
+    } catch (error) {
+      res.status(400).json({error: error.message})
+    }
+  }
+
+// login post request 
+const login = async (req, res) => {
+    const {email, password} = req.body
+    
+    try {
+      const user = await User.login(email, password)
+  
+      
+      // create a token
+      const token = createToken(user._id)
+  
+      res.status(200).json({
+        userId:user._id,
+        salutation:user.salutation,
+        firstName:user.firstName,
+        lastName:user.lastName,
+        nationality:user.nationality,
+        email:user.email,
+        phoneNo:user.phoneNo,
+        organization:user.organization,
+        category:user.category,
+        noOfPapers:user.noOfPapers,
+        paperId:user.paperId,
+        token})
+    } catch (error) {
+      res.status(400).json({error: error.message})
+    }
+  }  
+  
+  module.exports={
+    login,
+    register
+}
