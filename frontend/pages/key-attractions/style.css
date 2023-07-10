@@ -7,6 +7,9 @@
     height: inherit;
     padding: 4em;
 }
+#main2{
+    display: none;
+}
 #containe{
     display: flex;
     /* flex-wrap: wrap; */
@@ -43,8 +46,8 @@
     font-family: "Open Sans", sans-serif;
 }
 #text p{
-    color: #1acc8d;
-    font-weight: 800;
+    color: brown;
+    font-weight: 1000;
     font-size: 2rem;
     font-family: "Open Sans", sans-serif;
 }
@@ -57,10 +60,16 @@
         flex-direction: column;
     }
     #top{
-        padding: 2em 0 0 0;
+        padding: 3em 0 0;
     }
     #bottom{
-        padding: 0 0 0 2em;
+        padding: 0 0  2em;
+    }
+    #main{
+        display: none;
+    }
+    #main2{
+        display: block ;
     }
 }
 
@@ -95,8 +104,64 @@
         font-weight: 700;
         line-height: 60px;
         color: white;
+    }
 }
+@media(max-width:360px){
+    #containe #text{
+        margin: 2em;
+        padding-top: 0.5em;
+    }
+    #main{
+        display: none;
+    }
+    #main2{
+        display: block ;
+    }
 }
+@media(max-width: 280px){
+    #containe #text{
+        margin: 3em ;
+
+    }
+    #containe img{
+        height: 50em;
+    }
+}
+@media(width: 912px){
+    #containe{
+        display: inline;
+
+    }
+    #containe img{
+        width: 40em;
+    }
+    #main{
+        display: none;
+    }
+    #main2{
+        display: block ;
+    }
+}
+@media (width:1200px){
+    #containe{
+        display: flex;
+        flex-direction: column;
+    }
+    #top{
+        padding: 3em 0 0;
+    }
+    #bottom{
+        padding: 0 0  2em;
+    }
+    #main{
+        display: none;
+    }
+    #main2{
+        display: block ;
+    }
+}
+
+
 
 
 
