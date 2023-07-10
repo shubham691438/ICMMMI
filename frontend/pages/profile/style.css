@@ -1,166 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-*{
-    padding: 0;
-    margin: 0;
+.spacing{
+    margin-top: 100px;
 }
 
-#hero:before {
-    content: "url()";
-    background: rgba(2, 5, 161, 0.91) no-repeat;
-    /* background-image: url("assets/img/nit1.jpg"); */
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-#hero h1 {
-    margin: 0 0 20px 0;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 190px;
-    color: white;
-}
-#hero{
-    height: 395px;
-}
-@media (max-width: 912px) {
-    #hero{
-        height: 318.5px;
+body{margin-top:20px;
+    color: #9b9ca1;
     }
-    #hero h1 {
-        margin: 0 0 2px 0;
-        font-size: 48px;
-        font-weight: 700;
-        line-height: 60px;
-        color: white;
-}
-}
+    .bg-secondary-soft {
+        background-color: rgba(208, 212, 217, 0.1) !important;
+    }
+    .rounded {
+        border-radius: 5px !important;
+    }
+    .py-5 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    .px-4 {
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important;
+    }
+    .file-upload .square {
+        height: 250px;
+        width: 250px;
+        margin: auto;
+        vertical-align: middle;
+        border: 1px solid #e5dfe4;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+    .text-secondary {
+        --bs-text-opacity: 1;
+        color: rgba(208, 212, 217, 0.5) !important;
+    }
+    .btn-success-soft {
+        color: #28a745;
+        background-color: rgba(40, 167, 69, 0.1);
+    }
+    .btn-danger-soft {
+        color: #dc3545;
+        background-color: rgba(220, 53, 69, 0.1);
+    }
+    .form-control {
+        display: block;
+        width: 100%;
+        padding: 0.5rem 1rem;
+        font-size: 0.9375rem;
+        font-weight: 400;
+        line-height: 1.6;
+        color: #29292e;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #e5dfe4;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 5px;
+        -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+        transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-*{padding: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif
-}
-
-#left{
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    align-items: center;
-    align-self: center;
-    border-right: 0.5px solid rgb(151, 149, 147);
-}
-svg{
-    margin: 10em 0 10em 0;
-}
-
-#right{
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-left: none;
-    width: 62em;
-}
-
-.containe{
-    /* height:100vh; */
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background-color:#ffffff
-}
-
-.card{
-    margin-top: 17em;
-    margin-bottom: 10em;
-    width:350px;
-    height: 51em;
-    background-color:#fff;
-    /* box-shadow:0px 15px 30px rgba(0,0,0,0.1); */
-    border: 2px solid black;
-    border-radius:10px;
-    overflow:hidden
-}
-
-.card .info{
-    padding:10px;
-    display:flex;
-    justify-content:space-between;
-    border-bottom:none;
-    background-color:rgb(255, 253, 253);
-    position: relative;
-}
-.card .info span{
-    margin-left: 3em;
-
-    font-size: 3em;
-    font-weight: 500;
-    color: #080a7b;
-}
+    .profile-details{
+        background-color: #fff;
+        border-radius: 33px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 2rem !important;
+    }
 
 
-.card .info button{
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 5em;
-    width: 6em;
-    border:none;
-    color:#fff;
-    border-radius:0px 4px 0px 40px;
-    background-color:#000;
-    cursor:pointer;
-    text-transform:uppercase;}
-    
-    .card .forms{
-        padding: 10px;
-        margin-top: 3em;
+    /* profile image */
+    body{
+        background-color: #eee;
+    }
+    .card{
+        background-color: #fff;
+        width: 280px;
+        border-radius: 33px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 2rem !important;
     }
     
-    .card .inputs{
-        display:flex;
-        flex-direction:column;
-        margin-bottom: 0.5em;
-    }
     
-    .card .inputs span{
-        font-size: 1em;
-        font-weight: 600;
-        color: #1abd84;
-        margin-left: 1em;
-    }
-    
-    .card .inputs input{
-        height:30px;
-        padding:2px 10px;
-        font-size:17px;
-        box-shadow:none;
-        outline: 1px;
-        margin: 0.5em 1em;
-        border-radius: 3px;
-    }
-    .card .inputs input:focus{
-        border: 2px solid rgb(30, 156, 127);
-    }
-    
-    .card .inputs input[type="text"][readonly]{
-        border: 2px solid rgba(0,0,0,0);
-    }
-    .card .inputs input[type="number"][readonly]{
-        border: 2px solid rgba(0,0,0,0);
-        background-color: transparent;
-    }
-    .card .inputs input[type="password"][readonly]{
-        border: 2px solid rgba(0,0,0,0);
-    }
-    .card .inputs input[type="email"][readonly]{
-        border: 2px solid rgba(0,0,0,0);
-    }
-    .names{
-        display: flex;
-        /* justify-content: space-between; */
-    }
-    .names input{
-        width: 26.5em;
-    }
