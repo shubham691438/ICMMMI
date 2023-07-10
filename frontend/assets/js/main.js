@@ -1,4 +1,5 @@
 
+
 (function() {
   "use strict";
 
@@ -271,3 +272,34 @@
   new PureCounter();
 
 })()
+
+
+//custom script added
+let navButton=document.querySelector("#header #navbar button")
+if(localStorage.getItem('user'))
+{
+  
+  navButton.innerText="Logout";
+  
+}
+else if(localStorage.getItem('admin'))
+{
+  navButton.innerText="Logout";
+  
+  
+}
+
+navButton.parentNode.addEventListener('click',function(event){
+    if(navButton.innerText=="Logout")
+    {
+        event.preventDefault();
+        localStorage.removeItem('user');
+        localStorage.removeItem('admin');
+        navButton.innerText="Login";
+        window.location.href="../../index.html"
+        
+    }
+
+})
+
+
