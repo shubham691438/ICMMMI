@@ -1,12 +1,20 @@
 /* Hero Section */
 
+.header-box{
+  background-color: rgb(0,0,0,0.3);
+  margin-top: 80px;
+  padding-bottom: 10px;
+  /* width:100px;
+  height: 50x; */
+
+}
 #hero h1 p{
   margin-top: 5px;
   font-size: 30px;
   line-height: 30px;
 }
 #hero h2 {
-  color: black;
+  color: white;
   margin-bottom: 40px;
   font-size: 25px;
 }
