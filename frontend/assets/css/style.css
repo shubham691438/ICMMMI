@@ -106,7 +106,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 80px;
+  height: 120px;
   transition: all 0.5s;
   z-index: 997;
   box-shadow: 5px 5px 5px rgb(123, 122, 122);
@@ -122,12 +122,12 @@ h6 {
 #header.header-scrolled {
   /* background: rgba(1, 4, 136, 0.9); */
   background: #109fb6fd;
-  height: 70px;
+  height: 120px;
   color: white;
 }
 
 #header .logo h1 {
-  font-size: 28px;
+  font-size: 38px;
   margin: 0;
   padding: 0;
   line-height: 2;
@@ -143,7 +143,8 @@ h6 {
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 52px;
+  max-height: 82px;
+  margin-left: -60px;
 }
 
 @media(max-width: 768px) {
@@ -192,6 +193,7 @@ h6 {
   white-space: nowrap;
   transition: 0.3s;
 }
+
 
 .navbar a i,
 .navbar a:focus i {
