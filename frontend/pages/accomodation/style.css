@@ -371,8 +371,21 @@ h6 {
     padding: 0;
     margin: 0;
     max-height: 82px;
-    margin-left: -60px;
+    /* margin-left: 60px; */
 }
+
+@media(max-width: 768px) {
+    #header .logo h1 {
+        font-size: 24px;
+        padding: 8px 0;
+    }
+
+    #header .logo img {
+        max-height: 50px;
+
+    }
+}
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -656,22 +669,43 @@ h6 {
     margin-top: -30px;
 }
 
-@media (min-width: 1024px) {
-    #hero {
-        background-attachment: fixed;
-    }
-}
-
 @media (max-width: 991px) {
+<<<<<<< HEAD
+    #hero {
+
+        padding-top: 80px;
+    }
+    .nit-logo {
+        display: none;
+=======
     #hero h1 {
         font-size: 32px;
         margin-left: 30px;
+>>>>>>> 181fb6ff1d45efbe3f579972bbdf02dce9d74146
     }
 
-    #hero h2 {
-        font-size: 18px;
-        margin-left: 30px;
+    #hero .animated {
+        animation: none;
     }
+
+    #hero .hero-img {
+        text-align: center;
+    }
+
+    #hero .hero-img img {
+        max-width: 50%;
+    }
+
+   #hero h1 {
+       font-size: 32px;
+       margin-left: 30px;
+       margin-top: -15px;
+   }
+
+   #hero h2 {
+       font-size: 18px;
+       margin-left: 10px;
+   }
 }
 
 @media (max-width: 575px) {
@@ -679,17 +713,6 @@ h6 {
         width: 80%;
     }
 }
-
-@keyframes up-down {
-    0% {
-        transform: translateY(10px);
-    }
-
-    100% {
-        transform: translateY(-10px);
-    }
-}
-
 
 /*--------------------------------------------------------------
 # Sections General

@@ -56,6 +56,46 @@
     height: 130vh;
 }
 
+@media (max-width: 991px) {
+  #hero1 {
+
+    padding-top: 80px;
+  }
+
+  .nit-logo {
+    display: none;
+  }
+
+  #hero .animated {
+    animation: none;
+  }
+
+  #hero .hero-img {
+    text-align: center;
+  }
+
+  #hero .hero-img img {
+    max-width: 50%;
+  }
+
+  #hero1 h1 {
+    font-size: 33px;
+    margin-left: 10px;
+    margin-top: 155px;
+  }
+
+  #hero1 h2 {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  #hero .hero-img img {
+    width: 80%;
+  }
+}
+
 .head{
     display:flex;
     justify-content:center;
