@@ -52,8 +52,56 @@ const login = async (req, res) => {
       res.status(400).json({error: error.message})
     }
   }  
+
+  //request to get user
+  const getUser=async(req,res)=>{
+
+      // Get the user ID from the request parameters
+      const userId = req.params.id;
+
+      try{
+          // Find the user in the array based on the ID
+          const user = await User.findOne({_id:userId});
+          if (user) {
+            // User found,
+            res.status(200).json(user);
+          } else {
+            // User not found, 
+            res.status(404).json({ error: 'User not found' });
+          }
+      }
+      catch(error){
+        res.status(500).json({error: error.message})
+      }
+  } 
+
+  //request to update user data
+  const updateUser= async (req,res)=>{
+
+    const userId = req.params.id;
+    const {salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId} = req.body
+    
+  
+    try {
+      // Find the user by ID and update the data
+      const user = await User.findByIdAndUpdate({ _id: userId }, { $set: {salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId}},{ new: true });
+  
+      if (user) {
+        // User updated successfully, send the updated user data as a response
+        res.status(200).json(user);
+      } else {
+        // User not found, 
+        res.status(404).json({ error: 'User not found' });
+      }
+    } catch (error) {
+      // Error occurred during the update, send an error response
+      res.status(500).json({ error: 'Internal server error' });
+    }
+  }
   
   module.exports={
     login,
-    register
+    register,
+    getUser,
+    updateUser
 }

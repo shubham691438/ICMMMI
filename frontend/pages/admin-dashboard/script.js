@@ -2,8 +2,16 @@
 let totalRegistrations=0,indianRegistartions=0,industries=0,academicians=0,students=0, accompanions=0,others=0;
 
 async function fetchUsers(){
+
+    const admin=JSON.parse(localStorage.getItem('admin'));
+
+    if(!admin)
+    {
+        window.location.href="../login/index.html"
+        return;
+    }
     try{
-        const admin=JSON.parse(localStorage.getItem('admin'));
+       
         
         if(!admin)
         {
@@ -166,3 +174,5 @@ function updatePieChart(){
     },
     });
 }
+
+

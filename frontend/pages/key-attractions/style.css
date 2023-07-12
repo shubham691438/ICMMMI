@@ -7,6 +7,9 @@
     height: inherit;
     padding: 4em;
 }
+#main2{
+    display: none;
+}
 #containe{
     display: flex;
     /* flex-wrap: wrap; */
@@ -62,6 +65,13 @@
     #bottom{
         padding: 0 0  2em;
     }
+    #main{
+        display: none;
+    }
+    #main2{
+        display: block ;
+
+    }
 }
 
 #hero:before {
@@ -95,23 +105,31 @@
         font-weight: 700;
         line-height: 60px;
         color: white;
-}
+    }
 }
 @media(max-width:360px){
     #containe #text{
-        margin: 4em;
+        margin: 2em;
         padding-top: 0.5em;
+    }
+    #main{
+        display: none;
+    }
+    #main2{
+        display: block ;
     }
 }
 @media(max-width: 280px){
     #containe #text{
-        margin:6em ;
+        margin: 3em ;
 
     }
     #containe img{
         height: 50em;
     }
 }
+
+
 @media(width: 912px){
     #containe{
         display: inline;
@@ -120,6 +138,14 @@
     #containe img{
         width: 40em;
     }
+
+    #main{
+        display: none;
+    }
+    #main2{
+        display: block ;
+    }
+
 }
 @media (width:1200px){
     #containe{
@@ -132,6 +158,13 @@
     #bottom{
         padding: 0 0  2em;
     }
+    #main{
+        display: none;
+    }
+    #main2{
+        display: block ;
+    }
+
 }
 
 
