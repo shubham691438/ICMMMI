@@ -212,7 +212,31 @@ section {
     width:100%;
 }
 
- @media (max-width: 992px)
+.member2{
+  width:260px;
+}
+ 
+ /* @media (min-width: 560px)
+{
+.member2 {
+    flex: 0 0 auto;
+    width:46vw;
+    /* font-size: 2px; */
+
+}
+}  */
+
+/* @media (max-width: 992px)
+{
+.member2 {
+    flex: 0 0 auto;
+    width:46vw;
+    /* font-size: 2px; */
+
+}
+}  
+
+/* @media (max-width: 498px)
 {
 .member2 {
     flex: 0 0 auto;
@@ -220,4 +244,28 @@ section {
     font-size: 2px;
 
 }
+} */
+
+/* @media (max-width: 503px)
+{
+.member2 {
+    flex: 0 0 auto;
+    width:100vw;
+    /* font-size: 2px; */
+
 }
+} 
+
+.member7 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.member2 {
+  min-width: 260px;
+  flex: 1 1 auto; /* Allow boxes to grow and shrink equally */
+}
+    
+
+
+
