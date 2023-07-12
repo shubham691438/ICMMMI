@@ -205,7 +205,7 @@
         <h2>Registeration form</h2>
         <p>Register YourSelf</p>
       </div>
-
+      <div><h3 style="color: green">Details To make Payment Will be Updated Soon....</h3></div>
       <div class="registration-form" id="registration-form">
         <form >
             <div class="form-icon">
@@ -238,12 +238,14 @@
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="nationality">Nationality</label>
-                <input type="text" class="form-control" id="nationality" placeholder="nationality" required>
+                <select class="form-control " id="nationality" required>
+                  <option value="Indian">Indian</option>
+                  <option value="International">International</option>
+                </select>
               </div>
               <div class="form-group col-md-6">
                 <label for="category">Category</label>
                 <select class="form-control " id="category" required>
-                  <option value="Select Category">Select Category</option>
                   <option value="Delegates from Industry">Delegates from Industry</option>
                   <option value="Academician">Academician</option>
                   <option value="Research scholar or student">Research scholar or student</option>
@@ -281,6 +283,16 @@
             <div class="form-group">
               <label for="password">Password</label>
                 <input type="password" class="form-control" id="password" placeholder="Password" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="amount">Amount to be Paid</label>
+                <input type="string" class="form-control" id="amount"  value="" readonly>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="TransactionRefNo">Transaction Reference Number</label>
+                <input type="text" class="form-control" id="TransactionRefNo" placeholder="Enter Transaction Reference Number" required>
+              </div>
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-block create-account">Register</button>
@@ -342,11 +354,13 @@
 
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>IMPORTANT DATES</h4>
-            <strong>Abstract Submission :  </strong> August 31, 2023<br><br>
-            <strong>Registration Open:</strong> December 1, 2023<br><br>
-            <strong>Early Bird Registration:</strong> December 31, 2023<br><br>
-            <strong>Last Date for Registration:</strong> January 31, 2024<br><br>
-            <strong>Conference Date:</strong> 23 - 25 Febuary, 2024<br><br>
+            <strong>EXTENDED ABSTRACT SUBMISSION : </strong> September 15th, 2023 <br><br>
+                  <strong>INTIMATION OF ABSTRACT ACCEPTANCE : </strong> September 30th, 2023 <br><br>
+                  <strong>FULL PAPER SUBMISSION : </strong> November 30th 2023 <br><br>
+                  <strong>REGISTRATION OPEN:</strong> Febuary 1st, 2024 <br><br>
+                  <strong>EARLY BIRD REGISTRATION:</strong>  April 1st, 2024 <br><br>
+                  <strong>LAST DATE FOR REGISTRATION:</strong> May 1st, 2024 <br><br>
+                  <strong>CONFERENCE DATE:</strong> 24 - 26 May, 2024<br><br>
 
           </div>
           

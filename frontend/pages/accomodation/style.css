@@ -411,15 +411,17 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-    background-image: url("../../assets/img/bg2.jpg");
-    margin-top: 85px;
-    margin-bottom: -40px;
-    height: 400px;
+    width: 100%;
+    background: url("../../assets/img/bizton-hotel.jpg");
     background-size: cover;
+    background-color: white;
+    position: relative;
+    padding: 120px 0 0 0;
+    padding-bottom: 30px;
 }
 
 #hero h1 {
-    color: black;
+    color: white;
     font-size: 55px;
     font-weight: 700;
     margin-top: 50px;
@@ -439,12 +441,18 @@ h6 {
 }
 
 @media (max-width: 991px) {
+<<<<<<< HEAD
     #hero {
 
         padding-top: 80px;
     }
     .nit-logo {
         display: none;
+=======
+    #hero h1 {
+        font-size: 32px;
+        margin-left: 30px;
+>>>>>>> 181fb6ff1d45efbe3f579972bbdf02dce9d74146
     }
 
     #hero .animated {
