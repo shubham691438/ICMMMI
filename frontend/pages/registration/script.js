@@ -1,3 +1,86 @@
+
+// Setting amount
+
+
+updateAmountValue();
+document.getElementById('nationality').addEventListener('input', function(event) {
+  updateAmountValue();
+});
+
+document.getElementById('category').addEventListener('input', function(event) {
+  updateAmountValue();
+});
+
+function updateAmountValue() {
+    // Indian Nationals
+  const indianDelegateIndustryEarlyBird = 5000;
+  const indianDelegateIndustryAfterNovember = 6000;
+
+  const indianAcademiciansEarlyBird = 5000;
+  const indianAcademiciansAfterNovember = 6000;
+
+  const indianResearchScholarsStudentsEarlyBird = 3000;
+  const indianResearchScholarsStudentsAfterNovember = 4000;
+
+  const indianAccompanyingPersonsEarlyBird = 2000;
+  const indianAccompanyingPersonsAfterNovember = 2500;
+
+  // International
+  const internationalDelegateIndustryEarlyBird = 250;
+  const internationalDelegateIndustryAfterNovember = 300;
+
+  const internationalAcademiciansEarlyBird = 150;
+  const internationalAcademiciansAfterNovember = 200;
+
+  const internationalResearchScholarsStudentsEarlyBird = 80;
+  const internationalResearchScholarsStudentsAfterNovember = 100;
+
+  const internationalAccompanyingPersonsEarlyBird = 80;
+  const internationalAccompanyingPersonsAfterNovember = 100;
+
+  const nationality = document.getElementById('nationality').value;
+  const category = document.getElementById('category').value;
+  let amount = 0;
+
+  if (nationality === 'Indian') {
+    switch (category) {
+      case 'Delegates from Industry':{ 
+        amount=indianDelegateIndustryEarlyBird
+        break;}
+      case 'Academician':{
+        amount = indianAcademiciansEarlyBird;
+        break;}
+      case 'Research scholar or student':{
+        amount = indianResearchScholarsStudentsEarlyBird;
+        break;}
+      case 'Accompanying persons':{
+        amount = indianAccompanyingPersonsEarlyBird;
+        break;}
+    }
+    document.getElementById('amount').value = "Rs "+amount;
+  } else {
+    // For International Nationals
+    switch (category) {
+      case 'Delegates from Industry':{
+        amount=internationalDelegateIndustryEarlyBird;
+        break;}
+      case 'Academician':{
+        amount = internationalAcademiciansEarlyBird;
+        break;}
+      case 'Research scholar or student':{
+        amount = internationalResearchScholarsStudentsEarlyBird;
+        break;}
+      case 'Accompanying persons':{
+        amount = internationalAccompanyingPersonsEarlyBird;
+        break;}
+    }
+    document.getElementById('amount').value = "USD "+amount;
+  }
+  // console.log(nationality,category,amount)
+  
+}
+
+//registration form
 let form=document.getElementById('registration-form');
 
 form.addEventListener('submit',function(event){

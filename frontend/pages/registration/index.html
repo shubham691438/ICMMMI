@@ -235,12 +235,14 @@
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="nationality">Nationality</label>
-                <input type="text" class="form-control" id="nationality" placeholder="nationality" required>
+                <select class="form-control " id="nationality" required>
+                  <option value="Indian">Indian</option>
+                  <option value="International">International</option>
+                </select>
               </div>
               <div class="form-group col-md-6">
                 <label for="category">Category</label>
                 <select class="form-control " id="category" required>
-                  <option value="Select Category">Select Category</option>
                   <option value="Delegates from Industry">Delegates from Industry</option>
                   <option value="Academician">Academician</option>
                   <option value="Research scholar or student">Research scholar or student</option>
@@ -278,6 +280,16 @@
             <div class="form-group">
               <label for="password">Password</label>
                 <input type="password" class="form-control" id="password" placeholder="Password" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="amount">Amount to be Paid</label>
+                <input type="string" class="form-control" id="amount"  value="" readonly>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="TransactionRefNo">Transaction Reference Number</label>
+                <input type="text" class="form-control" id="TransactionRefNo" placeholder="Enter Transaction Reference Number" required>
+              </div>
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-block create-account">Register</button>
