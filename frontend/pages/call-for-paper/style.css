@@ -72,15 +72,15 @@ body {
 --------------------------------------------------------------*/
 #hero {
     min-height: initial;
-    background-image: url("../../assets/img/nit_pic2.jpg");
+    background-image: url("../../assets/img/3.png");
     margin-top: 85px;
     margin-bottom: -40px;
     background-size: cover;
 }
 
 #hero h1{
-    color: white;
-    font-size: 55px;
+    color: black;
+    font-size: 65px;
     font-weight: 700;
     margin-top: 50px;
     margin-left: 100px;

@@ -1,6 +1,26 @@
 .spacing{
   margin-top: 128px;
 }
+
+#hero1{
+  height: 450px;
+  background-image: url("../../assets/img/9.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#hero1 h1{
+  font-size: 70px;
+  font-weight: 700;
+  color: white;
+  margin-top: 180px;
+  margin-left: -70px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
 .head{
   display:flex;
   justify-content:center;
