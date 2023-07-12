@@ -1,3 +1,23 @@
+#hero1 {
+  height: 450px;
+  background-image: url("../../assets/img/6.jpeg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#hero1 h1 {
+  font-size: 70px;
+  font-weight: 700;
+  color: black;
+  margin-top: 150px;
+  margin-left: 120px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
 .spacing{
   margin-top: 100px;
 }
@@ -10,12 +30,6 @@
 
 .card{
     margin: 20px 0;
-}
-
-.container{
-    /* display: flex;
-    justify-content: center; */
-    
 }
 .container1{
     display: inline-flex;
