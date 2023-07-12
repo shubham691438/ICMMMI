@@ -20,6 +20,7 @@
 }
 
 @media (max-width: 575px) {
+  
   #hero h1 p{
       font-size: 20px;
       line-height: 20px;
