@@ -30,10 +30,10 @@ section {
     display: block;
 }
 body {
-    color: #666;
+    /* color: #666; */
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    background: #fff;
+    /* background: #fff; */
 }
 .text-maroon {
     color: maroon;
@@ -41,3 +41,14 @@ body {
 .text-center {
     text-align: center!important;
 }
+
+
+
+@media only screen and (max-width: 362px) {
+    body{
+      font-size: 14px;
+    }
+    .table{font-size: 12px;
+
+    }
+  }
