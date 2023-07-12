@@ -1,5 +1,5 @@
 .spacing{
-  margin-top: 100px;
+  margin-top: 128px;
 }
 .head{
   display:flex;
@@ -8,6 +8,7 @@
   margin-bottom: 2%;
   padding-top: 0%;
 }
+
 .box{
   border:2px solid black;
   margin-left: 1vw;
@@ -24,12 +25,15 @@
   justify-content:center;
 }
 
-
 .sect {
-  padding: 0vh 0;
+  padding: 0 0;
   overflow: hidden;
 }
 
+section {
+  padding: 7px 0;
+  overflow: hidden;
+}
 
 .section-bg {
   background-color: #f3f5fa;
@@ -82,7 +86,7 @@
   padding: 30px;
   border-radius: 5px;
   background: #fff;
-  transition: 0.5s;
+  /* transition: 0.5s; */
   height: 90%;
   margin-bottom: 10px;
 }
@@ -95,14 +99,18 @@
 }
 
 .team .member .pic img {
-  transition: ease-in-out 0.3s;
+  transition:none;
   width: 180px;
   height: 150px;
 }
 
-.team .member:hover {
-  transform: translateY(-10px);
+.team .member:hover img {
+  transform: none;
 }
+
+/* .team .member:hover {
+  transform: translateY(-10px);
+} */
 
 .team .member .member-info {
   padding-left: 30px;
@@ -135,6 +143,7 @@
   padding: 15px 0px;
   border-radius: 0 0 0px 0px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+  margin:auto;
 }
 
 .team .member span {
