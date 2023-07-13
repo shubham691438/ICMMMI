@@ -145,6 +145,13 @@ h6 {
     margin-left: -60px;
 }
 
+@media (max-width: 992px) {
+   
+    #header .nit-logo{
+        display: none;
+    }
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -419,9 +426,9 @@ h6 {
 
 #hero h2 {
     font-size: 22px;
-    color: white;
+    color: black;
     line-height: 25px;
-    margin-left: 100px;
+    margin-left: 200px;
     margin-top: -30px;
 }
 @media (max-width: 991px) {
@@ -436,14 +443,6 @@ h6 {
 
     #hero .animated {
         animation: none;
-    }
-
-    #hero .hero-img {
-        text-align: center;
-    }
-
-    #hero .hero-img img {
-        max-width: 50%;
     }
 
     #hero h1 {
@@ -714,6 +713,47 @@ section {
     }
 }
 
+/*--------------------------------------------------------------
+# Features
+--------------------------------------------------------------*/
+.features {
+    padding-top: 0px;
+}
+
+.features .icon-box {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    transition: 0.3s;
+    border: 1px solid #eef0ef;
+}
+
+.features .icon-box i {
+    font-size: 32px;
+    padding-right: 10px;
+    line-height: 1;
+}
+
+.features .icon-box h3 {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 16px;
+}
+
+.features .icon-box h3 a {
+    color: #37423b;
+    transition: 0.3s;
+}
+
+.features .icon-box:hover {
+    border-color: #5fcf80;
+}
+
+.features .icon-box:hover h3 a {
+    color: #5fcf80;
+}
 
 
 

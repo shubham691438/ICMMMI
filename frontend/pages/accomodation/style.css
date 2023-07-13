@@ -439,20 +439,15 @@ h6 {
     margin-left: 100px;
     margin-top: -30px;
 }
-
 @media (max-width: 991px) {
-<<<<<<< HEAD
     #hero {
-
+        /* margin-top: -100px; */
+        height: 55vh;
         padding-top: 80px;
     }
+
     .nit-logo {
         display: none;
-=======
-    #hero h1 {
-        font-size: 32px;
-        margin-left: 30px;
->>>>>>> 181fb6ff1d45efbe3f579972bbdf02dce9d74146
     }
 
     #hero .animated {
@@ -460,6 +455,7 @@ h6 {
     }
 
     #hero .hero-img {
+        margin-bottom: 20px;
         text-align: center;
     }
 
@@ -467,16 +463,22 @@ h6 {
         max-width: 50%;
     }
 
-   #hero h1 {
-       font-size: 32px;
-       margin-left: 30px;
-       margin-top: -15px;
-   }
+    #hero h1 {
+        font-size: 33px;
+        margin-left: 10px;
+        margin-top: 35px;
+    }
 
-   #hero h2 {
-       font-size: 18px;
-       margin-left: 10px;
-   }
+    #hero h2 {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 575px) {
+    #hero .hero-img img {
+        width: 80%;
+    }
 }
 
 @media (max-width: 575px) {
