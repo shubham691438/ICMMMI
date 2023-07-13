@@ -1,5 +1,6 @@
 
 let totalRegistrations=0,indianRegistartions=0,industries=0,academicians=0,students=0, accompanions=0,others=0;
+let amount=0;
 
 async function fetchUsers(){
 
@@ -42,6 +43,8 @@ async function fetchUsers(){
             else if(user.category=="Accompanying persons") accompanions++;
             else others++;
 
+            amount+=user.amount?user.amount:0;
+
             const htmlMarkup=`
             <div class="card shadow mb-4">
             <div class="card-header py-3">
@@ -80,6 +83,14 @@ async function fetchUsers(){
                             <p><strong>Paper Id</strong>: ${user.paperId}</p>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col col-xl-6 col-12">
+                            <p><strong>Amount Paid </strong> : ${user.amount}</p>
+                        </div>
+                        <div class="col col-xl-6 col-12" >
+                            <p><strong>Transaction Reference Number</strong>: ${user.transactionRefNo}</p>
+                        </div>
+                    </div>
                 </diV>
 
             </div>
@@ -93,35 +104,30 @@ async function fetchUsers(){
 
         const categoryHtmlMarkup=`
         <h4 class="small font-weight-bold">Delegates from Industries <span
-        class="float-right" ">${industries*100/totalRegistrations}%</span></h4>
+        class="float-right" ">${(industries*100/totalRegistrations).toFixed(2)}%</span></h4>
         <div class="progress mb-4">
             <div class="progress-bar bg-danger" role="progressbar" style="width: ${industries*100/totalRegistrations}%"
                 aria-valuenow=${industries*100/totalRegistrations} aria-valuemin="0" aria-valuemax="100"></div>
         </div>
         <h4 class="small font-weight-bold">Academicians <span
-                class="float-right">${academicians*100/totalRegistrations}%</span></h4>
+                class="float-right">${(academicians*100/totalRegistrations).toFixed(2)}%</span></h4>
         <div class="progress mb-4">
             <div class="progress-bar bg-warning" role="progressbar" style="width: ${academicians*100/totalRegistrations}%"
                 aria-valuenow=${academicians*100/totalRegistrations} aria-valuemin="0" aria-valuemax="100"></div>
         </div>
         <h4 class="small font-weight-bold">Research scholars & students<span
-                class="float-right">${students*100/totalRegistrations}%</span></h4>
+                class="float-right">${(students*100/totalRegistrations).toFixed(2)}%</span></h4>
         <div class="progress mb-4">
             <div class="progress-bar" role="progressbar" style="width: ${students*100/totalRegistrations}%"
                 aria-valuenow=${students*100/totalRegistrations} aria-valuemin="0" aria-valuemax="100"></div>
         </div>
         <h4 class="small font-weight-bold">Accompanying persons <span
-                class="float-right">${accompanions*100/totalRegistrations}%</span></h4>
+                class="float-right">${(accompanions*100/totalRegistrations).toFixed(2)}%</span></h4>
         <div class="progress mb-4">
             <div class="progress-bar bg-info" role="progressbar" style="width: ${accompanions*100/totalRegistrations}%"
                 aria-valuenow=${accompanions*100/totalRegistrations} aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-        <h4 class="small font-weight-bold">Accompanying persons <span
-                class="float-right">${others*100/totalRegistrations}%</span></h4>
-        <div class="progress mb-4">
-            <div class="progress-bar bg-info" role="progressbar" style="width: ${others*100/totalRegistrations}%"
-                aria-valuenow=${others*100/totalRegistrations} aria-valuemin="0" aria-valuemax="100"></div>
-        </div>`
+        `
 
         document.getElementById('category-progress-bar').insertAdjacentHTML('beforeend',categoryHtmlMarkup);
         updatePieChart();

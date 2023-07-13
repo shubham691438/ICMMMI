@@ -302,4 +302,11 @@ navButton.parentNode.addEventListener('click',function(event){
 
 })
 
+// window.addEventListener("DOMContentLoaded", () => {
+//   const messageElement = document.getElementById("message");
+//   const containerWidth = document.querySelector(".container").offsetWidth;
+//   messageElement.style.width = containerWidth + "px";
+// });
+
+
 
