@@ -17,6 +17,10 @@
 }
 
 .our_room .room {
+    background-color: #fff;
+    border-radius: 33px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2rem !important;
     text-align: center;
     background-color: #fff;
     margin-bottom: 30px;
@@ -670,18 +674,9 @@ h6 {
 }
 
 @media (max-width: 991px) {
-<<<<<<< HEAD
-    #hero {
-
-        padding-top: 80px;
-    }
-    .nit-logo {
-        display: none;
-=======
     #hero h1 {
         font-size: 32px;
         margin-left: 30px;
->>>>>>> 181fb6ff1d45efbe3f579972bbdf02dce9d74146
     }
 
     #hero .animated {
