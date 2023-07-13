@@ -1,5 +1,6 @@
 "use strict";
 const nodemailer = require("nodemailer");
+require('dotenv').config()
 
 const sendMail=async(req,res)=>{
     const {senderName,senderEmail,subject,msg}=req.body;
@@ -9,8 +10,8 @@ const sendMail=async(req,res)=>{
             host: 'smtp.gmail.com',
             port: 587,
             auth: {
-                user: 'icmmmi2024@gmail.com',
-                pass: 'lquwolsisupdkymv'
+                user: process.env.OFFICIAL_EMAIL,
+                pass: process.env.PASS
             }
         });
 
