@@ -107,7 +107,7 @@ form.addEventListener('submit',function(event){
     let amount=document.getElementById('amount').value;
     let transactionRefNo=document.getElementById('transactionRefNo').value;
 
-    console.log(salutation,firstName,lastName,nationality,category,organization,noOfPapers,paperId,email,phoneNo,password)
+    // console.log(salutation,firstName,lastName,nationality,category,organization,noOfPapers,paperId,email,phoneNo,password)
 
     async function postFormData(data) {
         try {
