@@ -86,7 +86,7 @@ section {
   padding: 30px;
   border-radius: 5px;
   background: #fff;
-  /* transition: 0.5s; */
+  transition: 0.5s;
   height: 90%;
   margin-bottom: 10px;
 }
@@ -108,9 +108,9 @@ section {
   transform: none;
 }
 
-/* .team .member:hover {
+.team .member:hover {
   transform: translateY(-10px);
-} */
+}
 
 .team .member .member-info {
   padding-left: 30px;
