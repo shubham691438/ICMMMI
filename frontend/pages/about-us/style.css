@@ -121,7 +121,7 @@ h6 {
 #header.header-scrolled {
     /* background: rgba(1, 4, 136, 0.9); */
     background: #109fb6fd;
-    height: 70px;
+    height: 120px;
     color: white;
 }
 
@@ -577,7 +577,7 @@ section {
                 font-size: 40px;
                 font-weight: 600;
                 margin-left: 45px;
-                color: #010483;
+                color: black;
                 margin-bottom: 20px;
                 font-family: "Poppins", sans-serif;
             }
