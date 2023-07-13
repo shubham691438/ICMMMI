@@ -9,8 +9,8 @@ const sendMail=async(req,res)=>{
             host: 'smtp.gmail.com',
             port: 587,
             auth: {
-                user: 'ss691438@gmail.com',
-                pass: 'xgppxfkhqgvkenal'
+                user: 'icmmmi2024@gmail.com',
+                pass: 'lquwolsisupdkymv'
             }
         });
 
@@ -24,7 +24,7 @@ Message:
             // send mail with defined transport object
             const info = await transporter.sendMail({
               from: `${senderName} <${senderEmail}>`, // sender address
-              to: "krish691438@gmail.com", // list of receivers
+              to: "icmmmi2024@gmail.com", // list of receivers
               subject: `${subject}`, // Subject line
               text: `${data}`, // plain text body
             });
