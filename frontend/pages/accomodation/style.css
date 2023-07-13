@@ -670,18 +670,16 @@ h6 {
 }
 
 @media (max-width: 991px) {
-<<<<<<< HEAD
     #hero {
 
         padding-top: 80px;
     }
     .nit-logo {
         display: none;
-=======
+    }
     #hero h1 {
         font-size: 32px;
         margin-left: 30px;
->>>>>>> 181fb6ff1d45efbe3f579972bbdf02dce9d74146
     }
 
     #hero .animated {
@@ -1121,5 +1119,23 @@ section {
     width: 10em;
     margin: 2em;
 }
-
+.btn:hover{
+    background-color: blue;
+}
+.bed_room h3{
+    padding: 10px;
+}
+@media (max-width: 991px){
+ #hero{
+    padding-top: 200px;
+ }
+}
+@media (max-width:280px){
+    #hero h1{
+        margin-left: 0px;
+    }
+    #hero{
+        width:288px;
+    }
+}
   
