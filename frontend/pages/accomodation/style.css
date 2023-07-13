@@ -1,3 +1,236 @@
+/** Hotels section **/
+
+.our_room {
+    background-color: #f4f5f7;
+    padding: 60px 0 30px 0;
+    margin-top: 90px;
+}
+
+.our_room .titlepage {
+    text-align: center;
+}
+
+.our_room .titlepage p {
+    color: #121212;
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.our_room .room {
+    background-color: #fff;
+    border-radius: 33px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2rem !important;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 30px;
+    transition: ease-in all 0.5s;
+}
+
+.our_room .room .room_img {
+    overflow: hidden;
+}
+
+.our_room .room .room_img figure {
+    margin: 0;
+}
+
+.our_room .room .room_img figure img {
+    width: 100%;
+    transition: all .5s;
+}
+
+.our_room .room .room_img figure img:hover {
+    transform: scale(1.2);
+}
+
+.our_room .room .bed_room {
+    padding: 33px 30px;
+}
+
+.our_room .room .bed_room h3 {
+    color: #121212;
+    font-size: 25px;
+    line-height: 20px;
+    font-weight: 500;
+    transition: ease-in all 0.5s;
+    margin: auto;
+}
+
+#serv_hover:hover.room {
+    cursor: pointer;
+    box-shadow: 0px 0px 30px rgba(255, 9, 9, 0.15);
+    transition: ease-in all 0.5s;
+}
+
+@media (min-width: 1200px) and (max-width: 1342px) {}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .book_room h1 {
+        font-size: 28px;
+    }
+    .carousel-indicators {
+        bottom: 17px;
+    }
+    .about_img {
+        margin-right: 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navigation.navbar-dark .navbar-nav .nav-link {
+        margin: 0 10px;
+    }
+    .carousel-item img {
+        min-height: 570px;
+    }
+    .book_room h1 {
+        font-size: 19px;
+    }
+    .carousel-indicators {
+        bottom: 27px;
+    }
+    .about_img {
+        margin-right: 0px;
+    }
+    .book_btn {
+        padding: 5px 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .header {
+        height: 76px;
+    }
+    .carousel-item img {
+        min-height: 570px;
+    }
+    .carousel-indicators {
+        bottom: 27px;
+    }
+    .about .titlepage {
+        max-width: inherit;
+    }
+    .about_img {
+        margin-right: 0px;
+        margin-top: 30px;
+    }
+    .main_form .send_btn {
+        margin-bottom: 30px;
+    }
+    ul.link_menu {
+        margin-bottom: 20px;
+    }
+    .navigation.navbar {
+        float: right;
+        display: inherit !important;
+        padding: 0;
+        width: 100%;
+        padding-top: 5px !important;
+    }
+    .navigation .navbar-collapse {
+        background: #0f1521;
+        padding: 20px;
+        margin-top: 56px;
+        position: absolute;
+        width: 100%;
+        margin-right: 20px;
+        z-index: 999;
+    }
+    .navigation.navbar-dark .navbar-nav .nav-link {
+        padding: 10px 0;
+        color: #fff;
+    }
+    .navigation.navbar-dark .navbar-toggler {
+        border: inherit;
+        float: right;
+        padding-top: 9px;
+    }
+    .navigation.navbar-dark .navbar-toggler-icon {
+        background: url(../images/menu_icon.png);
+        background-repeat: no-repeat;
+    }
+    .d_none {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .logo {
+        text-align: center !important;
+        padding-bottom: 6px;
+        float: left;
+    }
+    .header {
+        height: 84px;
+    }
+    .carousel-item img {
+        min-height: 570px;
+    }
+    .book_room h1 {
+        font-size: 20px;
+        line-height: 25px;
+        padding-bottom: 15px;
+    }
+    .book_now .online_book {
+        margin-bottom: 20px;
+    }
+    .book_btn {
+        padding: 5px 0;
+    }
+    .about .titlepage {
+        max-width: inherit;
+    }
+    .about_img {
+        margin-right: 0px;
+        margin-top: 30px;
+    }
+    .main_form .send_btn {
+        margin-bottom: 30px;
+    }
+    ul.link_menu {
+        margin-bottom: 20px;
+    }
+    .navigation.navbar {
+        float: right;
+        display: inherit !important;
+        padding: 0;
+        width: 100%;
+    }
+    .navigation .navbar-collapse {
+        background: #0f1521;
+        padding: 20px;
+       margin-top: -5px;
+        position: absolute;
+        width: 100%;
+        margin-right: 20px;
+        z-index: 999;
+    }
+    .navigation.navbar-dark .navbar-nav .nav-link {
+        padding: 10px 0;
+        color: #fff;
+    }
+    .navigation.navbar-dark .navbar-toggler {
+        float: right;
+        border: inherit;
+        margin-top: -61px;
+    }
+    .testimonial_box {
+        padding: 0px 19px 40px 20px;
+    }
+    .navigation.navbar-dark .navbar-toggler-icon {
+        background: url(../images/menu_icon.png);
+        background-repeat: no-repeat;
+    }
+    .d_none {
+        display: none;
+    }
+}
+
+
+
+/** end Hotel section **/
+
 body {
     font-family: "Open Sans", sans-serif;
     color: #444444;
@@ -440,16 +673,6 @@ h6 {
     margin-top: -30px;
 }
 @media (max-width: 991px) {
-    #hero {
-        /* margin-top: -100px; */
-        height: 55vh;
-        padding-top: 80px;
-    }
-
-    .nit-logo {
-        display: none;
-    }
-
     #hero .animated {
         animation: none;
     }
@@ -894,3 +1117,5 @@ section {
     width: 10em;
     margin: 2em;
 }
+
+  

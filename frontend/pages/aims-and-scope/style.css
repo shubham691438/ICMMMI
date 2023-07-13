@@ -405,10 +405,10 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-    background-image: url("../../assets/img/bg2.jpg");
+    background-image: url("../../assets/img/nitjsr-hero-img.jpeg");
     margin-top: 85px;
     margin-bottom: -40px;
-    height: 400px;
+   
     background-size: cover;
 }
 
