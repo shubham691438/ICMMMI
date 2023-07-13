@@ -104,6 +104,8 @@ form.addEventListener('submit',function(event){
     let email=document.getElementById('email').value;
     let phoneNo=document.getElementById('phoneNo').value;
     let password=document.getElementById('password').value;
+    let amount=document.getElementById('amount').value;
+    let transactionRefNo=document.getElementById('transactionRefNo').value;
 
     // console.log(salutation,firstName,lastName,nationality,category,organization,noOfPapers,paperId,email,phoneNo,password)
 
@@ -129,7 +131,7 @@ form.addEventListener('submit',function(event){
             console.log(json);
             setTimeout(()=>{
                 window.location.href = "../../index.html";
-            },1000)
+            },2000)
             
           }  
           
@@ -142,7 +144,7 @@ form.addEventListener('submit',function(event){
         }
       }
       
-      const data = { salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId,password };
+      const data = { salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId,password,amount,transactionRefNo };
       postFormData(data);
       
 })
