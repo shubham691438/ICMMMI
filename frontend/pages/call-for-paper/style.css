@@ -72,14 +72,14 @@ body {
 --------------------------------------------------------------*/
 #hero {
     min-height: initial;
-    background-image: url("../../assets/img/3.png");
+    background-image: url("../../assets/img/call\ for\ papers.jpg");
     margin-top: 85px;
     margin-bottom: -40px;
     background-size: cover;
 }
 
 #hero h1{
-    color: black;
+    color: white;
     font-size: 65px;
     font-weight: 700;
     margin-top: 50px;
@@ -100,7 +100,7 @@ body {
 @media (max-width: 991px) {
     #hero {
         /* margin-top: -100px; */
-        height: 55vh;
+        /*height: 55vh;*/
         padding-top: 80px;
     }
 
