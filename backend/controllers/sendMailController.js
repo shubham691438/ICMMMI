@@ -9,8 +9,8 @@ const sendMail=async(req,res)=>{
             host: 'smtp.gmail.com',
             port: 587,
             auth: {
-                user: 'ss691438@gmail.com',
-                pass: 'xgppxfkhqgvkenal'
+                user: 'icmmmi2024@gmail.com',
+                pass: 'lquwolsisupdkymv'
             }
         });
 
