@@ -672,18 +672,13 @@ h6 {
     margin-left: 100px;
     margin-top: -30px;
 }
-
 @media (max-width: 991px) {
-    #hero h1 {
-        font-size: 32px;
-        margin-left: 30px;
-    }
-
     #hero .animated {
         animation: none;
     }
 
     #hero .hero-img {
+        margin-bottom: 20px;
         text-align: center;
     }
 
@@ -691,16 +686,22 @@ h6 {
         max-width: 50%;
     }
 
-   #hero h1 {
-       font-size: 32px;
-       margin-left: 30px;
-       margin-top: -15px;
-   }
+    #hero h1 {
+        font-size: 33px;
+        margin-left: 10px;
+        margin-top: 35px;
+    }
 
-   #hero h2 {
-       font-size: 18px;
-       margin-left: 10px;
-   }
+    #hero h2 {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 575px) {
+    #hero .hero-img img {
+        width: 80%;
+    }
 }
 
 @media (max-width: 575px) {
