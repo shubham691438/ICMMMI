@@ -16,11 +16,13 @@ const UserSchema=new Schema({
     noOfPapers:Number,
     paperId:String,
     password:String,
+    amount:String,
+    transactionRefNo:String,
 })
 
 
 // static register method
-UserSchema.statics.register = async function(salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId,password) {
+UserSchema.statics.register = async function(salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId,password,amount,transactionRefNo) {
 
     // validation
     if(!salutation){
@@ -63,7 +65,7 @@ UserSchema.statics.register = async function(salutation,firstName,lastName,natio
     const salt = await bcrypt.genSalt(10)
     const hashedPassword = await bcrypt.hash(password, salt)
   
-    const user = await this.create({ salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId,password:hashedPassword })
+    const user = await this.create({ salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId,password:hashedPassword,amount,transactionRefNo })
   
     return user
   }

@@ -2,7 +2,7 @@
 
 .our_room {
     background-color: #f4f5f7;
-    padding: 60px 0 30px 0;
+    /* padding: 60px 0 30px 0; */
     margin-top: 90px;
 }
 
@@ -538,7 +538,7 @@ h6 {
     transition: 0.5s;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1400px) {
     .mobile-nav-toggle {
         display: block;
     }
@@ -673,12 +673,20 @@ h6 {
     margin-top: -30px;
 }
 @media (max-width: 991px) {
+    #hero1 {
+
+        padding-top: 80px;
+    }
+
+    .nit-logo {
+        display: none;
+    }
+
     #hero .animated {
         animation: none;
     }
 
     #hero .hero-img {
-        margin-bottom: 20px;
         text-align: center;
     }
 
@@ -687,20 +695,14 @@ h6 {
     }
 
     #hero h1 {
-        font-size: 33px;
+        font-size: 38px;
         margin-left: 10px;
-        margin-top: 35px;
+        margin-top: 75px;
     }
 
-    #hero h2 {
+    #hero1 h2 {
         font-size: 18px;
         margin-left: 10px;
-    }
-}
-
-@media (max-width: 575px) {
-    #hero .hero-img img {
-        width: 80%;
     }
 }
 
@@ -722,9 +724,6 @@ section {
     background-color: #f5f5ff;
 }
 
-.section-title {
-    padding-bottom: 40px;
-}
 
 .section-title h2 {
     font-size: 14px;

@@ -10,15 +10,15 @@ const createToken =(id)=>{
 
 //register post request to create a new user in db
 const register = async (req, res) => {
-    const {salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId,password} = req.body
+    const {salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId,password,amount,transactionRefNo} = req.body
   
     try {
-      const user = await User.register(salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId,password)
+      const user = await User.register(salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId,password,amount,transactionRefNo)
   
       // create a token
       const token = createToken(user._id)
       
-      res.status(200).json({userId:user._id,salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId,token})
+      res.status(200).json({userId:user._id,salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId,token,amount,transactionRefNo})
     } catch (error) {
       res.status(400).json({error: error.message})
     }
@@ -47,7 +47,10 @@ const login = async (req, res) => {
         category:user.category,
         noOfPapers:user.noOfPapers,
         paperId:user.paperId,
-        token})
+        token,
+        amount:user.amount,
+        transactionRefNo:user.transactionRefNo,
+      })
     } catch (error) {
       res.status(400).json({error: error.message})
     }
@@ -79,12 +82,12 @@ const login = async (req, res) => {
   const updateUser= async (req,res)=>{
 
     const userId = req.params.id;
-    const {salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId} = req.body
+    const {salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId,amount,transactionRefNo} = req.body
     
   
     try {
       // Find the user by ID and update the data
-      const user = await User.findByIdAndUpdate({ _id: userId }, { $set: {salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId}},{ new: true });
+      const user = await User.findByIdAndUpdate({ _id: userId }, { $set: {salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId,amount,transactionRefNo}},{ new: true });
   
       if (user) {
         // User updated successfully, send the updated user data as a response
