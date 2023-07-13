@@ -100,7 +100,7 @@ userLoginForm.addEventListener('submit',function(event){
             const alertBox=document.getElementById('msg-user-login');
             alertBox.className="alert alert-success";
             alertBox.innerHTML="Logged in Successfully";
-            // console.log(json);
+            console.log(json);
             localStorage.setItem('user',JSON.stringify(json));
 
             window.location.href = "../profile/index.html";

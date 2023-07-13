@@ -26,6 +26,8 @@ async function setUserData(){
       if(user.noOfPapers) document.getElementById('noOfPapers').value=user.noOfPapers
       if(user.paperId) document.getElementById('paperId').value=user.paperId
       if(user.organization) document.getElementById('organization').value=user.organization
+      if(user.amount) document.getElementById('amount').value=user.amount
+      if(user.transactionRefNo) document.getElementById('transactionRefNo').value=user.transactionRefNo
 
 }
 
@@ -52,6 +54,8 @@ document.getElementById('updateButton').addEventListener('click',function(event)
    let noOfPapers= document.getElementById('noOfPapers').value
    let paperId=document.getElementById('paperId').value
    let organization=document.getElementById('organization').value
+   let amount=document.getElementById('amount').value;
+   let transactionRefNo=document.getElementById('transactionRefNo').value;
 
    async function updateUserData(data) {
       try {
@@ -78,7 +82,7 @@ document.getElementById('updateButton').addEventListener('click',function(event)
          const updatedUser={
             userId:user.userId,
             token:user.token,
-            salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId,
+            salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId,amount,transactionRefNo
          }
          localStorage.setItem('user',JSON.stringify(updatedUser));
           
@@ -93,7 +97,7 @@ document.getElementById('updateButton').addEventListener('click',function(event)
       }
     }
     
-    const data = { salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId };
+    const data = { salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId,amount,transactionRefNo };
    //  console.log(data);
     updateUserData(data);
 
