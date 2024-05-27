@@ -1,6 +1,7 @@
 #hero1 {
   height: 450px;
-  background-image: url("../../assets/img/6.jpeg");
+  /* background-image: url("../../assets/img/6.jpeg"); */
+  background-image: url("../../assets/img/nit-jsr-academic-building.jpg");
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
