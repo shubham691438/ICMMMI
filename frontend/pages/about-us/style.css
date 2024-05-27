@@ -109,7 +109,7 @@ h6 {
     height: 120px;
     transition: all 0.5s;
     z-index: 997;
-    box-shadow: 5px 5px 5px rgb(123, 122, 122);
+    /* box-shadow: 5px 5px 5px rgb(123, 122, 122); */
     transition: all 0.5s;
     background: rgba(1, 4, 136, 0.9);
 }
