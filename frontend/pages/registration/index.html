@@ -197,7 +197,13 @@
         <h2>Registeration form</h2>
         <p>Register YourSelf</p>
       </div>
-      <div><h3 style="color: green">Details To make Payment Will be Updated Soon....</h3></div>
+      <div><h3 style="color: green">Payment Details....</h3>
+    <p><strong>Name of the Beneficiary Institute:</strong> Research and Consultancy NIT Jamshedpur</p>
+    <p><strong>Name of the Bank:</strong> STATE BANK OF INDIA</p>
+    <p><strong>Branch Name & Bank Code:</strong> NIT CAMPUS, SBIN0001882</p>
+    <p><strong>Account Number:</strong> 38246478714</p>
+    <p><strong>IFSC Code:</strong> SBIN0001882</p>
+      </div>
       <div class="registration-form" id="registration-form">
         <form >
             <div class="form-icon">
@@ -252,8 +258,8 @@
 
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label for="noOfPapers">Number of Papers</label>
-              <input type="number" class="form-control" id="noOfPapers" placeholder="Enter Number of papers">
+              <label for="paperTitle">Paper Title</label>
+              <input type="text" class="form-control" id="paperTitle" placeholder="Enter Paper Title">
             </div>
             <div class="form-group col-md-6">
               <label for="paperId">Paper Id</label>
@@ -279,12 +285,33 @@
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="amount">Amount to be Paid</label>
-                <input type="string" class="form-control" id="amount"  value="" readonly>
+                <select class="form-control" id="amount" required>
+    <option value="Select Amount">Select Amount</option>
+    <option value="500">₹6000</option>
+    <option value="1000">₹600</option>
+    <option value="1500">USD 250</option>
+    <option value="2000">USD 150</option>
+    <option value="2000">USD 80</option>
+  </select>
               </div>
               <div class="form-group col-md-6">
                 <label for="transactionRefNo">Transaction Reference Number</label>
                 <input type="text" class="form-control" id="transactionRefNo" placeholder="Enter Transaction Reference Number" required>
               </div>
+              <!-- <div class="form-group col-md-6">
+  <label for="paymentProof">Upload Payment Proof</label>
+  <input 
+    type="file" 
+    class="form-control" 
+    id="paymentProof" 
+    accept=".jpg, .jpeg, .png, .pdf" 
+    required
+  >
+  <small class="form-text text-muted">
+    Accepted formats: JPG, PNG, PDF. Maximum file size: 10MB.
+  </small>
+</div> -->
+
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-block create-account">Register</button>
@@ -345,7 +372,7 @@
 
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>IMPORTANT DATES</h4>
-            <strong>EXTENDED ABSTRACT SUBMISSION : </strong> <s>5 January ,2025</s> 5 Feb,2025<br><br>
+            <strong>EXTENDED ABSTRACT SUBMISSION : </strong> <s>5 January ,2025</s> 10 Feb,2025<br><br>
             <strong>INTIMATION OF ABSTRACT ACCEPTANCE : </strong> 15th December,2024 <br><br>
             <strong>FULL PAPER SUBMISSION : </strong> 5th Jan ,2025 <br><br>
             <strong>EARLY BIRD REGISTRATION:</strong>  10th Jan, 2025 <br><br>
