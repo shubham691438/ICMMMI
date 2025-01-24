@@ -1,0 +1,110 @@
+const User=require('../models/UserModel')
+const jwt=require('jsonwebtoken')
+require('dotenv').config()
+
+//creating json web token
+const maxAge=2*24*60*60
+const createToken =(id)=>{
+    return jwt.sign({id},process.env.SECRET_JWT_KEY,{expiresIn:maxAge})
+}
+
+//register post request to create a new user in db
+const register = async (req, res) => {
+    const {salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId,password,amount,transactionRefNo} = req.body
+  
+    try {
+      const user = await User.register(salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId,password,amount,transactionRefNo)
+  
+      // create a token
+      const token = createToken(user._id)
+      
+      res.status(200).json({userId:user._id,salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId,token,amount,transactionRefNo})
+    } catch (error) {
+      res.status(400).json({error: error.message})
+    }
+  }
+
+// login post request 
+const login = async (req, res) => {
+    const {email, password} = req.body
+    
+    try {
+      const user = await User.login(email, password)
+  
+      
+      // create a token
+      const token = createToken(user._id)
+  
+      res.status(200).json({
+        userId:user._id,
+        salutation:user.salutation,
+        firstName:user.firstName,
+        lastName:user.lastName,
+        nationality:user.nationality,
+        email:user.email,
+        phoneNo:user.phoneNo,
+        organization:user.organization,
+        category:user.category,
+        noOfPapers:user.noOfPapers,
+        paperId:user.paperId,
+        token,
+        amount:user.amount,
+        transactionRefNo:user.transactionRefNo,
+      })
+    } catch (error) {
+      res.status(400).json({error: error.message})
+    }
+  }  
+
+  //request to get user
+  const getUser=async(req,res)=>{
+
+      // Get the user ID from the request parameters
+      const userId = req.params.id;
+
+      try{
+          // Find the user in the array based on the ID
+          const user = await User.findOne({_id:userId});
+          if (user) {
+            // User found,
+            res.status(200).json(user);
+          } else {
+            // User not found, 
+            res.status(404).json({ error: 'User not found' });
+          }
+      }
+      catch(error){
+        res.status(500).json({error: error.message})
+      }
+  } 
+
+  //request to update user data
+  const updateUser= async (req,res)=>{
+
+    const userId = req.params.id;
+    const {salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId,amount,transactionRefNo} = req.body
+    
+  
+    try {
+      // Find the user by ID and update the data
+      const user = await User.findByIdAndUpdate({ _id: userId }, { $set: {salutation,firstName,lastName,nationality,email,phoneNo,organization,category,noOfPapers,paperId,amount,transactionRefNo}},{ new: true });
+  
+      if (user) {
+        // User updated successfully, send the updated user data as a response
+        res.status(200).json(user);
+      } else {
+        // User not found, 
+        res.status(404).json({ error: 'User not found' });
+      }
+    } catch (error) {
+      // Error occurred during the update, send an error response
+      res.status(500).json({ error: 'Internal server error' });
+    }
+  }
+  
+  module.exports={
+    login,
+    register,
+    getUser,
+    updateUser
+}

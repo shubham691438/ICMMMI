@@ -1,0 +1,149 @@
+.boxed a:hover { color: #ffffff;
+    background: #222222;
+}
+.boxed a {
+    display: inline-block;
+    padding: 8px 30px;
+    color: #D2691E;
+    background: #ffffff;
+}
+a:hover, a:active, a:focus {
+    color: #666;
+    outline: none;
+    text-decoration: none;
+}
+a:hover {
+    color: #080808;
+    text-decoration: underline;
+}
+
+
+#about {
+    position: relative;
+    padding: 80px 0 60px 0;
+    background: #f2f2f2;
+}
+
+
+
+section {
+    display: block;
+}
+body {
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background: #fff;
+}
+.text-maroon {
+    color: maroon;
+}
+.text-center {
+    text-align: center!important;
+}
+
+.spacing{
+    margin-top: 50px;
+}
+
+.deadline-card{
+    background-color: #fff;
+    /* width: 330px; */
+    border-radius: 33px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2rem !important;
+}
+
+.guideline-card{
+    background-color: #fff;
+    border-radius: 33px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2rem !important;
+    /* transition-duration: 0.5s; */
+}
+
+.submit-paper-button{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+    min-height: initial;
+    background-image: url("../../assets/img/call\ for\ papers.jpg");
+    margin-top: 85px;
+    margin-bottom: -40px;
+    background-size: cover;
+}
+
+#hero h1{
+    color: white;
+    font-size: 65px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#hero h2{
+    font-size: 22px;
+    color: white;
+    line-height: 25px;
+    margin-left: 100px;
+    margin-top: -30px;
+}
+@media (max-width: 991px) {
+    #hero {
+        /* margin-top: -100px; */
+        /*height: 55vh;*/
+        padding-top: 80px;
+    }
+
+    .nit-logo {
+        display: none;
+    }
+
+    #hero .animated {
+        animation: none;
+    }
+
+    #hero .hero-img {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #hero .hero-img img {
+        max-width: 50%;
+    }
+
+    #hero h1 {
+        font-size: 33px;
+        margin-left: 10px;
+        margin-top: 35px;
+    }
+
+    #hero h2 {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 575px) {
+    #hero .hero-img img {
+        width: 80%;
+    }
+}
+@keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}

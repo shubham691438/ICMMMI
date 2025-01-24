@@ -1,0 +1,185 @@
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: inherit;
+    padding: 4em;
+}
+#main2{
+    display: none;
+}
+#containe{
+    border: 1px solid rgb(171, 165, 165);
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4em;
+    border-radius: 1em;
+    box-shadow: 0 1px 2px 1px rgb(135, 133, 133);
+}
+#containe:hover{
+    box-shadow: 0 4px 5px 4px rgb(95, 92, 92);
+}
+
+
+#containe img{
+    height: 15em;
+    width: 24em;
+    border: 1px ridge rgb(133, 131, 131);
+    margin: 1em;
+    border-radius: 1em;
+}
+#containe #text{
+    margin: 1em;
+}
+#top{
+    text-align: center;
+    padding: 3em 3em 0 3em;
+    font-size: 2rem;
+    color: rgba(1, 4, 136, 0.9);
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+#bottom{
+    text-align: center;
+    padding: 0 3em 3em 3em;
+    font-size: 2rem;
+    color: rgba(1, 4, 136, 0.9);
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+#text{
+    font-size: 1.3rem;
+    font-family: "Open Sans", sans-serif;
+}
+#text p{
+    color: rgb(33, 180, 131);
+    font-weight: 1000;
+    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 1em;
+}
+
+
+
+@media (max-width:840px){
+    #containe{
+        display: flex;
+        flex-direction: column;
+    }
+    #top{
+        padding: 3em 0 0;
+    }
+    #bottom{
+        padding: 0 0  2em;
+    }
+    #main{
+        display: none;
+    }
+    #main2{
+        display: block ;
+
+    }
+}
+
+#hero:before {
+    content: "url()";
+    background: rgba(2, 5, 161, 0.91) no-repeat;
+    /* background-image: url("assets/img/nit1.jpg"); */
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#hero h1 {
+    margin: 0 0 20px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 190px;
+    color: white;
+}
+#hero{
+    height: 395px;
+}
+@media (max-width: 912px) {
+    #hero{
+        height: 318.5px;
+    }
+    #hero h1 {
+        margin: 0 0 2px 0;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 60px;
+        color: white;
+    }
+}
+@media(max-width:360px){
+    #containe #text{
+        margin: 2em;
+        padding-top: 0.5em;
+    }
+    #main{
+        display: none;
+    }
+    #main2{
+        display: block ;
+    }
+}
+@media(max-width: 280px){
+    #containe #text{
+        margin: 3em ;
+
+    }
+    #containe img{
+        height: 50em;
+    }
+}
+
+
+@media(width: 912px){
+    #containe{
+        display: inline;
+
+    }
+    #containe img{
+        width: 40em;
+    }
+
+    #main{
+        display: none;
+    }
+    #main2{
+        display: block ;
+    }
+
+}
+@media (width:1200px){
+    #containe{
+        display: flex;
+        flex-direction: column;
+    }
+    #top{
+        padding: 3em 0 0;
+    }
+    #bottom{
+        padding: 0 0  2em;
+    }
+    #main{
+        display: none;
+    }
+    #main2{
+        display: block ;
+    }
+
+}
+
+
+
+
+
+
