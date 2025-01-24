@@ -12,7 +12,6 @@ document.getElementById('category').addEventListener('input', function(event) {
 });
 
 function updateAmountValue() {
-    // Indian Nationals
   const indianDelegateIndustryEarlyBird = 5000;
   const indianDelegateIndustryAfterNovember = 6000;
 
