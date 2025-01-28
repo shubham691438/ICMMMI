@@ -270,7 +270,7 @@ form.addEventListener('submit', function (event) {
   // Function to send data to Google Sheets
   async function postFormData(data) {
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycbzneiQ92Raxn1edW5J0-cizKif0p1hXh0MJJ9L34hrwzZ4Z7zhvWe6VG4SXhIvEpLVDag/exec";
+      "https://script.google.com/macros/s/AKfycbwp_yUk0Xveei9OmKAsJOpa0UbafJ86hbofzQ7MkW1I3ISccgQG96KFFvlUCnXKlKFe/exec";
 
     try {
       const response = await fetch(scriptURL, {
